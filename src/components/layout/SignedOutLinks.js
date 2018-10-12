@@ -5,9 +5,9 @@ const SignedOutLinks = () => {
   return (
     <div>
       <ul className="right">
-        <li><a href="https://github.com/ruiwen905">GitHub Account</a></li>
-        <li><a href="https://www.facebook.com/chen.ruiwen">Facebook</a></li>
-        <li><a href="http://www.comp.nus.edu.sg/~ruiwen94/Resume.pdf">Resume</a></li>
+        <li><a href="https://github.com/ruiwen905">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/chen-rui-wen-75931a11a/">LinkedIn</a></li>
+        <li><a href="https://drive.google.com/file/d/1lYdSZPADHrVGKRcgbnzNOwUcEzvVPJga/view?usp=sharing">Resume</a></li>
         <li><NavLink to='/signin'>Login</NavLink></li>
       </ul>
     </div>
