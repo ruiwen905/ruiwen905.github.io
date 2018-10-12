@@ -1,27 +1,23 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [3 Col Portfolio](http://startbootstrap.com/template-overviews/3-col-portfolio/)
+This project was created using [Create React App](https://github.com/facebookincubator/create-react-app).
 
-[3 Col Portfolio](http://startbootstrap.com/template-overviews/3-col-portfolio/) is a three column portfolio template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+This Portfolio Webapp is created using React, Redux and Google Cloud Firestore and Materialize CSS
 
-## Getting Started
+The signup page is hidden, you can find it at ruiwen905.github.io/signup
+OR you can use Email: guest and Password: guestPassword to try and add new projects
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/3-col-portfolio/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio.git`
-* Fork the repo
+The serverless Portfolio Web Application is created using ReactJS, Redux, Materialize CSS
+Data are stored in Google Cloud Firestore
+User can signup, login using Firebase Authentication and create 'New Project'
+Under 'New Project' form, user can input project title, dynamically add multiple features, images, links to video demo and github repo and select the start and end date using a date picker
 
-## Bugs and Issues
+###Getting Started :bulb:
+Install in your localhost do the following :octocat:
+```
+> git clone https://github.com/ruiwen905/ruiwen905.github.io.git portfolio
+> cd portfolio
+> npm install
+> npm start
+> Go to localhost:3000
+```
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/3-col-portfolio/).
-
-## Creator
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio/blob/gh-pages/LICENSE) license.
+Created by Rui Wen
