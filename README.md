@@ -3,7 +3,8 @@ This project was created using [Create React App](https://github.com/facebookinc
 This Portfolio Webapp is created using React, Redux and Google Cloud Firestore and Materialize CSS
 
 The signup page is hidden, you can find it at ruiwen905.github.io/signup
-OR you can use Email: guest and Password: guestPassword to try and add new projects
+OR 
+you can use Email: guest@gmail.com & Password: guestPassword to try and add new projects
 
 The serverless Portfolio Web Application is created using ReactJS, Redux, Materialize CSS
 Data are stored in Google Cloud Firestore
