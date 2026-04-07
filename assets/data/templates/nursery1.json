@@ -1,0 +1,50 @@
+{
+  "level": "nursery1",
+  "label": "Nursery 1 (Age 3-4)",
+  "morning": [
+    {"id":"mr1","desc":"Keep pillow & fold blanket","icon":"🛏️"},
+    {"id":"mr2","desc":"Brush teeth & pee","icon":"🦷"},
+    {"id":"mr3","desc":"Change clothes","icon":"👕"},
+    {"id":"mr4","desc":"Finish breakfast","icon":"🥣"},
+    {"id":"mr5","desc":"Keep toys","icon":"🧸"}
+  ],
+  "evening": [
+    {"id":"ev1","desc":"Finish dinner","icon":"🍽️"},
+    {"id":"ev2","desc":"Take out clothes","icon":"👗"},
+    {"id":"ev3","desc":"Bath & wear clothes","icon":"🛁"},
+    {"id":"ev4","desc":"Read book","icon":"📖"},
+    {"id":"ev5","desc":"Brush teeth & pee","icon":"🦷"}
+  ],
+  "marketplace": [
+    {"id":"m1","name":"DIY Waffles / Dumplings","icon":"🧇","days":3},
+    {"id":"m2","name":"Orange Juice / Ice Cream","icon":"🍦","days":3},
+    {"id":"m3","name":"Water Play","icon":"💦","days":5},
+    {"id":"m4","name":"Library","icon":"📚","days":3},
+    {"id":"m5","name":"Indoor Playground","icon":"🎠","days":9},
+    {"id":"m6","name":"Zoo","icon":"🦁","days":12}
+  ],
+  "skills": {
+    "boy": [
+      {"id":"sk_potty","name":"Potty Training","icon":"🚽","target":20,"current":0,"mastered":false,"color":"#f39c12","milestone":"Uses the toilet independently"},
+      {"id":"sk_hands","name":"Wash Hands","icon":"🤲","target":10,"current":0,"mastered":false,"color":"#3498db","milestone":"Washes hands without reminding"},
+      {"id":"sk_spoon","name":"Use a Spoon","icon":"🥄","target":10,"current":0,"mastered":false,"color":"#27ae60","milestone":"Eats independently with spoon/fork"},
+      {"id":"sk_dress","name":"Getting Dressed","icon":"👕","target":15,"current":0,"mastered":false,"color":"#e74c3c","milestone":"Puts on clothes with minimal help"},
+      {"id":"sk_share","name":"Sharing Toys","icon":"🤝","target":10,"current":0,"mastered":false,"color":"#9b59b6","milestone":"Shares toys with friends & siblings"},
+      {"id":"sk_jump","name":"Jumping","icon":"🦘","target":8,"current":0,"mastered":false,"color":"#1abc9c","milestone":"Jumps on both feet confidently"},
+      {"id":"sk_name","name":"Recognise My Name","icon":"✏️","target":5,"current":0,"mastered":false,"color":"#e67e22","milestone":"Can identify own name in print"},
+      {"id":"sk_speak","name":"Speak in Sentences","icon":"💬","target":10,"current":0,"mastered":false,"color":"#2980b9","milestone":"Speaks in 3-4 word sentences"},
+      {"id":"sk_draw","name":"Drawing Circles","icon":"🎨","target":8,"current":0,"mastered":false,"color":"#c0392b","milestone":"Can draw a circle and simple shapes"}
+    ],
+    "girl": [
+      {"id":"sk_potty","name":"Potty Training","icon":"🚽","target":20,"current":0,"mastered":false,"color":"#f39c12","milestone":"Uses the toilet independently"},
+      {"id":"sk_hands","name":"Wash Hands","icon":"🤲","target":10,"current":0,"mastered":false,"color":"#e84393","milestone":"Washes hands without reminding"},
+      {"id":"sk_spoon","name":"Use a Spoon","icon":"🥄","target":10,"current":0,"mastered":false,"color":"#27ae60","milestone":"Eats independently with spoon/fork"},
+      {"id":"sk_dress","name":"Getting Dressed","icon":"👗","target":15,"current":0,"mastered":false,"color":"#e74c3c","milestone":"Puts on clothes with minimal help"},
+      {"id":"sk_share","name":"Sharing Toys","icon":"🤝","target":10,"current":0,"mastered":false,"color":"#9b59b6","milestone":"Shares toys with friends & siblings"},
+      {"id":"sk_jump","name":"Jumping","icon":"🦘","target":8,"current":0,"mastered":false,"color":"#1abc9c","milestone":"Jumps on both feet confidently"},
+      {"id":"sk_name","name":"Recognise My Name","icon":"✏️","target":5,"current":0,"mastered":false,"color":"#e67e22","milestone":"Can identify own name in print"},
+      {"id":"sk_speak","name":"Speak in Sentences","icon":"💬","target":10,"current":0,"mastered":false,"color":"#2980b9","milestone":"Speaks in 3-4 word sentences"},
+      {"id":"sk_draw","name":"Drawing Circles","icon":"🎨","target":8,"current":0,"mastered":false,"color":"#c0392b","milestone":"Can draw a circle and simple shapes"}
+    ]
+  }
+}

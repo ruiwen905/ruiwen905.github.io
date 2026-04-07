@@ -1,0 +1,54 @@
+/* tabs/skills/skills.css */
+.skills-board { padding: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; align-items: start; }
+.kid-skills-col { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,.08); }
+.kid-skills-header { padding: 13px; color: white; display: flex; align-items: center; gap: 10px; }
+.kid-skills-header .avatar-img, .kid-skills-header .avatar-emoji { width: 64px; height: 64px; cursor: pointer; }
+.kid-skills-name { font-family: 'Fredoka One', cursive; font-size: 2rem; flex: 1; }
+
+/* MEDAL SHOWCASE */
+.medal-showcase { padding: 12px 12px 6px; border-bottom: 2px solid #f5f0e8; }
+.medal-showcase-title { font-size: 1.5rem; font-weight: 800; color: #aaa; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.medal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.medal-badge { background: linear-gradient(135deg, #fffde0, #fff5aa); border: 2px solid #f5c842; border-radius: 12px; padding: 8px 4px; text-align: center; cursor: pointer; transition: transform .15s; }
+.medal-badge:hover { transform: scale(1.05); }
+.medal-badge .mb-icon { font-size: 2.4rem; line-height: 1; }
+.medal-badge .mb-name { font-size: 1.1rem; font-weight: 800; color: #8a6000; margin-top: 3px; line-height: 1.2; }
+.medal-badge .mb-date { font-size: .95rem; color: #b89030; margin-top: 2px; }
+.medal-empty { color: #ddd; font-size: 1.5rem; text-align: center; padding: 8px; font-style: italic; }
+
+/* SKILL CARDS */
+.skill-cards { padding: 10px; display: flex; flex-direction: column; gap: 10px; }
+.skill-card { border-radius: 14px; border: 2px solid #eee; overflow: hidden; background: white; }
+.skill-card-head { display: flex; align-items: center; gap: 10px; padding: 12px 14px; }
+.skill-icon { font-size: 2.6rem; }
+.skill-name { font-weight: 800; font-size: 1.9rem; flex: 1; }
+.skill-edit-btn { display: none; background: #ff6b35; color: white; border: none; border-radius: 8px; padding: 4px 8px; font-size: 1.3rem; cursor: pointer; }
+.admin-mode .skill-edit-btn { display: block; }
+.skill-progress-area { padding: 0 14px 14px; }
+.skill-bar-wrap { background: #f0f0f0; border-radius: 20px; height: 22px; overflow: hidden; margin-bottom: 6px; cursor: pointer; position: relative; }
+.skill-bar-fill { height: 100%; border-radius: 20px; transition: width .4s cubic-bezier(.34,1.56,.64,1); }
+.skill-bar-tap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: 800; color: white; text-shadow: 0 1px 2px rgba(0,0,0,.3); }
+.skill-bar-label { display: flex; justify-content: space-between; font-size: 1.5rem; color: #aaa; font-weight: 700; }
+.tap-hint { text-align: center; font-size: 1.5rem; color: #bbb; margin-top: 4px; }
+.skill-milestone { font-size: 1.4rem; color: #7c6fcf; margin-top: 4px; font-style: italic; }
+@keyframes medalIn { 0%{transform:scale(0) rotate(-20deg);opacity:0} 60%{transform:scale(1.2) rotate(5deg)} 100%{transform:scale(1) rotate(0);opacity:1} }
+.skill-mastered-strip { padding: 12px 14px; background: linear-gradient(135deg, #fffde0, #fff5aa); border-top: 2px solid #f5c842; text-align: center; }
+.mastered-icon { font-size: 3rem; animation: medalIn .6s ease forwards; }
+.mastered-label { font-family: 'Fredoka One', cursive; font-size: 1.8rem; color: #8a6000; margin-top: 4px; }
+.mastered-milestone { font-size: 1.4rem; color: #b89030; margin-top: 2px; }
+.add-skill-btn { display: none; margin: 0 10px 10px; padding: 10px; background: #e8f4ff; border: 2px dashed #5c52c0; border-radius: 10px; width: calc(100% - 20px); font-family: 'Fredoka One', cursive; font-size: 1.8rem; color: #5c52c0; cursor: pointer; }
+.admin-mode .add-skill-btn { display: block; }
+
+@media (max-width: 900px) {
+  .kid-skills-name { font-size: 1.1rem; }
+  .kid-skills-header .avatar-img, .kid-skills-header .avatar-emoji { width: 36px; height: 36px; font-size: 1rem; }
+  .skill-name { font-size: .95rem; }
+  .skill-icon { font-size: 1.4rem; }
+  .skill-bar-label { font-size: .8rem; }
+  .tap-hint { font-size: .75rem; }
+  .medal-badge .mb-icon { font-size: 1.6rem; }
+  .medal-badge .mb-name { font-size: .8rem; }
+  .medal-badge .mb-date { font-size: .7rem; }
+  .medal-showcase-title { font-size: 1rem; }
+  .add-skill-btn { font-size: .9rem; }
+}

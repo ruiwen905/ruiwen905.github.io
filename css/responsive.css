@@ -1,0 +1,20 @@
+@media (max-width: 900px) {
+  .left-nav { display: none; }
+  .mobile-bar { display: flex; }
+  .main { padding-top: 58px; }
+  .floating-star { top: 64px; right: 10px; font-size: 1.2rem; padding: 5px 10px 5px 8px; }
+  .floating-star .fs-icon { font-size: 1.4rem; }
+  .admin-banner { font-size: 1rem; padding: 6px; }
+  .modal h3 { font-size: 1.3rem; }
+  .modal label { font-size: .9rem; }
+  .modal input, .modal select { font-size: .9rem; padding: 7px 9px; }
+  .modal-btns button { font-size: 1rem; padding: 9px; }
+  /* Boards collapse to 1 col below 600px */
+  .board, .play-board, .skills-board { padding: 10px 7px; gap: 7px; grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .board, .play-board, .skills-board { grid-template-columns: 1fr; }
+  .voucher-grid { grid-template-columns: 1fr 1fr; }
+  .market-grid { grid-template-columns: 1fr 1fr; }
+  #view-market .market-wrap { grid-template-columns: 1fr; }
+}

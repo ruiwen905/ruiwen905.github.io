@@ -1,0 +1,676 @@
+{
+  "version": 2,
+  "createdAt": "2026-04-07T04:15:39.129Z",
+  "kids": [
+    {
+      "key": "kid0",
+      "name": "Ethan",
+      "age": 5,
+      "gender": "boy",
+      "level": "kindergarten1",
+      "image": "assets/images/ethan.png"
+    },
+    {
+      "key": "kid1",
+      "name": "Lydia",
+      "age": 3,
+      "gender": "girl",
+      "level": "nursery1",
+      "image": "assets/images/lydia.png"
+    },
+    {
+      "key": "kid2",
+      "name": "Lucas",
+      "age": 3,
+      "gender": "boy",
+      "level": "nursery1",
+      "image": "assets/images/lucas.png"
+    }
+  ],
+  "morning": [
+    {
+      "id": "mr1",
+      "desc": "Keep pillow & fold blanket",
+      "icon": "🛏️"
+    },
+    {
+      "id": "mr2",
+      "desc": "Brush teeth & pee",
+      "icon": "🦷"
+    },
+    {
+      "id": "mr3",
+      "desc": "Change clothes",
+      "icon": "👕"
+    },
+    {
+      "id": "mr4",
+      "desc": "Finish breakfast",
+      "icon": "🥣"
+    },
+    {
+      "id": "mr5",
+      "desc": "Pack bag",
+      "icon": "🎒"
+    },
+    {
+      "id": "mr6",
+      "desc": "Keep toys",
+      "icon": "🧸"
+    }
+  ],
+  "evening": [
+    {
+      "id": "ev1",
+      "desc": "Finish dinner",
+      "icon": "🍽️"
+    },
+    {
+      "id": "ev2",
+      "desc": "Take out clothes",
+      "icon": "👗"
+    },
+    {
+      "id": "ev3",
+      "desc": "Bath & wear clothes",
+      "icon": "🛁"
+    },
+    {
+      "id": "ev4",
+      "desc": "Read book",
+      "icon": "📖"
+    },
+    {
+      "id": "ev5",
+      "desc": "Brush teeth & pee",
+      "icon": "🦷"
+    }
+  ],
+  "marketplace": [
+    {
+      "id": "m1",
+      "name": "DIY Waffles / Dumplings",
+      "icon": "🧇",
+      "days": 3
+    },
+    {
+      "id": "m2",
+      "name": "Orange Juice / Ice Cream",
+      "icon": "🍦",
+      "days": 3
+    },
+    {
+      "id": "m3",
+      "name": "Water Play",
+      "icon": "💦",
+      "days": 5
+    },
+    {
+      "id": "m4",
+      "name": "Library",
+      "icon": "📚",
+      "days": 3
+    },
+    {
+      "id": "m5",
+      "name": "IKEA / Gardens / Airport",
+      "icon": "✈️",
+      "days": 10
+    },
+    {
+      "id": "m6",
+      "name": "Indoor Playground",
+      "icon": "🎠",
+      "days": 9
+    },
+    {
+      "id": "m7",
+      "name": "Zoo",
+      "icon": "🦁",
+      "days": 12
+    }
+  ],
+  "tasks": {
+    "kid0": {
+      "mr1": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr2": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr3": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr4": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr5": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr6": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev1": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev2": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev3": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev4": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev5": {
+        "done": false,
+        "date": "07/04/2026"
+      }
+    },
+    "kid1": {
+      "mr1": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr2": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr3": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr4": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr5": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr6": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev1": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev2": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev3": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev4": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev5": {
+        "done": false,
+        "date": "07/04/2026"
+      }
+    },
+    "kid2": {
+      "mr1": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr2": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr3": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr4": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr5": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "mr6": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev1": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev2": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev3": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev4": {
+        "done": false,
+        "date": "07/04/2026"
+      },
+      "ev5": {
+        "done": false,
+        "date": "07/04/2026"
+      }
+    }
+  },
+  "stars": {
+    "kid0": 20,
+    "kid1": 15,
+    "kid2": 5
+  },
+  "sgiven": {
+    "kid0": null,
+    "kid1": null,
+    "kid2": null
+  },
+  "spent": 9,
+  "vouch": [
+    {
+      "id": 1775536231137,
+      "name": "DIY Waffles / Dumplings",
+      "icon": "🧇",
+      "status": "active",
+      "date": "2026-04-07T04:30:31.137Z"
+    }
+  ],
+  "skills": {
+    "kid0": [
+      {
+        "id": "sk_potty_kid0",
+        "name": "Potty Trained",
+        "icon": "🚽",
+        "target": 20,
+        "current": 20,
+        "mastered": true,
+        "color": "#f39c12",
+        "milestone": "Uses toilet fully independently"
+      },
+      {
+        "id": "sk_bike_kid0",
+        "name": "Ride a Bicycle",
+        "icon": "🚲",
+        "target": 10,
+        "current": 0,
+        "mastered": false,
+        "color": "#3498db",
+        "milestone": "Rides without training wheels"
+      },
+      {
+        "id": "sk_swim_kid0",
+        "name": "Swimming",
+        "icon": "🏊",
+        "target": 15,
+        "current": 0,
+        "mastered": false,
+        "color": "#1abc9c",
+        "milestone": "Can swim 10m without floats"
+      },
+      {
+        "id": "sk_write_kid0",
+        "name": "Write My Name",
+        "icon": "✏️",
+        "target": 5,
+        "current": 0,
+        "mastered": false,
+        "color": "#9b59b6",
+        "milestone": "Writes full name legibly"
+      },
+      {
+        "id": "sk_read_kid0",
+        "name": "Read Simple Words",
+        "icon": "📖",
+        "target": 10,
+        "current": 0,
+        "mastered": false,
+        "color": "#e67e22",
+        "milestone": "Reads 20+ sight words"
+      },
+      {
+        "id": "sk_count_kid0",
+        "name": "Count to 20",
+        "icon": "🔢",
+        "target": 5,
+        "current": 0,
+        "mastered": false,
+        "color": "#2980b9",
+        "milestone": "Counts to 20 independently"
+      },
+      {
+        "id": "sk_scoot_kid0",
+        "name": "Ride a Scooter",
+        "icon": "🛴",
+        "target": 8,
+        "current": 0,
+        "mastered": false,
+        "color": "#27ae60",
+        "milestone": "Scoots confidently and safely"
+      },
+      {
+        "id": "sk_shoes_kid0",
+        "name": "Tie Shoelaces",
+        "icon": "👟",
+        "target": 10,
+        "current": 0,
+        "mastered": false,
+        "color": "#e74c3c",
+        "milestone": "Ties laces without help"
+      },
+      {
+        "id": "sk_scissors_kid0",
+        "name": "Use Scissors",
+        "icon": "✂️",
+        "target": 8,
+        "current": 0,
+        "mastered": false,
+        "color": "#c0392b",
+        "milestone": "Cuts along lines accurately"
+      },
+      {
+        "id": "sk_add_kid0",
+        "name": "Simple Addition",
+        "icon": "➕",
+        "target": 8,
+        "current": 0,
+        "mastered": false,
+        "color": "#8e44ad",
+        "milestone": "Adds numbers up to 10"
+      }
+    ],
+    "kid1": [
+      {
+        "id": "sk_potty_kid1",
+        "name": "Potty Training",
+        "icon": "🚽",
+        "target": 20,
+        "current": 0,
+        "mastered": false,
+        "color": "#f39c12",
+        "milestone": "Uses the toilet independently"
+      },
+      {
+        "id": "sk_hands_kid1",
+        "name": "Wash Hands",
+        "icon": "🤲",
+        "target": 10,
+        "current": 0,
+        "mastered": false,
+        "color": "#e84393",
+        "milestone": "Washes hands without reminding"
+      },
+      {
+        "id": "sk_spoon_kid1",
+        "name": "Use a Spoon",
+        "icon": "🥄",
+        "target": 10,
+        "current": 0,
+        "mastered": false,
+        "color": "#27ae60",
+        "milestone": "Eats independently with spoon/fork"
+      },
+      {
+        "id": "sk_dress_kid1",
+        "name": "Getting Dressed",
+        "icon": "👗",
+        "target": 15,
+        "current": 0,
+        "mastered": false,
+        "color": "#e74c3c",
+        "milestone": "Puts on clothes with minimal help"
+      },
+      {
+        "id": "sk_share_kid1",
+        "name": "Sharing Toys",
+        "icon": "🤝",
+        "target": 10,
+        "current": 0,
+        "mastered": false,
+        "color": "#9b59b6",
+        "milestone": "Shares toys with friends & siblings"
+      },
+      {
+        "id": "sk_jump_kid1",
+        "name": "Jumping",
+        "icon": "🦘",
+        "target": 8,
+        "current": 0,
+        "mastered": false,
+        "color": "#1abc9c",
+        "milestone": "Jumps on both feet confidently"
+      },
+      {
+        "id": "sk_name_kid1",
+        "name": "Recognise My Name",
+        "icon": "✏️",
+        "target": 5,
+        "current": 0,
+        "mastered": false,
+        "color": "#e67e22",
+        "milestone": "Can identify own name in print"
+      },
+      {
+        "id": "sk_speak_kid1",
+        "name": "Speak in Sentences",
+        "icon": "💬",
+        "target": 10,
+        "current": 0,
+        "mastered": false,
+        "color": "#2980b9",
+        "milestone": "Speaks in 3-4 word sentences"
+      },
+      {
+        "id": "sk_draw_kid1",
+        "name": "Drawing Circles",
+        "icon": "🎨",
+        "target": 8,
+        "current": 0,
+        "mastered": false,
+        "color": "#c0392b",
+        "milestone": "Can draw a circle and simple shapes"
+      }
+    ],
+    "kid2": [
+      {
+        "id": "sk_potty_kid2",
+        "name": "Potty Training",
+        "icon": "🚽",
+        "target": 20,
+        "current": 0,
+        "mastered": false,
+        "color": "#f39c12",
+        "milestone": "Uses the toilet independently"
+      },
+      {
+        "id": "sk_hands_kid2",
+        "name": "Wash Hands",
+        "icon": "🤲",
+        "target": 10,
+        "current": 0,
+        "mastered": false,
+        "color": "#3498db",
+        "milestone": "Washes hands without reminding"
+      },
+      {
+        "id": "sk_spoon_kid2",
+        "name": "Use a Spoon",
+        "icon": "🥄",
+        "target": 10,
+        "current": 0,
+        "mastered": false,
+        "color": "#27ae60",
+        "milestone": "Eats independently with spoon/fork"
+      },
+      {
+        "id": "sk_dress_kid2",
+        "name": "Getting Dressed",
+        "icon": "👕",
+        "target": 15,
+        "current": 0,
+        "mastered": false,
+        "color": "#e74c3c",
+        "milestone": "Puts on clothes with minimal help"
+      },
+      {
+        "id": "sk_share_kid2",
+        "name": "Sharing Toys",
+        "icon": "🤝",
+        "target": 10,
+        "current": 0,
+        "mastered": false,
+        "color": "#9b59b6",
+        "milestone": "Shares toys with friends & siblings"
+      },
+      {
+        "id": "sk_jump_kid2",
+        "name": "Jumping",
+        "icon": "🦘",
+        "target": 8,
+        "current": 0,
+        "mastered": false,
+        "color": "#1abc9c",
+        "milestone": "Jumps on both feet confidently"
+      },
+      {
+        "id": "sk_name_kid2",
+        "name": "Recognise My Name",
+        "icon": "✏️",
+        "target": 5,
+        "current": 0,
+        "mastered": false,
+        "color": "#e67e22",
+        "milestone": "Can identify own name in print"
+      },
+      {
+        "id": "sk_speak_kid2",
+        "name": "Speak in Sentences",
+        "icon": "💬",
+        "target": 10,
+        "current": 0,
+        "mastered": false,
+        "color": "#2980b9",
+        "milestone": "Speaks in 3-4 word sentences"
+      },
+      {
+        "id": "sk_draw_kid2",
+        "name": "Drawing Circles",
+        "icon": "🎨",
+        "target": 8,
+        "current": 0,
+        "mastered": false,
+        "color": "#c0392b",
+        "milestone": "Can draw a circle and simple shapes"
+      }
+    ]
+  },
+  "playProgress": {
+    "kid0": {
+      "date": "07/04/2026",
+      "count": 0,
+      "starGiven": true
+    },
+    "kid1": {
+      "date": "07/04/2026",
+      "count": 2,
+      "starGiven": false
+    },
+    "kid2": {
+      "date": "07/04/2026",
+      "count": 0,
+      "starGiven": false
+    }
+  },
+  "customPlay": {
+    "kid0": [
+      {
+        "id": "cg_snake_3",
+        "type": "game_snake",
+        "title": "Snake: 3-Letter Words",
+        "sub": "Collect letters to spell 3-letter words. Speed 1.",
+        "icon": "🐍",
+        "data": {
+          "words": [
+            "CAT",
+            "DOG",
+            "SUN",
+            "HAT",
+            "PIG",
+            "ANT",
+            "BEE",
+            "FOX",
+            "CUP",
+            "BUS",
+            "MAP",
+            "RUN"
+          ],
+          "defaultSpeed": 1
+        }
+      },
+      {
+        "id": "cg_maze_ph_star",
+        "type": "game_maze_phonics",
+        "title": "Phonics Maze: STAR",
+        "sub": "Collect S-T-A-R in the maze",
+        "icon": "🔤",
+        "data": {
+          "rows": 9,
+          "cols": 9,
+          "word": "STAR"
+        }
+      },
+      {
+        "id": "cg_maze_ph_play",
+        "type": "game_maze_phonics",
+        "title": "Phonics Maze: PLAY",
+        "sub": "Collect P-L-A-Y through the maze",
+        "icon": "🔤",
+        "data": {
+          "rows": 9,
+          "cols": 9,
+          "word": "PLAY"
+        }
+      }
+    ],
+    "kid1": [
+      {
+        "id": "cg_3pigs",
+        "type": "story",
+        "title": "The Three Little Pigs",
+        "sub": "Build it strong and be prepared!",
+        "icon": "🐷",
+        "data": {
+          "emoji": "🐷",
+          "summary": "Three pigs each build a house — one of straw, one of sticks, one of bricks. The big bad wolf blows down the first two but cannot blow down the brick house. The pigs are safe inside!",
+          "moral": "Work hard and build things properly. A strong foundation keeps you safe. Don't take shortcuts!"
+        }
+      },
+      {
+        "id": "cg_3bears",
+        "type": "story",
+        "title": "Goldilocks and the Three Bears",
+        "sub": "A classic fairy tale about trying things",
+        "icon": "🐻",
+        "data": {
+          "emoji": "🐻",
+          "summary": "Goldilocks walks into the home of three bears. She tries their porridge — too hot, too cold, just right! She tries their chairs and beds too. When the bears come home, Goldilocks runs away.",
+          "moral": "Always ask permission before using someone else's things. And things that are just right are the best!"
+        }
+      }
+    ]
+  }
+}

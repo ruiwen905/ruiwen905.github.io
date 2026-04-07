@@ -1,0 +1,94 @@
+/* ── RESET & BASE ── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Nunito', sans-serif; background: #f0ede8; color: #2d2d2d; min-height: 100vh; }
+
+/* ── APP SHELL ── */
+#app { display: none; }
+#app.visible { display: flex; min-height: 100vh; }
+
+/* ── LEFT NAV ── */
+.left-nav {
+  width: 130px; flex-shrink: 0; background: #3a3180;
+  display: flex; flex-direction: column; align-items: stretch; padding-top: 16px;
+}
+.nav-item {
+  display: flex; flex-direction: column; align-items: center; gap: 5px;
+  padding: 16px 6px; cursor: pointer; border: none; background: none;
+  color: rgba(255,255,255,.5); font-family: 'Fredoka One', cursive; font-size: 1.25rem;
+  border-left: 4px solid transparent; transition: all .2s; line-height: 1.2; text-align: center;
+}
+.nav-item:hover { color: rgba(255,255,255,.8); background: rgba(255,255,255,.07); }
+.nav-item.active { color: #f6c94e; border-left-color: #f6c94e; background: rgba(255,255,255,.1); }
+.nav-item .ni { font-size: 1.9rem; }
+.nav-spacer { flex: 1; }
+.admin-indicator { display: none; padding: 8px 6px; text-align: center; color: #ff6b35; font-size: 1rem; font-weight: 800; }
+.admin-mode .admin-indicator { display: block; }
+.nav-reset-btn { display: none; padding: 10px 6px; text-align: center; color: #ff9966; font-size: 1.1rem; font-weight: 800; cursor: pointer; border: none; background: none; }
+.admin-mode .nav-reset-btn { display: block; }
+
+/* ── MAIN CONTENT ── */
+.main { flex: 1; overflow-y: auto; min-width: 0; }
+.view { display: none; }
+.view.active { display: block; }
+
+/* ── ADMIN BANNER ── */
+.admin-banner { display: none; background: #ff6b35; color: white; text-align: center; padding: 9px; font-family: 'Fredoka One', cursive; font-size: 1.8rem; }
+.admin-mode .admin-banner { display: block; }
+
+/* ── FLOATING STAR ── */
+.floating-star {
+  position: fixed; top: 14px; right: 18px; z-index: 950;
+  background: #5c52c0; color: white; border-radius: 30px;
+  padding: 7px 16px 7px 10px; display: flex; align-items: center; gap: 6px;
+  font-family: 'Fredoka One', cursive; font-size: 2rem;
+  box-shadow: 0 3px 14px rgba(92,82,192,.5); pointer-events: none;
+}
+.floating-star .fs-icon { font-size: 2.4rem; }
+
+/* ── MOBILE TOP BAR ── */
+.mobile-bar {
+  display: none; position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+  background: #3a3180; height: 58px; align-items: stretch;
+}
+.mob-tab {
+  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px;
+  border: none; background: none; color: rgba(255,255,255,.5); font-family: 'Fredoka One', cursive;
+  font-size: .85rem; cursor: pointer; border-bottom: 3px solid transparent; transition: all .2s;
+}
+.mob-tab.active { color: #f6c94e; border-bottom-color: #f6c94e; background: rgba(255,255,255,.08); }
+.mob-tab .mi { font-size: 1.3rem; }
+
+/* ── LOADING ── */
+#loading {
+  position: fixed; inset: 0; background: #f0ede8;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 8000; flex-direction: column; gap: 16px;
+}
+#loading.hidden { display: none; }
+.loading-star { font-size: 5rem; animation: spin 1.5s linear infinite; }
+@keyframes spin { from { transform: rotate(0) } to { transform: rotate(360deg) } }
+.loading-text { font-family: 'Fredoka One', cursive; font-size: 2rem; color: #5c52c0; }
+
+/* ── ADMIN MODAL ── */
+.modal-bg { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 2000; align-items: center; justify-content: center; padding: 20px; }
+.modal-bg.open { display: flex; }
+.modal { background: white; border-radius: 20px; padding: 24px; width: 100%; max-width: 500px; max-height: 90vh; overflow-y: auto; }
+.modal h3 { font-family: 'Fredoka One', cursive; font-size: 2.4rem; margin-bottom: 16px; }
+.modal label { display: block; font-size: 1.8rem; font-weight: 700; margin-bottom: 4px; color: #555; }
+.modal input, .modal select { width: 100%; padding: 10px 12px; font-size: 1.8rem; font-family: 'Nunito', sans-serif; border: 2px solid #ddd; border-radius: 10px; margin-bottom: 14px; }
+.modal input:focus { outline: none; border-color: #7c6fcf; }
+.modal-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.modal-btns button { flex: 1; padding: 11px; font-family: 'Fredoka One', cursive; font-size: 1.9rem; border: none; border-radius: 12px; cursor: pointer; min-width: 90px; }
+.btn-save { background: #7c6fcf; color: white; }
+.btn-cancel { background: #eee; color: #555; }
+.btn-danger { background: #e74c3c; color: white; }
+
+/* ── MEDAL TOOLTIP ── */
+.medal-tooltip {
+  position: fixed; background: #3a3180; color: white; padding: 8px 14px;
+  border-radius: 10px; font-size: 1.4rem; z-index: 2000; pointer-events: none;
+  max-width: 200px; text-align: center; transition: opacity .2s;
+}
+
+/* ── SHARED ANIMATIONS ── */
+@keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)} }

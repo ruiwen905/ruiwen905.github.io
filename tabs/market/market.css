@@ -1,0 +1,61 @@
+/* tabs/market/market.css */
+#view-market .market-wrap { padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.pool-card-wrap { padding: 0 0 16px; }
+.pool-card { background: #5c52c0; border-radius: 14px; padding: 14px 16px; color: white; text-align: center; }
+.pool-card-label { font-size: 1.7rem; opacity: .8; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
+.pool-star-row { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 4px 0 2px; }
+.pool-star-icon { font-size: 3.8rem; }
+.pool-pts-num { font-family: 'Fredoka One', cursive; font-size: 4rem; line-height: 1; }
+.pool-sublabel { font-size: 1.7rem; opacity: .75; }
+.market-section { background: #c8440a; border-radius: 16px; overflow: hidden; }
+.stall-roof { background: repeating-linear-gradient(90deg,#e8390a 0,#e8390a 36px,#f5c842 36px,#f5c842 72px); height: 30px; }
+.stall-scallop { height: 22px; background: repeating-linear-gradient(90deg,#e8390a 0,#e8390a 36px,#f5c842 36px,#f5c842 72px); clip-path: polygon(0 0,4.17% 0,4.17% 60%,8.33% 100%,12.5% 60%,12.5% 0,16.67% 0,16.67% 60%,20.83% 100%,25% 60%,25% 0,29.17% 0,29.17% 60%,33.33% 100%,37.5% 60%,37.5% 0,41.67% 0,41.67% 60%,45.83% 100%,50% 60%,50% 0,54.17% 0,54.17% 60%,58.33% 100%,62.5% 60%,62.5% 0,66.67% 0,66.67% 60%,70.83% 100%,75% 60%,75% 0,79.17% 0,79.17% 60%,83.33% 100%,87.5% 60%,87.5% 0,91.67% 0,91.67% 60%,95.83% 100%,100% 60%,100% 0); }
+.stall-body { padding: 12px 14px 14px; }
+.stall-title { font-family: 'Fredoka One', cursive; font-size: 2.2rem; color: #fff5cc; text-shadow: 1px 2px 0 rgba(0,0,0,.3); display: flex; align-items: center; gap: 7px; margin-bottom: 10px; }
+.market-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.market-item { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 13px 8px 11px; border-radius: 12px; background: #fff9ee; border: 2px solid #e8b84b; box-shadow: 0 2px 4px rgba(0,0,0,.15); text-align: center; position: relative; }
+.market-item .admin-edit { display: none; position: absolute; top: 4px; right: 4px; background: #ff6b35; color: white; border: none; border-radius: 50%; width: 26px; height: 26px; font-size: .95rem; cursor: pointer; align-items: center; justify-content: center; }
+.admin-mode .market-item .admin-edit { display: flex; }
+.market-icon { font-size: 3.2rem; line-height: 1; }
+.market-name { font-weight: 800; font-size: 1.9rem; color: #3a2000; line-height: 1.2; }
+.buy-btn { background: #d43a00; color: #fff5cc; border: none; padding: 8px; border-radius: 18px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.9rem; cursor: pointer; box-shadow: 0 2px 0 #8a2000; width: 100%; transition: transform .1s; }
+.buy-btn:hover { transform: scale(1.04) translateY(-1px); background: #bf3200; }
+.buy-btn:disabled { background: #ccc; color: #888; box-shadow: none; cursor: not-allowed; transform: none; }
+.add-market-btn { display: none; margin-top: 10px; width: 100%; background: #f5c842; color: #3a2000; border: none; padding: 11px; border-radius: 12px; font-family: 'Fredoka One', cursive; font-size: 1.9rem; cursor: pointer; }
+.admin-mode .add-market-btn { display: block; }
+.bag-section { background: #5a3e1b; border-radius: 16px; overflow: hidden; }
+.bag-header-art { background: #7a5530; padding: 14px 16px 12px; position: relative; border-bottom: 4px solid #4a2e0e; }
+.bag-strap-left  { position: absolute; left: 30px; top: -7px; width: 18px; height: 14px; background: #9a7040; border-radius: 4px 4px 0 0; border: 2px solid #6a4820; }
+.bag-strap-right { position: absolute; right: 30px; top: -7px; width: 18px; height: 14px; background: #9a7040; border-radius: 4px 4px 0 0; border: 2px solid #6a4820; }
+.bag-clasp { position: absolute; left: 50%; transform: translateX(-50%); top: -5px; width: 38px; height: 13px; background: #d4a832; border-radius: 7px; border: 2px solid #a07820; }
+.bag-title { font-family: 'Fredoka One', cursive; font-size: 2.2rem; color: #fff5cc; text-shadow: 1px 2px 0 rgba(0,0,0,.4); display: flex; align-items: center; gap: 8px; margin-bottom: 9px; }
+.voucher-filter { width: 100%; padding: 8px 10px; border: 2px solid #9a7040; border-radius: 10px; font-family: 'Nunito', sans-serif; font-size: 1.9rem; background: #6a4820; color: #fff5cc; }
+.voucher-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; padding: 12px 14px 14px; }
+.voucher-item { background: #fffde8; border-radius: 10px; display: flex; flex-direction: column; border: 2px solid #d4b84a; box-shadow: 0 2px 6px rgba(0,0,0,.25); overflow: hidden; position: relative; }
+.voucher-item::before { content: ''; position: absolute; left: -8px; right: -8px; top: 88px; height: 2px; background: repeating-linear-gradient(to right, #d4b84a 0, #d4b84a 6px, transparent 6px, transparent 12px); }
+.voucher-top  { height: 90px; background: linear-gradient(135deg, #f5c842, #e8a020); display: flex; align-items: center; justify-content: center; font-size: 3.4rem; }
+.voucher-body { padding: 9px 11px 11px; }
+.voucher-item.done { opacity: .65; filter: grayscale(.4); }
+.voucher-item.done .v-name { text-decoration: line-through; color: #999; }
+.v-name  { font-weight: 800; font-size: 1.9rem; color: #3a2000; }
+.v-meta  { font-size: 1.7rem; color: #a07020; margin-top: 3px; font-weight: 600; }
+.use-btn { margin-top: 7px; background: #e87b9a; color: white; border: none; padding: 8px 10px; border-radius: 12px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.7rem; cursor: pointer; box-shadow: 0 2px 0 #b04060; width: 100%; }
+.use-btn:hover { background: #d4637f; }
+.admin-del-vouch { display: none; margin-top: 5px; background: #e74c3c; color: white; border: none; padding: 5px 9px; border-radius: 10px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.5rem; cursor: pointer; width: 100%; }
+.admin-mode .admin-del-vouch { display: block; }
+
+@media (max-width: 900px) {
+  .stall-title, .bag-title { font-size: 1.1rem; }
+  .market-icon { font-size: 1.8rem; }
+  .market-name { font-size: 1rem; }
+  .buy-btn { font-size: 1rem; padding: 6px; }
+  .voucher-filter { font-size: 1rem; padding: 5px 7px; }
+  .v-name { font-size: 1rem; }
+  .v-meta { font-size: .85rem; }
+  .use-btn { font-size: .85rem; padding: 5px 7px; }
+  .voucher-top { height: 55px; font-size: 2rem; }
+  .voucher-item::before { top: 53px; }
+  .pool-pts-num { font-size: 2.2rem; }
+  .pool-star-icon { font-size: 2rem; }
+  .pool-card-label, .pool-sublabel { font-size: 1rem; }
+}

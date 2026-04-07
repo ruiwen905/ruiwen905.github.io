@@ -1,0 +1,2481 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-04",
+  "games": [
+    {
+      "id": "cg_twinkle",
+      "title": "Twinkle Twinkle Little Star",
+      "category": "Songs",
+      "type": "song",
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "⭐",
+      "desc": "Classic bedtime lullaby",
+      "data": {
+        "lyrics": "Twinkle, twinkle, little star\nHow I wonder what you are!\nUp above the world so high\nLike a diamond in the sky\nTwinkle, twinkle, little star\nHow I wonder what you are!"
+      }
+    },
+    {
+      "id": "cg_wheels",
+      "title": "Wheels on the Bus",
+      "category": "Songs",
+      "type": "song",
+      "ages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🚌",
+      "desc": "Fun action song about buses",
+      "data": {
+        "lyrics": "The wheels on the bus go round and round\nRound and round, round and round\nThe wheels on the bus go round and round\nAll through the town!\n\nThe wipers on the bus go swish swish swish\nAll through the town!\n\nThe horn on the bus goes beep beep beep\nAll through the town!\n\nThe people on the bus go up and down\nAll through the town!"
+      }
+    },
+    {
+      "id": "cg_baa",
+      "title": "Baa Baa Black Sheep",
+      "category": "Songs",
+      "type": "song",
+      "ages": [
+        2,
+        3,
+        4
+      ],
+      "lang": "en",
+      "icon": "🐑",
+      "desc": "Classic nursery rhyme",
+      "data": {
+        "lyrics": "Baa, baa, black sheep\nHave you any wool?\nYes sir, yes sir\nThree bags full!\n\nOne for the master\nOne for the dame\nAnd one for the little boy\nWho lives down the lane"
+      }
+    },
+    {
+      "id": "cg_abc",
+      "title": "ABC Song",
+      "category": "Songs",
+      "type": "song",
+      "ages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🔤",
+      "desc": "Learn the alphabet in order",
+      "data": {
+        "lyrics": "A B C D E F G\nH I J K L M N O P\nQ R S T U V\nW X Y and Z\nNow I know my ABCs\nNext time won't you sing with me!"
+      }
+    },
+    {
+      "id": "cg_5monkeys",
+      "title": "Five Little Monkeys",
+      "category": "Songs",
+      "type": "song",
+      "ages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🐒",
+      "desc": "Counting down from 5 — subtraction song",
+      "data": {
+        "lyrics": "Five little monkeys jumping on the bed\nOne fell off and bumped his head\nMama called the doctor and the doctor said\nNo more monkeys jumping on the bed!\n\nFour little monkeys jumping on the bed...\n\nThree little monkeys jumping on the bed...\n\nTwo little monkeys jumping on the bed...\n\nOne little monkey jumping on the bed\nOne fell off and bumped his head\nMama called the doctor and the doctor said\nNo more monkeys jumping on the bed!"
+      }
+    },
+    {
+      "id": "cg_rain",
+      "title": "Rain Rain Go Away",
+      "category": "Songs",
+      "type": "song",
+      "ages": [
+        2,
+        3,
+        4
+      ],
+      "lang": "en",
+      "icon": "🌧️",
+      "desc": "Simple 2-line weather song",
+      "data": {
+        "lyrics": "Rain, rain, go away\nCome again another day\nLittle children want to play\nRain, rain, go away!"
+      }
+    },
+    {
+      "id": "cg_incy",
+      "title": "Incy Wincy Spider",
+      "category": "Songs",
+      "type": "song",
+      "ages": [
+        2,
+        3,
+        4
+      ],
+      "lang": "en",
+      "icon": "🕷️",
+      "desc": "Action song with hand gestures",
+      "data": {
+        "lyrics": "Incy Wincy Spider\nClimbed up the water spout\nDown came the rain\nAnd washed the spider out\n\nOut came the sunshine\nAnd dried up all the rain\nAnd Incy Wincy Spider\nClimbed up the spout again!"
+      }
+    },
+    {
+      "id": "cg_haolizi",
+      "title": "好孩子",
+      "category": "Songs",
+      "type": "song",
+      "ages": [
+        3,
+        4,
+        5
+      ],
+      "lang": "cn",
+      "icon": "👧",
+      "desc": "中文歌曲 — 好孩子",
+      "data": {
+        "lyrics": "我是好孩子\n爱爸爸 爱妈妈\n爸爸妈妈上班去\n我不哭 也不闹\n自己乖乖在家里\n好孩子 人人夸"
+      }
+    },
+    {
+      "id": "cg_xiaoxing",
+      "title": "小星星",
+      "category": "Songs",
+      "type": "song",
+      "ages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "lang": "cn",
+      "icon": "⭐",
+      "desc": "中文小星星 Twinkle Twinkle",
+      "data": {
+        "lyrics": "一闪一闪亮晶晶\n满天都是小星星\n挂在天上放光明\n好像许多小眼睛\n一闪一闪亮晶晶\n满天都是小星星"
+      }
+    },
+    {
+      "id": "cg_3bears",
+      "title": "Goldilocks and the Three Bears",
+      "category": "Stories",
+      "type": "story",
+      "ages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🐻",
+      "desc": "A classic fairy tale about trying things",
+      "data": {
+        "emoji": "🐻",
+        "summary": "Goldilocks walks into the home of three bears. She tries their porridge — too hot, too cold, just right! She tries their chairs and beds too. When the bears come home, Goldilocks runs away.",
+        "moral": "Always ask permission before using someone else's things. And things that are just right are the best!"
+      }
+    },
+    {
+      "id": "cg_3pigs",
+      "title": "The Three Little Pigs",
+      "category": "Stories",
+      "type": "story",
+      "ages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🐷",
+      "desc": "Build it strong and be prepared!",
+      "data": {
+        "emoji": "🐷",
+        "summary": "Three pigs each build a house — one of straw, one of sticks, one of bricks. The big bad wolf blows down the first two but cannot blow down the brick house. The pigs are safe inside!",
+        "moral": "Work hard and build things properly. A strong foundation keeps you safe. Don't take shortcuts!"
+      }
+    },
+    {
+      "id": "cg_tortoise",
+      "title": "The Tortoise and the Hare",
+      "category": "Stories",
+      "type": "story",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🐢",
+      "desc": "Slow and steady wins the race",
+      "data": {
+        "emoji": "🐢",
+        "summary": "A fast hare laughs at a slow tortoise and challenges him to a race. The hare runs ahead then takes a nap, sure he will win. The tortoise keeps going steadily and crosses the finish line first!",
+        "moral": "Slow and steady wins the race. Never give up, even if others seem ahead of you."
+      }
+    },
+    {
+      "id": "cg_ugly",
+      "title": "The Ugly Duckling",
+      "category": "Stories",
+      "type": "story",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🦢",
+      "desc": "Everyone is beautiful in their own way",
+      "data": {
+        "emoji": "🦢",
+        "summary": "A duckling is born different from the others and is teased for being ugly. He wanders alone feeling sad. But when spring comes, he sees his reflection — he has grown into a beautiful swan!",
+        "moral": "Never judge yourself by how others see you. You are special. Everyone blooms in their own time."
+      }
+    },
+    {
+      "id": "cg_ants",
+      "title": "The Ant and the Grasshopper",
+      "category": "Stories",
+      "type": "story",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🐜",
+      "desc": "Work now, play later",
+      "data": {
+        "emoji": "🐜",
+        "summary": "All summer the ants work hard storing food for winter. The grasshopper sings and plays instead. When winter comes, the grasshopper is cold and hungry while the ants are warm and well-fed.",
+        "moral": "Work hard and plan ahead. Don't spend all your time playing when there is important work to do."
+      }
+    },
+    {
+      "id": "cg_vowels",
+      "title": "Short Vowel Sounds",
+      "category": "Phonics",
+      "type": "game_phonics",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🔤",
+      "desc": "a·e·i·o·u — identify short vowel sounds",
+      "data": {
+        "digraphs": [
+          {
+            "letters": "a",
+            "color": "#e74c3c",
+            "words": [
+              {
+                "w": "cat",
+                "e": "🐱",
+                "c": true
+              },
+              {
+                "w": "bat",
+                "e": "🦇",
+                "c": true
+              },
+              {
+                "w": "hat",
+                "e": "🎩",
+                "c": true
+              },
+              {
+                "w": "map",
+                "e": "🗺️",
+                "c": true
+              },
+              {
+                "w": "fan",
+                "e": "💨",
+                "c": true
+              },
+              {
+                "w": "dog",
+                "e": "🐶",
+                "c": false
+              },
+              {
+                "w": "cup",
+                "e": "☕",
+                "c": false
+              },
+              {
+                "w": "pen",
+                "e": "✏️",
+                "c": false
+              }
+            ]
+          },
+          {
+            "letters": "e",
+            "color": "#3498db",
+            "words": [
+              {
+                "w": "hen",
+                "e": "🐔",
+                "c": true
+              },
+              {
+                "w": "bed",
+                "e": "🛏️",
+                "c": true
+              },
+              {
+                "w": "pen",
+                "e": "✏️",
+                "c": true
+              },
+              {
+                "w": "net",
+                "e": "🥅",
+                "c": true
+              },
+              {
+                "w": "web",
+                "e": "🕸️",
+                "c": true
+              },
+              {
+                "w": "cat",
+                "e": "🐱",
+                "c": false
+              },
+              {
+                "w": "dog",
+                "e": "🐶",
+                "c": false
+              },
+              {
+                "w": "cup",
+                "e": "☕",
+                "c": false
+              }
+            ]
+          },
+          {
+            "letters": "i",
+            "color": "#27ae60",
+            "words": [
+              {
+                "w": "pig",
+                "e": "🐷",
+                "c": true
+              },
+              {
+                "w": "bit",
+                "e": "🔧",
+                "c": true
+              },
+              {
+                "w": "sit",
+                "e": "💺",
+                "c": true
+              },
+              {
+                "w": "fin",
+                "e": "🐟",
+                "c": true
+              },
+              {
+                "w": "lip",
+                "e": "👄",
+                "c": true
+              },
+              {
+                "w": "cat",
+                "e": "🐱",
+                "c": false
+              },
+              {
+                "w": "dog",
+                "e": "🐶",
+                "c": false
+              },
+              {
+                "w": "sun",
+                "e": "☀️",
+                "c": false
+              }
+            ]
+          },
+          {
+            "letters": "o",
+            "color": "#f39c12",
+            "words": [
+              {
+                "w": "dog",
+                "e": "🐶",
+                "c": true
+              },
+              {
+                "w": "hot",
+                "e": "🔥",
+                "c": true
+              },
+              {
+                "w": "box",
+                "e": "📦",
+                "c": true
+              },
+              {
+                "w": "mop",
+                "e": "🧹",
+                "c": true
+              },
+              {
+                "w": "log",
+                "e": "🪵",
+                "c": true
+              },
+              {
+                "w": "cat",
+                "e": "🐱",
+                "c": false
+              },
+              {
+                "w": "pen",
+                "e": "✏️",
+                "c": false
+              },
+              {
+                "w": "sun",
+                "e": "☀️",
+                "c": false
+              }
+            ]
+          },
+          {
+            "letters": "u",
+            "color": "#9b59b6",
+            "words": [
+              {
+                "w": "cup",
+                "e": "☕",
+                "c": true
+              },
+              {
+                "w": "bug",
+                "e": "🐛",
+                "c": true
+              },
+              {
+                "w": "sun",
+                "e": "☀️",
+                "c": true
+              },
+              {
+                "w": "run",
+                "e": "🏃",
+                "c": true
+              },
+              {
+                "w": "nut",
+                "e": "🥜",
+                "c": true
+              },
+              {
+                "w": "cat",
+                "e": "🐱",
+                "c": false
+              },
+              {
+                "w": "dog",
+                "e": "🐶",
+                "c": false
+              },
+              {
+                "w": "pen",
+                "e": "✏️",
+                "c": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_count10",
+      "title": "Count to 10",
+      "category": "Numeracy",
+      "type": "game_counting",
+      "ages": [
+        2,
+        3,
+        4
+      ],
+      "lang": "en",
+      "icon": "🔢",
+      "desc": "Count objects up to 10",
+      "data": {
+        "max": 10,
+        "emoji": "🍎"
+      }
+    },
+    {
+      "id": "cg_count20",
+      "title": "Count to 20",
+      "category": "Numeracy",
+      "type": "game_counting",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🔢",
+      "desc": "Count objects up to 20",
+      "data": {
+        "max": 20,
+        "emoji": "⭐"
+      }
+    },
+    {
+      "id": "cg_patterns",
+      "title": "AB Patterns",
+      "category": "Numeracy",
+      "type": "game_patterns",
+      "ages": [
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🔷",
+      "desc": "What comes next in the pattern?",
+      "data": {
+        "patterns": [
+          {
+            "seq": [
+              "🔴",
+              "🔵",
+              "🔴",
+              "🔵",
+              "🔴"
+            ],
+            "ans": "🔵",
+            "choices": [
+              "🔵",
+              "🔴",
+              "⭐",
+              "❤️"
+            ]
+          },
+          {
+            "seq": [
+              "⭐",
+              "❤️",
+              "⭐",
+              "❤️",
+              "⭐"
+            ],
+            "ans": "❤️",
+            "choices": [
+              "⭐",
+              "💛",
+              "❤️",
+              "💚"
+            ]
+          },
+          {
+            "seq": [
+              "🍎",
+              "🍊",
+              "🍎",
+              "🍊",
+              "🍎"
+            ],
+            "ans": "🍊",
+            "choices": [
+              "🍎",
+              "🍊",
+              "🍋",
+              "🍇"
+            ]
+          },
+          {
+            "seq": [
+              "🐱",
+              "🐶",
+              "🐱",
+              "🐶",
+              "🐱"
+            ],
+            "ans": "🐶",
+            "choices": [
+              "🐱",
+              "🐸",
+              "🐶",
+              "🐰"
+            ]
+          },
+          {
+            "seq": [
+              "🌙",
+              "⭐",
+              "🌙",
+              "⭐",
+              "🌙"
+            ],
+            "ans": "⭐",
+            "choices": [
+              "🌙",
+              "⭐",
+              "☀️",
+              "🌟"
+            ]
+          },
+          {
+            "seq": [
+              "🔺",
+              "🔷",
+              "🔺",
+              "🔷",
+              "🔺"
+            ],
+            "ans": "🔷",
+            "choices": [
+              "🔺",
+              "🔷",
+              "🔶",
+              "🔹"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_clock",
+      "title": "Reading the Clock",
+      "category": "Time",
+      "type": "game_clock",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🕐",
+      "desc": "o'clock, half past, quarter past/to",
+      "data": {
+        "clocks": [
+          {
+            "h": 1,
+            "m": 0,
+            "label": "1:00",
+            "display": "one o'clock"
+          },
+          {
+            "h": 2,
+            "m": 0,
+            "label": "2:00",
+            "display": "two o'clock"
+          },
+          {
+            "h": 3,
+            "m": 0,
+            "label": "3:00",
+            "display": "three o'clock"
+          },
+          {
+            "h": 6,
+            "m": 0,
+            "label": "6:00",
+            "display": "six o'clock"
+          },
+          {
+            "h": 9,
+            "m": 0,
+            "label": "9:00",
+            "display": "nine o'clock"
+          },
+          {
+            "h": 12,
+            "m": 0,
+            "label": "12:00",
+            "display": "twelve o'clock"
+          },
+          {
+            "h": 3,
+            "m": 30,
+            "label": "3:30",
+            "display": "half past three"
+          },
+          {
+            "h": 6,
+            "m": 30,
+            "label": "6:30",
+            "display": "half past six"
+          },
+          {
+            "h": 9,
+            "m": 30,
+            "label": "9:30",
+            "display": "half past nine"
+          },
+          {
+            "h": 3,
+            "m": 15,
+            "label": "3:15",
+            "display": "quarter past three"
+          },
+          {
+            "h": 6,
+            "m": 15,
+            "label": "6:15",
+            "display": "quarter past six"
+          },
+          {
+            "h": 9,
+            "m": 45,
+            "label": "9:45",
+            "display": "quarter to ten"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_days_seq",
+      "title": "Day Sequences",
+      "category": "Calendar",
+      "type": "game_days_seq",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "📅",
+      "desc": "What day comes after Monday?",
+      "data": {
+        "rounds": [
+          {
+            "question": "Sunday",
+            "questionEmoji": "⛪",
+            "answer": "Monday",
+            "choices": [
+              "Monday",
+              "Tuesday",
+              "Saturday",
+              "Friday"
+            ]
+          },
+          {
+            "question": "Monday",
+            "questionEmoji": "😴",
+            "answer": "Tuesday",
+            "choices": [
+              "Tuesday",
+              "Wednesday",
+              "Sunday",
+              "Thursday"
+            ]
+          },
+          {
+            "question": "Tuesday",
+            "questionEmoji": "📚",
+            "answer": "Wednesday",
+            "choices": [
+              "Wednesday",
+              "Thursday",
+              "Monday",
+              "Friday"
+            ]
+          },
+          {
+            "question": "Wednesday",
+            "questionEmoji": "💼",
+            "answer": "Thursday",
+            "choices": [
+              "Thursday",
+              "Friday",
+              "Tuesday",
+              "Saturday"
+            ]
+          },
+          {
+            "question": "Thursday",
+            "questionEmoji": "📅",
+            "answer": "Friday",
+            "choices": [
+              "Friday",
+              "Saturday",
+              "Wednesday",
+              "Sunday"
+            ]
+          },
+          {
+            "question": "Friday",
+            "questionEmoji": "🎉",
+            "answer": "Saturday",
+            "choices": [
+              "Saturday",
+              "Sunday",
+              "Thursday",
+              "Monday"
+            ]
+          },
+          {
+            "question": "Saturday",
+            "questionEmoji": "🎨",
+            "answer": "Sunday",
+            "choices": [
+              "Sunday",
+              "Monday",
+              "Friday",
+              "Tuesday"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_sk_swim",
+      "title": "Swimming",
+      "category": "Skills",
+      "type": "skill",
+      "ages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🏊",
+      "desc": "Learn to swim independently",
+      "data": {
+        "skill": {
+          "name": "Swimming",
+          "icon": "🏊",
+          "target": 15,
+          "current": 0,
+          "mastered": false,
+          "color": "#1abc9c",
+          "milestone": "Swims 10m without floats"
+        }
+      }
+    },
+    {
+      "id": "cg_sk_bike",
+      "title": "Ride a Bicycle",
+      "category": "Skills",
+      "type": "skill",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🚲",
+      "desc": "Ride without training wheels",
+      "data": {
+        "skill": {
+          "name": "Ride a Bicycle",
+          "icon": "🚲",
+          "target": 10,
+          "current": 0,
+          "mastered": false,
+          "color": "#3498db",
+          "milestone": "Rides without training wheels"
+        }
+      }
+    },
+    {
+      "id": "cg_sk_read",
+      "title": "Read Simple Words",
+      "category": "Skills",
+      "type": "skill",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "📖",
+      "desc": "Read 20+ sight words independently",
+      "data": {
+        "skill": {
+          "name": "Read Simple Words",
+          "icon": "📖",
+          "target": 10,
+          "current": 0,
+          "mastered": false,
+          "color": "#e67e22",
+          "milestone": "Reads 20+ sight words"
+        }
+      }
+    },
+    {
+      "id": "cg_sk_share",
+      "title": "Sharing & Taking Turns",
+      "category": "Skills",
+      "type": "skill",
+      "ages": [
+        2,
+        3,
+        4
+      ],
+      "lang": "en",
+      "icon": "🤝",
+      "desc": "Share toys and take turns",
+      "data": {
+        "skill": {
+          "name": "Sharing & Taking Turns",
+          "icon": "🤝",
+          "target": 10,
+          "current": 0,
+          "mastered": false,
+          "color": "#9b59b6",
+          "milestone": "Shares and takes turns without prompting"
+        }
+      }
+    },
+    {
+      "id": "cg_sk_count",
+      "title": "Count to 20",
+      "category": "Skills",
+      "type": "skill",
+      "ages": [
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🔢",
+      "desc": "Count to 20 independently",
+      "data": {
+        "skill": {
+          "name": "Count to 20",
+          "icon": "🔢",
+          "target": 5,
+          "current": 0,
+          "mastered": false,
+          "color": "#2980b9",
+          "milestone": "Counts to 20 independently"
+        }
+      }
+    },
+    {
+      "id": "cg_sk_dress",
+      "title": "Getting Dressed",
+      "category": "Skills",
+      "type": "skill",
+      "ages": [
+        2,
+        3,
+        4
+      ],
+      "lang": "en",
+      "icon": "👕",
+      "desc": "Put on clothes without help",
+      "data": {
+        "skill": {
+          "name": "Getting Dressed",
+          "icon": "👕",
+          "target": 15,
+          "current": 0,
+          "mastered": false,
+          "color": "#e74c3c",
+          "milestone": "Dresses independently"
+        }
+      }
+    },
+    {
+      "id": "cg_sk_write",
+      "title": "Write My Name",
+      "category": "Skills",
+      "type": "skill",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "✏️",
+      "desc": "Write full name legibly",
+      "data": {
+        "skill": {
+          "name": "Write My Name",
+          "icon": "✏️",
+          "target": 5,
+          "current": 0,
+          "mastered": false,
+          "color": "#9b59b6",
+          "milestone": "Writes full name legibly"
+        }
+      }
+    },
+    {
+      "id": "cg_trace_abc",
+      "title": "Trace A–Z",
+      "category": "Tracing",
+      "type": "game_tracing_en",
+      "ages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "✏️",
+      "desc": "Trace all 26 English letters with guide dots",
+      "data": {
+        "lang": "en",
+        "chars": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T",
+          "U",
+          "V",
+          "W",
+          "X",
+          "Y",
+          "Z"
+        ]
+      }
+    },
+    {
+      "id": "cg_trace_123",
+      "title": "Trace 1–9",
+      "category": "Tracing",
+      "type": "game_tracing_en",
+      "ages": [
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🔢",
+      "desc": "Trace the numbers 1 through 9",
+      "data": {
+        "lang": "en",
+        "chars": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      }
+    },
+    {
+      "id": "cg_trace_cn_basic",
+      "title": "描写基本汉字",
+      "category": "Tracing",
+      "type": "game_tracing_cn",
+      "ages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "lang": "cn",
+      "icon": "毛",
+      "desc": "描写基础汉字：一二三人大小口日月",
+      "data": {
+        "lang": "cn",
+        "chars": [
+          "一",
+          "二",
+          "三",
+          "人",
+          "大",
+          "小",
+          "口",
+          "日",
+          "月",
+          "木",
+          "水",
+          "火",
+          "山",
+          "土"
+        ]
+      }
+    },
+    {
+      "id": "cg_trace_cn_extra",
+      "title": "描写汉字：心学手",
+      "category": "Tracing",
+      "type": "game_tracing_cn",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "cn",
+      "icon": "🖊️",
+      "desc": "描写：心学手",
+      "data": {
+        "lang": "cn",
+        "chars": [
+          "心",
+          "学",
+          "手",
+          "水",
+          "火",
+          "山",
+          "土",
+          "木"
+        ]
+      }
+    },
+    {
+      "id": "cg_match_animals",
+      "title": "Animal Match",
+      "category": "Matching",
+      "type": "game_matching",
+      "ages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🃏",
+      "desc": "Match animals with their names",
+      "data": {
+        "maxPairs": 6,
+        "pairs": [
+          {
+            "a": "🐱",
+            "aLabel": "",
+            "b": "Cat",
+            "bLabel": ""
+          },
+          {
+            "a": "🐶",
+            "b": "Dog"
+          },
+          {
+            "a": "🐸",
+            "b": "Frog"
+          },
+          {
+            "a": "🐘",
+            "b": "Elephant"
+          },
+          {
+            "a": "🦁",
+            "b": "Lion"
+          },
+          {
+            "a": "🐯",
+            "b": "Tiger"
+          },
+          {
+            "a": "🐧",
+            "b": "Penguin"
+          },
+          {
+            "a": "🦊",
+            "b": "Fox"
+          },
+          {
+            "a": "🐬",
+            "b": "Dolphin"
+          },
+          {
+            "a": "🦒",
+            "b": "Giraffe"
+          },
+          {
+            "a": "🐻",
+            "b": "Bear"
+          },
+          {
+            "a": "🦆",
+            "b": "Duck"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_match_emoji_pairs",
+      "title": "Emoji Memory",
+      "category": "Matching",
+      "type": "game_matching",
+      "ages": [
+        2,
+        3,
+        4
+      ],
+      "lang": "en",
+      "icon": "🃏",
+      "desc": "Flip and match emoji pairs",
+      "data": {
+        "maxPairs": 6,
+        "pairs": [
+          {
+            "a": "⭐",
+            "b": "⭐"
+          },
+          {
+            "a": "❤️",
+            "b": "❤️"
+          },
+          {
+            "a": "🌈",
+            "b": "🌈"
+          },
+          {
+            "a": "🌙",
+            "b": "🌙"
+          },
+          {
+            "a": "☀️",
+            "b": "☀️"
+          },
+          {
+            "a": "🎈",
+            "b": "🎈"
+          },
+          {
+            "a": "🍎",
+            "b": "🍎"
+          },
+          {
+            "a": "🐱",
+            "b": "🐱"
+          },
+          {
+            "a": "🚗",
+            "b": "🚗"
+          },
+          {
+            "a": "🏠",
+            "b": "🏠"
+          },
+          {
+            "a": "🌸",
+            "b": "🌸"
+          },
+          {
+            "a": "⚽",
+            "b": "⚽"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_match_words_en",
+      "title": "Word & Picture Match",
+      "category": "Matching",
+      "type": "game_matching",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "📖",
+      "desc": "Match words to their pictures",
+      "data": {
+        "maxPairs": 6,
+        "pairs": [
+          {
+            "a": "🍎",
+            "b": "Apple"
+          },
+          {
+            "a": "🐶",
+            "b": "Dog"
+          },
+          {
+            "a": "🏠",
+            "b": "House"
+          },
+          {
+            "a": "☀️",
+            "b": "Sun"
+          },
+          {
+            "a": "🌊",
+            "b": "Water"
+          },
+          {
+            "a": "🌳",
+            "b": "Tree"
+          },
+          {
+            "a": "✈️",
+            "b": "Plane"
+          },
+          {
+            "a": "📚",
+            "b": "Book"
+          },
+          {
+            "a": "🎂",
+            "b": "Cake"
+          },
+          {
+            "a": "⚽",
+            "b": "Ball"
+          },
+          {
+            "a": "🚀",
+            "b": "Rocket"
+          },
+          {
+            "a": "🦋",
+            "b": "Butterfly"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_match_cn",
+      "title": "中文词语配对",
+      "category": "Matching",
+      "type": "game_matching",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "cn",
+      "icon": "🀄",
+      "desc": "配对中文词语和图片",
+      "data": {
+        "maxPairs": 6,
+        "pairs": [
+          {
+            "a": "🍎",
+            "b": "苹果"
+          },
+          {
+            "a": "🐶",
+            "b": "狗"
+          },
+          {
+            "a": "🏠",
+            "b": "家"
+          },
+          {
+            "a": "☀️",
+            "b": "太阳"
+          },
+          {
+            "a": "💧",
+            "b": "水"
+          },
+          {
+            "a": "🌳",
+            "b": "树"
+          },
+          {
+            "a": "📚",
+            "b": "书"
+          },
+          {
+            "a": "🎂",
+            "b": "蛋糕"
+          },
+          {
+            "a": "🐱",
+            "b": "猫"
+          },
+          {
+            "a": "⚽",
+            "b": "球"
+          },
+          {
+            "a": "🌸",
+            "b": "花"
+          },
+          {
+            "a": "🦋",
+            "b": "蝴蝶"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_maze_easy",
+      "title": "Maze — Easy",
+      "category": "Maze",
+      "type": "game_maze",
+      "ages": [
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🌀",
+      "desc": "Simple 6×6 maze — reach the flag!",
+      "data": {
+        "rows": 6,
+        "cols": 6
+      }
+    },
+    {
+      "id": "cg_maze_medium",
+      "title": "Maze — Medium",
+      "category": "Maze",
+      "type": "game_maze",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🌀",
+      "desc": "Trickier 8×8 maze",
+      "data": {
+        "rows": 8,
+        "cols": 8
+      }
+    },
+    {
+      "id": "cg_maze_hard",
+      "title": "Maze — Hard",
+      "category": "Maze",
+      "type": "game_maze",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🌀",
+      "desc": "Challenging 10×10 maze",
+      "data": {
+        "rows": 10,
+        "cols": 10
+      }
+    },
+    {
+      "id": "cg_maze_ph_cat",
+      "title": "Phonics Maze: CAT",
+      "category": "Maze",
+      "type": "game_maze_phonics",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🔤",
+      "desc": "Collect C-A-T in order while navigating the maze",
+      "data": {
+        "rows": 8,
+        "cols": 8,
+        "word": "CAT"
+      }
+    },
+    {
+      "id": "cg_maze_ph_dog",
+      "title": "Phonics Maze: DOG",
+      "category": "Maze",
+      "type": "game_maze_phonics",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🔤",
+      "desc": "Collect D-O-G in the maze",
+      "data": {
+        "rows": 8,
+        "cols": 8,
+        "word": "DOG"
+      }
+    },
+    {
+      "id": "cg_maze_ph_sun",
+      "title": "Phonics Maze: SUN",
+      "category": "Maze",
+      "type": "game_maze_phonics",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🔤",
+      "desc": "Collect S-U-N in the maze",
+      "data": {
+        "rows": 8,
+        "cols": 8,
+        "word": "SUN"
+      }
+    },
+    {
+      "id": "cg_maze_ph_star",
+      "title": "Phonics Maze: STAR",
+      "category": "Maze",
+      "type": "game_maze_phonics",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🔤",
+      "desc": "Collect S-T-A-R in the maze",
+      "data": {
+        "rows": 9,
+        "cols": 9,
+        "word": "STAR"
+      }
+    },
+    {
+      "id": "cg_maze_ph_play",
+      "title": "Phonics Maze: PLAY",
+      "category": "Maze",
+      "type": "game_maze_phonics",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🔤",
+      "desc": "Collect P-L-A-Y through the maze",
+      "data": {
+        "rows": 9,
+        "cols": 9,
+        "word": "PLAY"
+      }
+    },
+    {
+      "id": "cg_puzzle_animals",
+      "title": "Spell Animals",
+      "category": "Puzzle",
+      "type": "game_puzzle",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🧩",
+      "desc": "Spell animal names from scrambled letters",
+      "data": {
+        "words": [
+          {
+            "word": "CAT",
+            "emoji": "🐱",
+            "hint": "A furry pet that meows"
+          },
+          {
+            "word": "DOG",
+            "emoji": "🐶",
+            "hint": "Man's best friend"
+          },
+          {
+            "word": "COW",
+            "emoji": "🐄",
+            "hint": "Lives on a farm, says moo"
+          },
+          {
+            "word": "HEN",
+            "emoji": "🐔",
+            "hint": "A female chicken"
+          },
+          {
+            "word": "PIG",
+            "emoji": "🐷",
+            "hint": "Pink and round"
+          },
+          {
+            "word": "ANT",
+            "emoji": "🐜",
+            "hint": "Very small, carries heavy things"
+          },
+          {
+            "word": "BEE",
+            "emoji": "🐝",
+            "hint": "Makes honey"
+          },
+          {
+            "word": "OWL",
+            "emoji": "🦉",
+            "hint": "Nocturnal bird that says whoo"
+          },
+          {
+            "word": "FOX",
+            "emoji": "🦊",
+            "hint": "Clever orange animal"
+          },
+          {
+            "word": "BUG",
+            "emoji": "🐛",
+            "hint": "Small crawling creature"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_puzzle_fruit",
+      "title": "Spell Fruits",
+      "category": "Puzzle",
+      "type": "game_puzzle",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🍎",
+      "desc": "Spell fruit names from scrambled letters",
+      "data": {
+        "words": [
+          {
+            "word": "APPLE",
+            "emoji": "🍎",
+            "hint": "Red or green, crunchy"
+          },
+          {
+            "word": "PEAR",
+            "emoji": "🍐",
+            "hint": "Teardrop shaped fruit"
+          },
+          {
+            "word": "PLUM",
+            "emoji": "🍑",
+            "hint": "Small purple sweet fruit"
+          },
+          {
+            "word": "LIME",
+            "emoji": "🍋",
+            "hint": "Green and sour"
+          },
+          {
+            "word": "KIWI",
+            "emoji": "🥝",
+            "hint": "Brown outside, green inside"
+          },
+          {
+            "word": "MANGO",
+            "emoji": "🥭",
+            "hint": "Tropical yellow fruit"
+          },
+          {
+            "word": "GRAPE",
+            "emoji": "🍇",
+            "hint": "Grows in clusters"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_puzzle_jobs",
+      "title": "Spell Jobs",
+      "category": "Puzzle",
+      "type": "game_puzzle",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "👷",
+      "desc": "Spell community job names",
+      "data": {
+        "words": [
+          {
+            "word": "NURSE",
+            "emoji": "👩‍⚕️",
+            "hint": "Takes care of sick people"
+          },
+          {
+            "word": "CHEF",
+            "emoji": "👨‍🍳",
+            "hint": "Cooks food in a restaurant"
+          },
+          {
+            "word": "PILOT",
+            "emoji": "👨‍✈️",
+            "hint": "Flies aeroplanes"
+          },
+          {
+            "word": "BAKER",
+            "emoji": "🥖",
+            "hint": "Makes bread and cakes"
+          },
+          {
+            "word": "FARMER",
+            "emoji": "👨‍🌾",
+            "hint": "Grows food on a farm"
+          },
+          {
+            "word": "DOCTOR",
+            "emoji": "🩺",
+            "hint": "Helps when you are sick"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_snake_3",
+      "title": "Snake: 3-Letter Words",
+      "category": "Snake",
+      "type": "game_snake",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🐍",
+      "desc": "Collect letters to spell 3-letter words. Speed 2.",
+      "data": {
+        "words": [
+          "CAT",
+          "DOG",
+          "SUN",
+          "HAT",
+          "PIG",
+          "ANT",
+          "BEE",
+          "FOX",
+          "CUP",
+          "BUS",
+          "MAP",
+          "RUN"
+        ],
+        "defaultSpeed": 2
+      }
+    },
+    {
+      "id": "cg_snake_4",
+      "title": "Snake: 4-Letter Words",
+      "category": "Snake",
+      "type": "game_snake",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🐍",
+      "desc": "Spell 4-letter words with the snake. Speed 3.",
+      "data": {
+        "words": [
+          "STAR",
+          "PLAY",
+          "BOOK",
+          "JUMP",
+          "BIRD",
+          "FISH",
+          "FROG",
+          "RAIN",
+          "CAKE",
+          "SHIP",
+          "TREE",
+          "KITE"
+        ],
+        "defaultSpeed": 3
+      }
+    },
+    {
+      "id": "cg_snake_fast",
+      "title": "Snake: Speed Challenge",
+      "category": "Snake",
+      "type": "game_snake",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🚀",
+      "desc": "Fast snake — spell words quickly! Speed 4.",
+      "data": {
+        "words": [
+          "SUN",
+          "BEE",
+          "ANT",
+          "CAT",
+          "DOG",
+          "CUP",
+          "HAT",
+          "BUS",
+          "PIG",
+          "FOX",
+          "RUN",
+          "MAP"
+        ],
+        "defaultSpeed": 4
+      }
+    },
+    {
+      "id": "cg_snake_slow",
+      "title": "Snake: Beginner",
+      "category": "Snake",
+      "type": "game_snake",
+      "ages": [
+        3,
+        4
+      ],
+      "lang": "en",
+      "icon": "🐌",
+      "desc": "Very slow snake for beginners — Speed 1",
+      "data": {
+        "words": [
+          "CAT",
+          "DOG",
+          "SUN",
+          "BEE",
+          "ANT",
+          "PIG"
+        ],
+        "defaultSpeed": 1
+      }
+    },
+    {
+      "id": "cg_trace_words",
+      "title": "Trace Simple Words",
+      "category": "Tracing",
+      "type": "game_tracing",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "✏️",
+      "desc": "Trace cat, dog, sun and more",
+      "data": {
+        "lang": "en",
+        "words": [
+          "cat",
+          "dog",
+          "sun",
+          "hat",
+          "cup",
+          "run",
+          "big",
+          "top",
+          "sit",
+          "hop"
+        ]
+      }
+    },
+    {
+      "id": "cg_trace_cn_body",
+      "title": "描写身体部位",
+      "category": "Tracing",
+      "type": "game_tracing",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "cn",
+      "icon": "✍️",
+      "desc": "描写眼耳口鼻等汉字",
+      "data": {
+        "lang": "cn",
+        "words": [
+          "眼",
+          "耳",
+          "口",
+          "鼻",
+          "手",
+          "脚",
+          "头",
+          "心"
+        ]
+      }
+    },
+    {
+      "id": "cg_match_food",
+      "title": "Food Match",
+      "category": "Matching",
+      "type": "game_matching",
+      "ages": [
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🎴",
+      "desc": "Match food emojis to words",
+      "data": {
+        "pairs": [
+          {
+            "emoji": "🍎",
+            "label": "apple"
+          },
+          {
+            "emoji": "🍊",
+            "label": "orange"
+          },
+          {
+            "emoji": "🍋",
+            "label": "lemon"
+          },
+          {
+            "emoji": "🍇",
+            "label": "grapes"
+          },
+          {
+            "emoji": "🍓",
+            "label": "strawberry"
+          },
+          {
+            "emoji": "🍕",
+            "label": "pizza"
+          },
+          {
+            "emoji": "🎂",
+            "label": "cake"
+          },
+          {
+            "emoji": "🍦",
+            "label": "ice cream"
+          },
+          {
+            "emoji": "🥕",
+            "label": "carrot"
+          },
+          {
+            "emoji": "🌽",
+            "label": "corn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_match_colours",
+      "title": "Colours Match",
+      "category": "Matching",
+      "type": "game_matching",
+      "ages": [
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🎴",
+      "desc": "Match colour words to emoji",
+      "data": {
+        "pairs": [
+          {
+            "emoji": "🔴",
+            "label": "red"
+          },
+          {
+            "emoji": "🔵",
+            "label": "blue"
+          },
+          {
+            "emoji": "🟢",
+            "label": "green"
+          },
+          {
+            "emoji": "🟡",
+            "label": "yellow"
+          },
+          {
+            "emoji": "🟠",
+            "label": "orange"
+          },
+          {
+            "emoji": "🟣",
+            "label": "purple"
+          },
+          {
+            "emoji": "⚫",
+            "label": "black"
+          },
+          {
+            "emoji": "⚪",
+            "label": "white"
+          },
+          {
+            "emoji": "🟤",
+            "label": "brown"
+          },
+          {
+            "emoji": "🩷",
+            "label": "pink"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_match_numbers",
+      "title": "Number Match",
+      "category": "Matching",
+      "type": "game_matching",
+      "ages": [
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🎴",
+      "desc": "Match number words to digits",
+      "data": {
+        "pairs": [
+          {
+            "emoji": "1️⃣",
+            "label": "one"
+          },
+          {
+            "emoji": "2️⃣",
+            "label": "two"
+          },
+          {
+            "emoji": "3️⃣",
+            "label": "three"
+          },
+          {
+            "emoji": "4️⃣",
+            "label": "four"
+          },
+          {
+            "emoji": "5️⃣",
+            "label": "five"
+          },
+          {
+            "emoji": "6️⃣",
+            "label": "six"
+          },
+          {
+            "emoji": "7️⃣",
+            "label": "seven"
+          },
+          {
+            "emoji": "8️⃣",
+            "label": "eight"
+          },
+          {
+            "emoji": "9️⃣",
+            "label": "nine"
+          },
+          {
+            "emoji": "🔟",
+            "label": "ten"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_puzzle_food",
+      "title": "Food Puzzle",
+      "category": "Puzzle",
+      "type": "game_puzzle",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🧩",
+      "desc": "Sliding puzzle with yummy food",
+      "data": {
+        "puzzles": [
+          {
+            "emoji": "🍕",
+            "label": "Pizza"
+          },
+          {
+            "emoji": "🎂",
+            "label": "Cake"
+          },
+          {
+            "emoji": "🍦",
+            "label": "Ice Cream"
+          },
+          {
+            "emoji": "🍎",
+            "label": "Apple"
+          },
+          {
+            "emoji": "🍓",
+            "label": "Strawberry"
+          },
+          {
+            "emoji": "🌮",
+            "label": "Taco"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_snake_animals",
+      "title": "Snake: Spell Animals",
+      "category": "Snake",
+      "type": "game_snake",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🐍",
+      "desc": "Collect letters to spell animal words",
+      "data": {
+        "words": [
+          "cat",
+          "dog",
+          "frog",
+          "lion",
+          "bear",
+          "fish",
+          "duck",
+          "wolf",
+          "deer",
+          "crab"
+        ],
+        "speed": "medium"
+      }
+    },
+    {
+      "id": "cg_snake_easy",
+      "title": "Snake: Easy Words",
+      "category": "Snake",
+      "type": "game_snake",
+      "ages": [
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🐍",
+      "desc": "Short 3-letter words — slow speed",
+      "data": {
+        "words": [
+          "cat",
+          "dog",
+          "sun",
+          "hat",
+          "cup",
+          "run",
+          "big",
+          "hop",
+          "sit",
+          "map"
+        ],
+        "speed": "slow"
+      }
+    },
+    {
+      "id": "cg_snake_phonics",
+      "title": "Snake: Phonics Words",
+      "category": "Snake",
+      "type": "game_snake",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🐍",
+      "desc": "Spell digraph words — medium speed",
+      "data": {
+        "words": [
+          "ship",
+          "chip",
+          "thin",
+          "when",
+          "ring",
+          "duck",
+          "blue",
+          "frog",
+          "star",
+          "tree"
+        ],
+        "speed": "medium"
+      }
+    },
+    {
+      "id": "cg_maze_phonics_cvc",
+      "title": "Phonics Maze: CVC Words",
+      "category": "Maze",
+      "type": "game_maze_phonics",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🔤",
+      "desc": "Collect letters to spell short vowel words",
+      "data": {
+        "words": [
+          "cat",
+          "dog",
+          "sun",
+          "hat",
+          "cup",
+          "run",
+          "sit",
+          "hop",
+          "big",
+          "map"
+        ]
+      }
+    },
+    {
+      "id": "cg_maze_phonics_digraph",
+      "title": "Phonics Maze: Digraphs",
+      "category": "Maze",
+      "type": "game_maze_phonics",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🔤",
+      "desc": "Collect letters to spell digraph words",
+      "data": {
+        "words": [
+          "ship",
+          "chin",
+          "thin",
+          "ring",
+          "duck",
+          "blue",
+          "frog",
+          "plan"
+        ]
+      }
+    },
+    {
+      "id": "cg_match_shapes",
+      "title": "Match Shapes",
+      "category": "Matching",
+      "type": "game_matching",
+      "ages": [
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🃏",
+      "desc": "Match shapes to their names",
+      "data": {
+        "maxPairs": 6,
+        "pairs": [
+          {
+            "emoji": "🔴",
+            "word": "circle"
+          },
+          {
+            "emoji": "🔺",
+            "word": "triangle"
+          },
+          {
+            "emoji": "🟦",
+            "word": "square"
+          },
+          {
+            "emoji": "🔷",
+            "word": "diamond"
+          },
+          {
+            "emoji": "⭐",
+            "word": "star"
+          },
+          {
+            "emoji": "🔶",
+            "word": "hexagon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_match_colors",
+      "title": "Match Colors 颜色",
+      "category": "Matching",
+      "type": "game_matching",
+      "ages": [
+        2,
+        3,
+        4
+      ],
+      "lang": "en",
+      "icon": "🃏",
+      "desc": "Match colors in English and Chinese",
+      "data": {
+        "maxPairs": 6,
+        "pairs": [
+          {
+            "emoji": "🔴",
+            "word": "red 红"
+          },
+          {
+            "emoji": "🔵",
+            "word": "blue 蓝"
+          },
+          {
+            "emoji": "🟡",
+            "word": "yellow 黄"
+          },
+          {
+            "emoji": "🟢",
+            "word": "green 绿"
+          },
+          {
+            "emoji": "🟠",
+            "word": "orange 橙"
+          },
+          {
+            "emoji": "⚫",
+            "word": "black 黑"
+          },
+          {
+            "emoji": "⚪",
+            "word": "white 白"
+          },
+          {
+            "emoji": "🟣",
+            "word": "purple 紫"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cg_maze_small",
+      "title": "Small Maze",
+      "category": "Maze",
+      "type": "game_maze",
+      "ages": [
+        3,
+        4,
+        5
+      ],
+      "lang": "en",
+      "icon": "🌀",
+      "desc": "Navigate a 7×7 maze to the trophy",
+      "data": {
+        "size": 7
+      }
+    },
+    {
+      "id": "cg_maze_phonics_cat",
+      "title": "Phonics Maze: CAT",
+      "category": "Maze",
+      "type": "game_maze_phonics",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🌀",
+      "desc": "Collect C-A-T to spell CAT!",
+      "data": {
+        "size": 9,
+        "word": "CAT"
+      }
+    },
+    {
+      "id": "cg_maze_phonics_sun",
+      "title": "Phonics Maze: SUN",
+      "category": "Maze",
+      "type": "game_maze_phonics",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🌀",
+      "desc": "Collect S-U-N to spell SUN!",
+      "data": {
+        "size": 9,
+        "word": "SUN"
+      }
+    },
+    {
+      "id": "cg_maze_phonics_ship",
+      "title": "Phonics Maze: SHIP",
+      "category": "Maze",
+      "type": "game_maze_phonics",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🌀",
+      "desc": "Collect S-H-I-P to spell SHIP!",
+      "data": {
+        "size": 11,
+        "word": "SHIP"
+      }
+    },
+    {
+      "id": "cg_snake_medium",
+      "title": "Snake: Medium Words",
+      "category": "Snake",
+      "type": "game_snake",
+      "ages": [
+        5,
+        6
+      ],
+      "lang": "en",
+      "icon": "🐍",
+      "desc": "Spell longer words. Medium speed.",
+      "data": {
+        "words": [
+          "SHIP",
+          "FROG",
+          "STAR",
+          "CAKE",
+          "BIRD",
+          "FISH",
+          "MOON",
+          "TREE",
+          "RING",
+          "SNOW"
+        ],
+        "speed": "medium"
+      }
+    },
+    {
+      "id": "cg_snake_cn",
+      "title": "蛇吃字母",
+      "category": "Snake",
+      "type": "game_snake",
+      "ages": [
+        4,
+        5,
+        6
+      ],
+      "lang": "cn",
+      "icon": "🐍",
+      "desc": "Collect letters to spell English words — slow",
+      "data": {
+        "words": [
+          "ONE",
+          "TWO",
+          "RED",
+          "SUN",
+          "CAT",
+          "DOG"
+        ],
+        "speed": "slow"
+      }
+    }
+  ]
+}

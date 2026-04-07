@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kids World 🌟</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
+
+<!-- ── CSS ── -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="onboarding/onboarding.css">
+<link rel="stylesheet" href="tabs/routines/routines.css">
+<link rel="stylesheet" href="tabs/market/market.css">
+<link rel="stylesheet" href="tabs/skills/skills.css">
+<link rel="stylesheet" href="tabs/play/play.css">
+<link rel="stylesheet" href="tabs/community/community.css">
+</head>
+<body>
+
+<!-- ── LOADING ── -->
+<div id="loading">
+  <div class="loading-star">⭐</div>
+  <div class="loading-text">Loading Kids World...</div>
+</div>
+
+<!-- ── ONBOARDING ── -->
+<div id="onboarding" class="hidden">
+  <div class="ob-card">
+    <div class="ob-logo">
+      <div class="ob-star">🌟</div>
+      <h1>Kids World</h1>
+      <p>Chores · Play · Skills · Rewards</p>
+    </div>
+    <div class="ob-progress-dots">
+      <div class="ob-dot active" id="dot-0"></div>
+      <div class="ob-dot" id="dot-1"></div>
+      <div class="ob-dot" id="dot-2"></div>
+    </div>
+
+    <div class="ob-step active" id="ob-step-0">
+      <div class="ob-step-title">Welcome! 👋</div>
+      <p style="font-size:1.7rem;color:#666;line-height:1.6;margin-bottom:20px;">
+        Track your kids' daily routines, rewards, learning games and skills — all in one place!
+      </p>
+      <div style="background:#f0edff;border-radius:14px;padding:16px;margin-bottom:20px;">
+        <div style="font-size:1.6rem;font-weight:800;color:#5c52c0;margin-bottom:8px;">What you get:</div>
+        <div style="font-size:1.5rem;color:#555;line-height:1.8;">
+          📋 Daily routine checklists<br>
+          🛒 Star-based reward marketplace<br>
+          🎮 Learning games by school level<br>
+          ⭐ Skills &amp; milestone tracking
+        </div>
+      </div>
+      <button class="ob-btn ob-btn-primary" onclick="Onboarding.next()">Let's Set Up! →</button>
+    </div>
+
+    <div class="ob-step" id="ob-step-1">
+      <div class="ob-step-title">Tell me about your kids 👧👦</div>
+      <div class="ob-kids-list" id="ob-kids-list"></div>
+      <button class="ob-add-kid" onclick="Onboarding.addKid()" id="ob-add-kid-btn">＋ Add another child</button>
+      <button class="ob-btn ob-btn-primary" onclick="Onboarding.next()">Continue →</button>
+      <button class="ob-btn ob-btn-secondary" onclick="Onboarding.back()">← Back</button>
+    </div>
+
+    <div class="ob-step" id="ob-step-2">
+      <div class="ob-step-title">Ready to go! 🎉</div>
+      <div class="ob-template-notice" id="ob-template-notice"></div>
+      <p style="font-size:1.6rem;color:#666;line-height:1.6;margin-bottom:20px;">
+        Each child's routines, marketplace, syllabus and skills will be pre-loaded based on their age.
+        Customise everything in Admin Mode later.
+      </p>
+      <button class="ob-btn ob-btn-primary" onclick="Onboarding.finish()">🚀 Start Kids World!</button>
+      <button class="ob-btn ob-btn-secondary" onclick="Onboarding.back()">← Back</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── PLAY OVERLAY ── -->
+<div class="play-overlay" id="play-overlay">
+  <div class="play-modal">
+    <div class="play-modal-head">
+      <div class="play-modal-title" id="pm-title"></div>
+      <button class="play-modal-close" onclick="Play.closeOverlay()">✕</button>
+    </div>
+    <div class="play-modal-body" id="pm-body"></div>
+  </div>
+</div>
+
+<!-- ── COMMUNITY PREVIEW OVERLAY ── -->
+<div class="cc-preview-overlay" id="cc-preview-overlay">
+  <div class="cc-preview-modal">
+    <div class="cc-preview-head">
+      <div class="cc-preview-title" id="cc-preview-title"></div>
+      <button class="cc-preview-close" onclick="Community.closePreview()">✕</button>
+    </div>
+    <div class="cc-preview-body" id="cc-preview-body"></div>
+  </div>
+</div>
+
+<!-- ── ADMIN MODAL ── -->
+<div class="modal-bg" id="modal-bg">
+  <div class="modal">
+    <h3 id="modal-title"></h3>
+    <div id="modal-body"></div>
+    <div class="modal-btns" id="modal-btns"></div>
+  </div>
+</div>
+
+<!-- ── MEDAL TOOLTIP ── -->
+<div class="medal-tooltip" id="medal-tooltip" style="opacity:0;"></div>
+
+<!-- ── APP ── -->
+<div id="app">
+  <div class="admin-banner">
+    🔧 Admin Mode &nbsp;
+    <button onclick="Boot.toggleAdmin()" style="background:rgba(255,255,255,.3);border:none;color:white;border-radius:8px;padding:3px 14px;font-size:1.6rem;cursor:pointer;font-family:'Fredoka One',cursive;">Exit</button>
+  </div>
+
+  <div class="floating-star" id="floating-star">
+    <span class="fs-icon">⭐</span><span id="fs-pts">0</span>
+  </div>
+
+  <div class="mobile-bar">
+    <button class="mob-tab active" id="mob-routines" onclick="Boot.switchView('routines')"><span class="mi">📋</span>Routines</button>
+    <button class="mob-tab"        id="mob-market"   onclick="Boot.switchView('market')"><span class="mi">🛒</span>Market</button>
+    <button class="mob-tab"        id="mob-play"     onclick="Boot.switchView('play')"><span class="mi">🎮</span>Play</button>
+    <button class="mob-tab"        id="mob-skills"   onclick="Boot.switchView('skills')"><span class="mi">⭐</span>Skills</button>
+    <button class="mob-tab"        id="mob-community" onclick="Boot.switchView('community')"><span class="mi">🌍</span>Community</button>
+  </div>
+
+  <nav class="left-nav">
+    <button class="nav-item active" id="nav-routines" onclick="Boot.switchView('routines')"><span class="ni">📋</span>Routines</button>
+    <button class="nav-item"        id="nav-market"   onclick="Boot.switchView('market')"><span class="ni">🛒</span>Market</button>
+    <button class="nav-item"        id="nav-play"     onclick="Boot.switchView('play')"><span class="ni">🎮</span>Play</button>
+    <button class="nav-item"        id="nav-skills"   onclick="Boot.switchView('skills')"><span class="ni">⭐</span>Skills</button>
+    <button class="nav-item"        id="nav-community" onclick="Boot.switchView('community')"><span class="ni">🌍</span>Community</button>
+    <div class="nav-spacer"></div>
+    <div class="admin-indicator">🔧 Admin</div>
+    <button class="nav-reset-btn" onclick="Boot.confirmReset()">🗑 Reset App</button>
+  </nav>
+
+  <div class="main">
+    <div class="view active" id="view-routines">
+      <div class="board" id="routines-board"></div>
+    </div>
+
+    <div class="view" id="view-market">
+      <div class="market-wrap">
+        <div>
+          <div class="pool-card-wrap">
+            <div class="pool-card">
+              <div class="pool-card-label">Total Stars</div>
+              <div class="pool-star-row">
+                <div class="pool-star-icon">⭐</div>
+                <div class="pool-pts-num" id="v-pool-pts">0</div>
+              </div>
+              <div class="pool-sublabel">stars to spend</div>
+            </div>
+          </div>
+          <div class="market-section">
+            <div class="stall-roof"></div><div class="stall-scallop"></div>
+            <div class="stall-body">
+              <div class="stall-title">🛒 Marketplace</div>
+              <div class="market-grid" id="market-grid"></div>
+              <button class="add-market-btn" onclick="Admin.openAddMarket()">＋ Add Activity</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="bag-section" style="margin:0 0 14px;">
+            <div class="bag-header-art">
+              <div class="bag-strap-left"></div><div class="bag-strap-right"></div><div class="bag-clasp"></div>
+              <div class="bag-title">🎒 Voucher Bag</div>
+              <select class="voucher-filter" id="vouch-filter" onchange="Market.setFilter(this.value)">
+                <option value="30">Past 30 days</option>
+                <option value="90">Past 90 days</option>
+                <option value="365">Past year</option>
+              </select>
+            </div>
+            <div class="voucher-grid" id="voucher-grid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="view" id="view-play">
+      <div class="play-board" id="play-board"></div>
+    </div>
+
+    <div class="view" id="view-skills">
+      <div class="skills-board" id="skills-board"></div>
+    </div>
+
+    <div class="view" id="view-community">
+      <div class="community-wrap">
+        <div class="community-header">
+          <h2>🌍 Community Library</h2>
+          <p>Browse games, songs, stories and skills shared by the community. Add them to any child!</p>
+        </div>
+        <div class="community-controls">
+          <input  class="community-search" id="comm-search" placeholder="Search games, songs, stories…" oninput="Community.onSearch(this.value)">
+          <select class="community-filter" id="comm-age-filter" onchange="Community.onAgeFilter(this.value)">
+            <option value="all">All Ages</option>
+          </select>
+          <select class="community-filter" id="comm-cat-filter" onchange="Community.onCatFilter(this.value)">
+            <option value="all">All Categories</option>
+          </select>
+        </div>
+        <div id="community-content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── JS: Core (order matters) ── -->
+<script src="js/state.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/boot.js"></script>
+<script src="onboarding/onboarding.js"></script>
+
+<!-- ── JS: Tab modules ── -->
+<script src="tabs/routines/routines.js"></script>
+<script src="tabs/market/market.js"></script>
+<script src="tabs/skills/skills.js"></script>
+<script src="tabs/play/play.js"></script>
+
+<!-- ── JS: Game registry (must load before game files) ── -->
+<script src="tabs/play/games/registry.js"></script>
+
+<!-- ── JS: Game components (add new games here) ── -->
+<script src="tabs/play/games/song/song.js"></script>
+<script src="tabs/play/games/story/story.js"></script>
+<script src="tabs/play/games/concept/concept.js"></script>
+<script src="tabs/play/games/phonics/phonics.js"></script>
+<script src="tabs/play/games/numeracy/numeracy.js"></script>
+<script src="tabs/play/games/calendar/calendar.js"></script>
+<script src="tabs/play/games/clock/clock.js"></script>
+<script src="tabs/play/games/tracing/tracing.js"></script>
+<script src="tabs/play/games/matching/matching.js"></script>
+<script src="tabs/play/games/maze/maze.js"></script>
+<script src="tabs/play/games/puzzle/puzzle.js"></script>
+<script src="tabs/play/games/snake/snake.js"></script>
+<script src="tabs/community/community.js"></script>
+<script src="tabs/play/games/tracing/tracing.js"></script>
+<script src="tabs/play/games/matching/matching.js"></script>
+<script src="tabs/play/games/puzzle/puzzle.js"></script>
+<script src="tabs/play/games/snake/snake.js"></script>
+<script src="tabs/play/games/maze/maze.js"></script>
+
+<!-- ── Boot ── -->
+<script>Boot.boot();</script>
+</body>
+</html>

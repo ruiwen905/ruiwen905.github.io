@@ -1,0 +1,71 @@
+/* tabs/play/play.css */
+.play-board { padding: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; align-items: start; }
+.kid-play-col { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,.08); }
+.kid-play-header { padding: 13px; color: white; display: flex; align-items: center; gap: 10px; }
+.kid-play-header .avatar-img, .kid-play-header .avatar-emoji { width: 64px; height: 64px; }
+.kid-play-name  { font-family: 'Fredoka One', cursive; font-size: 2rem; line-height: 1.1; flex: 1; }
+.kid-play-level { font-size: 1.4rem; opacity: .85; font-weight: 700; }
+.lang-tabs { display: flex; border-bottom: 2px solid #eee; }
+.lang-tab { flex: 1; padding: 10px 6px; border: none; background: #fafaf8; color: #999; font-family: 'Fredoka One', cursive; font-size: 1.6rem; cursor: pointer; border-bottom: 3px solid transparent; transition: all .2s; }
+.lang-tab.active { color: #5c52c0; border-bottom-color: #5c52c0; background: white; }
+.play-cats { padding: 10px; }
+.play-cat  { margin-bottom: 8px; border: 1.5px solid #eee; border-radius: 12px; overflow: hidden; }
+.play-cat-head  { padding: 10px 13px; background: #f8f7f5; display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+.play-cat-icon  { font-size: 2rem; }
+.play-cat-name  { font-weight: 800; font-size: 1.8rem; flex: 1; }
+.play-cat-arrow { font-size: 1.4rem; color: #ccc; transition: transform .2s; }
+.play-cat.open .play-cat-arrow { transform: rotate(90deg); }
+.play-items-list { display: none; padding: 6px 8px 8px; }
+.play-cat.open .play-items-list { display: block; }
+.play-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; margin: 4px 0; border-radius: 10px; cursor: pointer; border: 1.5px solid #eee; background: white; transition: all .15s; }
+.play-item:hover { border-color: #b8b0e8; background: #faf8ff; }
+.play-item-icon  { font-size: 2rem; min-width: 32px; text-align: center; }
+.play-item-info  { flex: 1; }
+.play-item-title { font-weight: 800; font-size: 1.8rem; }
+.play-item-sub   { font-size: 1.4rem; color: #aaa; font-weight: 600; }
+.play-item-type  { font-size: 1.3rem; padding: 3px 8px; border-radius: 8px; font-weight: 800; white-space: nowrap; }
+/* Type badges */
+.type-game_phonics,.type-game_blends { background: #fff0e8; color: #c06030; }
+.type-game_hfwords,.type-game_counting,.type-game_patterns { background: #e8f4ff; color: #2060c0; }
+.type-game_days_spell,.type-game_days_seq,.type-game_months_spell,.type-game_months_seq,.type-game_clock { background: #e8f0ff; color: #3050c0; }
+.type-song    { background: #fff0f5; color: #c04060; }
+.type-story   { background: #f0fff0; color: #207040; }
+.type-concept { background: #f8f0ff; color: #6040a0; }
+
+/* OVERLAY */
+.play-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.72); z-index: 1500; align-items: center; justify-content: center; padding: 0 10vw; }
+.play-overlay.open { display: flex; }
+.play-modal { background: white; border-radius: 24px; width: 80vw; max-width: 900px; max-height: 88vh; overflow-y: auto; display: flex; flex-direction: column; }
+.play-modal-head { padding: 18px 20px 14px; display: flex; align-items: center; gap: 12px; border-bottom: 2px solid #eee; flex-shrink: 0; }
+.play-modal-title { font-family: 'Fredoka One', cursive; font-size: 2.4rem; flex: 1; }
+.play-modal-close { background: #f0f0f0; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.play-modal-body  { padding: 20px; flex: 1; }
+
+@media (max-width: 900px) {
+  .kid-play-header .avatar-img, .kid-play-header .avatar-emoji { width: 36px; height: 36px; font-size: 1rem; }
+  .kid-play-name  { font-size: 1.1rem; }
+  .kid-play-level { font-size: .8rem; }
+  .lang-tab       { font-size: .85rem; padding: 7px 4px; }
+  .play-cat-name  { font-size: .9rem; }
+  .play-item-title{ font-size: .9rem; }
+  .play-item-sub  { font-size: .75rem; }
+  .play-item-type { font-size: .7rem; }
+  .play-item-icon { font-size: 1.1rem; min-width: 20px; }
+  .play-item      { padding: 7px 9px; gap: 6px; }
+  .play-modal-title { font-size: 1.4rem; }
+}
+
+/* ── DAILY PLAY PROGRESS BAR ── */
+.play-progress-wrap { padding: 0; }
+.play-prog-inner { padding: 10px 14px 8px; border-bottom: 1.5px solid #f0eeff; }
+.play-prog-label { display: flex; justify-content: space-between; font-size: 1.6rem; font-weight: 700; color: #888; margin-bottom: 5px; }
+.play-prog-bar-bg { background: #f0eefc; border-radius: 20px; height: 18px; overflow: hidden; }
+.play-prog-bar-fill { height: 100%; border-radius: 20px; background: #7c6fcf; transition: width .5s cubic-bezier(.34,1.56,.64,1), background .4s; }
+.play-prog-bar-fill.done { background: #27ae60; }
+.play-prog-hint { font-size: 1.4rem; color: #aaa; margin-top: 4px; text-align: center; }
+
+@media (max-width: 900px) {
+  .play-prog-label { font-size: .85rem; }
+  .play-prog-hint  { font-size: .75rem; }
+  .play-prog-bar-bg { height: 12px; }
+}

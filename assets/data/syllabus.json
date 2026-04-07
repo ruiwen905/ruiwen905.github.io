@@ -1,0 +1,2782 @@
+{
+  "N1": {
+    "en": [
+      {
+        "id": "songs_en",
+        "name": "Songs & Rhymes",
+        "icon": "🎵",
+        "items": [
+          {
+            "type": "song",
+            "id": "apples",
+            "title": "Apples and Bananas",
+            "sub": "Fun with food!",
+            "data": {
+              "lyrics": "I like to eat, eat, eat\nApples and bananas!\nI like to eat, eat, eat\nApples and bananas!\n\nI like to ote, ote, ote\nOples and banonos!\n\nI like to ite, ite, ite\nIpples and bininis!\n\nI like to ute, ute, ute\nUples and bununus!"
+            }
+          },
+          {
+            "type": "song",
+            "id": "cookies",
+            "title": "Who Took The Cookies?",
+            "sub": "Circle game song",
+            "data": {
+              "lyrics": "Who took the cookies from the cookie jar?\n[Name] took the cookies from the cookie jar!\nWho me? Yes, you!\nCould not be! Then who?\n\nWho took the cookies from the cookie jar?\nWho took the cookies from the cookie jar?"
+            }
+          },
+          {
+            "type": "song",
+            "id": "oldlady",
+            "title": "Old Lady Swallowed a Fly",
+            "sub": "Cumulative song",
+            "data": {
+              "lyrics": "There was an old lady who swallowed a fly\nI do not know why she swallowed a fly\nPerhaps she will die!\n\nThere was an old lady who swallowed a spider\nThat wriggled and jiggled and tickled inside her\nShe swallowed the spider to catch the fly\nI do not know why she swallowed a fly\nPerhaps she will die!"
+            }
+          }
+        ]
+      },
+      {
+        "id": "books_en",
+        "name": "Books",
+        "icon": "📚",
+        "items": [
+          {
+            "type": "story",
+            "id": "carrot",
+            "title": "The Carrot Seed",
+            "sub": "A story about patience",
+            "data": {
+              "summary": "A little boy plants a carrot seed. Everyone tells him it will not grow. But he keeps watering it and pulling the weeds every day. One day, a huge carrot grows — just as he knew it would!",
+              "moral": "Believe in yourself and keep trying even when others say you cannot do it. 🥕",
+              "emoji": "🥕"
+            }
+          },
+          {
+            "type": "story",
+            "id": "oldlady_book",
+            "title": "There Was an Old Lady",
+            "sub": "Funny story book",
+            "data": {
+              "summary": "An old lady swallows a fly, then a spider to catch the fly, then a bird, a cat, a dog, and more! Each time she swallows something bigger to catch what came before.",
+              "moral": "A fun story about cause and effect — actions have consequences!",
+              "emoji": "🪲"
+            }
+          }
+        ]
+      },
+      {
+        "id": "numeracy_n1",
+        "name": "Numeracy",
+        "icon": "🔢",
+        "items": [
+          {
+            "type": "game_counting",
+            "id": "count5",
+            "title": "Count to 5",
+            "sub": "How many can you see?",
+            "data": {
+              "max": 5,
+              "emoji": "🍎"
+            }
+          },
+          {
+            "type": "game_counting",
+            "id": "count10",
+            "title": "Count to 10",
+            "sub": "Count the objects!",
+            "data": {
+              "max": 10,
+              "emoji": "🐾"
+            }
+          },
+          {
+            "type": "game_counting",
+            "id": "count_stars",
+            "title": "Count the Stars",
+            "sub": "How many stars?",
+            "data": {
+              "max": 8,
+              "emoji": "⭐"
+            }
+          },
+          {
+            "type": "game_patterns",
+            "id": "patterns_n1",
+            "title": "Simple Patterns",
+            "sub": "AB & AAB patterns",
+            "data": {
+              "patterns": [
+                {
+                  "seq": [
+                    "🍕",
+                    "🍔",
+                    "🍕",
+                    "🍔",
+                    "🍕"
+                  ],
+                  "ans": "🍔",
+                  "choices": [
+                    "🍕",
+                    "🍔",
+                    "🍣",
+                    "🌮"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🔴",
+                    "🔵",
+                    "🔵",
+                    "🔴",
+                    "🔵"
+                  ],
+                  "ans": "🔵",
+                  "choices": [
+                    "🔵",
+                    "🔴",
+                    "⭐",
+                    "💚"
+                  ]
+                },
+                {
+                  "seq": [
+                    "⭐",
+                    "❤️",
+                    "⭐",
+                    "❤️",
+                    "⭐"
+                  ],
+                  "ans": "❤️",
+                  "choices": [
+                    "⭐",
+                    "💛",
+                    "❤️",
+                    "💚"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🍕",
+                    "🍔",
+                    "🌮",
+                    "🍕",
+                    "🍔"
+                  ],
+                  "ans": "🌮",
+                  "choices": [
+                    "🍕",
+                    "🍔",
+                    "🌮",
+                    "🍣"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🚗",
+                    "✈️",
+                    "🚢",
+                    "🚗",
+                    "✈️"
+                  ],
+                  "ans": "🚢",
+                  "choices": [
+                    "🚗",
+                    "✈️",
+                    "🚢",
+                    "🚂"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🍎",
+                    "🍊",
+                    "🍎",
+                    "🍊",
+                    "🍎"
+                  ],
+                  "ans": "🍊",
+                  "choices": [
+                    "🍎",
+                    "🍊",
+                    "🍋",
+                    "🍇"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🔴",
+                    "🔵",
+                    "🟢",
+                    "🔴",
+                    "🔵"
+                  ],
+                  "ans": "🟢",
+                  "choices": [
+                    "🟢",
+                    "🔴",
+                    "🔵",
+                    "🟡"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🍎",
+                    "🍊",
+                    "🍋",
+                    "🍇",
+                    "🍎"
+                  ],
+                  "ans": "🍊",
+                  "choices": [
+                    "🍊",
+                    "🍋",
+                    "🍇",
+                    "🍓"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🌙",
+                    "☀️",
+                    "⭐",
+                    "🌙",
+                    "☀️"
+                  ],
+                  "ans": "⭐",
+                  "choices": [
+                    "🌙",
+                    "☀️",
+                    "⭐",
+                    "🌟"
+                  ]
+                },
+                {
+                  "seq": [
+                    "⭐",
+                    "⭐",
+                    "❤️",
+                    "⭐",
+                    "⭐"
+                  ],
+                  "ans": "❤️",
+                  "choices": [
+                    "⭐",
+                    "❤️",
+                    "💛",
+                    "💚"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "motor_n1",
+        "name": "Physical Development",
+        "icon": "🏃",
+        "items": [
+          {
+            "type": "concept",
+            "id": "motor1",
+            "title": "Moving My Body",
+            "sub": "Fun exercises!",
+            "data": {
+              "concepts": [
+                {
+                  "name": "Pick Things Up",
+                  "emoji": "🖐️",
+                  "desc": "Pick things up from the floor from different body positions."
+                },
+                {
+                  "name": "Move Sideways",
+                  "emoji": "↔️",
+                  "desc": "Move sideways and backwards at different speeds."
+                },
+                {
+                  "name": "Use Tools",
+                  "emoji": "🧵",
+                  "desc": "Use various tools for threading, construction, and fixing puzzles."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "social_n1",
+        "name": "Social & Emotional",
+        "icon": "❤️",
+        "items": [
+          {
+            "type": "concept",
+            "id": "social1",
+            "title": "Friends & Feelings",
+            "sub": "How we feel and connect",
+            "data": {
+              "concepts": [
+                {
+                  "name": "Group Activities",
+                  "emoji": "👫",
+                  "desc": "Participate in small and big group activities with other children."
+                },
+                {
+                  "name": "Explore Toys",
+                  "emoji": "🧸",
+                  "desc": "Express interest in objects such as toys and books."
+                },
+                {
+                  "name": "Family & Friends",
+                  "emoji": "👨‍👩‍👧",
+                  "desc": "Greet and hug family members and friends."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "cn": [
+      {
+        "id": "stories_cn_n1",
+        "name": "故事",
+        "icon": "📖",
+        "items": [
+          {
+            "type": "story",
+            "id": "cn_n1_s1",
+            "title": "诚实的孩子",
+            "sub": "诚实的品德",
+            "data": {
+              "summary": "小明不小心打破了花瓶，他害怕被骂，想要躲起来。但是他想起妈妈说过，诚实的孩子最勇敢。他鼓起勇气，告诉了妈妈真相。妈妈原谅了他，还夸他是个诚实的好孩子。",
+              "moral": "诚实是最好的品德，勇敢说实话。",
+              "emoji": "💐"
+            }
+          },
+          {
+            "type": "story",
+            "id": "cn_n1_s2",
+            "title": "我家不见了",
+            "sub": "正义之士",
+            "data": {
+              "summary": "小兔子的家被大树压倒了，它很伤心，不知道该怎么办。森林里的小动物们看到了，大家一起帮忙，重新为小兔子建了一个更漂亮的新家。",
+              "moral": "遇到困难时，好朋友会互相帮助。",
+              "emoji": "🏠"
+            }
+          },
+          {
+            "type": "story",
+            "id": "cn_n1_s3",
+            "title": "我妈妈",
+            "sub": "妈妈的爱",
+            "data": {
+              "summary": "我的妈妈是世界上最好的妈妈。她会做好吃的饭，她会唱好听的歌，她会在我伤心的时候抱抱我。妈妈的爱是最温暖的。",
+              "moral": "妈妈是我们最亲爱的人，要孝顺妈妈。",
+              "emoji": "👩"
+            }
+          },
+          {
+            "type": "story",
+            "id": "cn_n1_s4",
+            "title": "我爸爸",
+            "sub": "爸爸的力量",
+            "data": {
+              "summary": "我的爸爸是超级英雄！他力气很大，会修理东西，会讲故事，会带我去玩。爸爸的爱让我感到很安全。",
+              "moral": "爸爸是家里的守护者，要爱护家人。",
+              "emoji": "👨"
+            }
+          },
+          {
+            "type": "story",
+            "id": "cn_n1_s5",
+            "title": "一对好朋友",
+            "sub": "友谊的故事",
+            "data": {
+              "summary": "小狗和小猫是最好的朋友。有一天，小狗不开心了，小猫陪着它玩，给它讲笑话，终于让小狗笑了。好朋友就是这样，互相关心，互相帮助。",
+              "moral": "真正的好朋友会在你不开心的时候陪伴你。",
+              "emoji": "🐾"
+            }
+          }
+        ]
+      },
+      {
+        "id": "songs_cn_n1",
+        "name": "儿歌",
+        "icon": "🎶",
+        "items": [
+          {
+            "type": "song",
+            "id": "zuhaqu",
+            "title": "组屋区",
+            "sub": "我们的家园",
+            "data": {
+              "lyrics": "住在组屋区\n大家都是好邻居\n华族马来族印族\n我们是一家人\n\n早上互相问早安\n出门互相打招呼\n大家和睦相处\n美丽的组屋区"
+            }
+          },
+          {
+            "type": "song",
+            "id": "fangxiange",
+            "title": "方向歌",
+            "sub": "学习方向",
+            "data": {
+              "lyrics": "向左转 向左转\n向右转 向右转\n前进一步 后退一步\n转个圈圈 停下来\n\n向上看 向上看\n向下看 向下看\n左看右看 前看后看\n方向我都认识了"
+            }
+          },
+          {
+            "type": "song",
+            "id": "hao_pengyou",
+            "title": "好朋友",
+            "sub": "友谊之歌",
+            "data": {
+              "lyrics": "好朋友 好朋友\n大家来握手\n你是我的好朋友\n我们一起玩\n\n分享玩具 分享快乐\n互相帮助 互相关心\n好朋友 好朋友\n永远在一起"
+            }
+          }
+        ]
+      },
+      {
+        "id": "culture_n1",
+        "name": "文化",
+        "icon": "🎨",
+        "items": [
+          {
+            "type": "concept",
+            "id": "culture1",
+            "title": "我们的文化",
+            "sub": "多元种族文化",
+            "data": {
+              "concepts": [
+                {
+                  "name": "漂亮的被子",
+                  "emoji": "🛏️",
+                  "desc": "学习如何叠被子，保持房间整洁。"
+                },
+                {
+                  "name": "我会说华文",
+                  "emoji": "🗣️",
+                  "desc": "练习说华语，和家人朋友交流。"
+                },
+                {
+                  "name": "认识各种族",
+                  "emoji": "🌏",
+                  "desc": "和不同种族的朋友交谈，了解不同的文化习俗。"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "K1": {
+    "en": [
+      {
+        "id": "phonics_k1",
+        "name": "Phonics",
+        "icon": "🔤",
+        "items": [
+          {
+            "type": "game_phonics",
+            "id": "digraphs",
+            "title": "Consonant Digraphs",
+            "sub": "ch · sh · th · wh · ph · ng · ck",
+            "data": {
+              "digraphs": [
+                {
+                  "letters": "ch",
+                  "color": "#e74c3c",
+                  "words": [
+                    {
+                      "w": "chop",
+                      "e": "🪓",
+                      "c": true
+                    },
+                    {
+                      "w": "chick",
+                      "e": "🐥",
+                      "c": true
+                    },
+                    {
+                      "w": "cheek",
+                      "e": "😊",
+                      "c": true
+                    },
+                    {
+                      "w": "cherry",
+                      "e": "🍒",
+                      "c": true
+                    },
+                    {
+                      "w": "dog",
+                      "e": "🐶",
+                      "c": false
+                    },
+                    {
+                      "w": "chin",
+                      "e": "🫦",
+                      "c": true
+                    },
+                    {
+                      "w": "hat",
+                      "e": "🎩",
+                      "c": false
+                    },
+                    {
+                      "w": "ship",
+                      "e": "🚢",
+                      "c": false
+                    },
+                    {
+                      "w": "sun",
+                      "e": "☀️",
+                      "c": false
+                    },
+                    {
+                      "w": "chair",
+                      "e": "🪑",
+                      "c": true
+                    },
+                    {
+                      "w": "thumb",
+                      "e": "👍",
+                      "c": false
+                    },
+                    {
+                      "w": "child",
+                      "e": "👶",
+                      "c": true
+                    },
+                    {
+                      "w": "chain",
+                      "e": "⛓️",
+                      "c": true
+                    },
+                    {
+                      "w": "chest",
+                      "e": "📦",
+                      "c": true
+                    },
+                    {
+                      "w": "ball",
+                      "e": "⚽",
+                      "c": false
+                    },
+                    {
+                      "w": "tree",
+                      "e": "🌳",
+                      "c": false
+                    },
+                    {
+                      "w": "fish",
+                      "e": "🐟",
+                      "c": false
+                    },
+                    {
+                      "w": "cheese",
+                      "e": "🧀",
+                      "c": true
+                    }
+                  ]
+                },
+                {
+                  "letters": "sh",
+                  "color": "#3498db",
+                  "words": [
+                    {
+                      "w": "dog",
+                      "e": "🐶",
+                      "c": false
+                    },
+                    {
+                      "w": "three",
+                      "e": "3️⃣",
+                      "c": false
+                    },
+                    {
+                      "w": "shark",
+                      "e": "🦈",
+                      "c": true
+                    },
+                    {
+                      "w": "ship",
+                      "e": "🚢",
+                      "c": true
+                    },
+                    {
+                      "w": "shell",
+                      "e": "🐚",
+                      "c": true
+                    },
+                    {
+                      "w": "shovel",
+                      "e": "🪚",
+                      "c": true
+                    },
+                    {
+                      "w": "chair",
+                      "e": "🪑",
+                      "c": false
+                    },
+                    {
+                      "w": "shoe",
+                      "e": "👟",
+                      "c": true
+                    },
+                    {
+                      "w": "cat",
+                      "e": "🐱",
+                      "c": false
+                    },
+                    {
+                      "w": "shelf",
+                      "e": "📚",
+                      "c": true
+                    },
+                    {
+                      "w": "cup",
+                      "e": "☕",
+                      "c": false
+                    },
+                    {
+                      "w": "shout",
+                      "e": "📢",
+                      "c": true
+                    },
+                    {
+                      "w": "shirt",
+                      "e": "👕",
+                      "c": true
+                    },
+                    {
+                      "w": "phone",
+                      "e": "📱",
+                      "c": false
+                    },
+                    {
+                      "w": "sheep",
+                      "e": "🐑",
+                      "c": true
+                    },
+                    {
+                      "w": "short",
+                      "e": "📏",
+                      "c": true
+                    },
+                    {
+                      "w": "bird",
+                      "e": "🐦",
+                      "c": false
+                    },
+                    {
+                      "w": "whale",
+                      "e": "🐋",
+                      "c": false
+                    }
+                  ]
+                },
+                {
+                  "letters": "th",
+                  "color": "#27ae60",
+                  "words": [
+                    {
+                      "w": "cheese",
+                      "e": "🧀",
+                      "c": false
+                    },
+                    {
+                      "w": "shoe",
+                      "e": "👟",
+                      "c": false
+                    },
+                    {
+                      "w": "thank",
+                      "e": "🙏",
+                      "c": true
+                    },
+                    {
+                      "w": "thorn",
+                      "e": "🌵",
+                      "c": true
+                    },
+                    {
+                      "w": "thread",
+                      "e": "🧵",
+                      "c": true
+                    },
+                    {
+                      "w": "throne",
+                      "e": "👑",
+                      "c": true
+                    },
+                    {
+                      "w": "three",
+                      "e": "3️⃣",
+                      "c": true
+                    },
+                    {
+                      "w": "thumb",
+                      "e": "👍",
+                      "c": true
+                    },
+                    {
+                      "w": "thirst",
+                      "e": "💧",
+                      "c": true
+                    },
+                    {
+                      "w": "whale",
+                      "e": "🐋",
+                      "c": false
+                    },
+                    {
+                      "w": "thief",
+                      "e": "🦹",
+                      "c": true
+                    },
+                    {
+                      "w": "star",
+                      "e": "⭐",
+                      "c": false
+                    },
+                    {
+                      "w": "phone",
+                      "e": "📱",
+                      "c": false
+                    },
+                    {
+                      "w": "ship",
+                      "e": "🚢",
+                      "c": false
+                    },
+                    {
+                      "w": "thunder",
+                      "e": "⚡",
+                      "c": true
+                    },
+                    {
+                      "w": "thick",
+                      "e": "📏",
+                      "c": true
+                    },
+                    {
+                      "w": "frog",
+                      "e": "🐸",
+                      "c": false
+                    },
+                    {
+                      "w": "chair",
+                      "e": "🪑",
+                      "c": false
+                    }
+                  ]
+                },
+                {
+                  "letters": "wh",
+                  "color": "#f39c12",
+                  "words": [
+                    {
+                      "w": "whirl",
+                      "e": "🌀",
+                      "c": true
+                    },
+                    {
+                      "w": "chair",
+                      "e": "🪑",
+                      "c": false
+                    },
+                    {
+                      "w": "wheel",
+                      "e": "⚙️",
+                      "c": true
+                    },
+                    {
+                      "w": "shirt",
+                      "e": "👕",
+                      "c": false
+                    },
+                    {
+                      "w": "whoosh",
+                      "e": "💨",
+                      "c": true
+                    },
+                    {
+                      "w": "whip",
+                      "e": "🪢",
+                      "c": true
+                    },
+                    {
+                      "w": "three",
+                      "e": "3️⃣",
+                      "c": false
+                    },
+                    {
+                      "w": "while",
+                      "e": "⏳",
+                      "c": true
+                    },
+                    {
+                      "w": "cat",
+                      "e": "🐱",
+                      "c": false
+                    },
+                    {
+                      "w": "whistle",
+                      "e": "🎵",
+                      "c": true
+                    },
+                    {
+                      "w": "kite",
+                      "e": "🪁",
+                      "c": false
+                    },
+                    {
+                      "w": "white",
+                      "e": "⬜",
+                      "c": true
+                    },
+                    {
+                      "w": "whisper",
+                      "e": "🤫",
+                      "c": true
+                    },
+                    {
+                      "w": "shell",
+                      "e": "🐚",
+                      "c": false
+                    },
+                    {
+                      "w": "frog",
+                      "e": "🐸",
+                      "c": false
+                    },
+                    {
+                      "w": "wheat",
+                      "e": "🌾",
+                      "c": true
+                    },
+                    {
+                      "w": "whale",
+                      "e": "🐋",
+                      "c": true
+                    },
+                    {
+                      "w": "dog",
+                      "e": "🐶",
+                      "c": false
+                    }
+                  ]
+                },
+                {
+                  "letters": "ph",
+                  "color": "#9b59b6",
+                  "words": [
+                    {
+                      "w": "phantom",
+                      "e": "👻",
+                      "c": true
+                    },
+                    {
+                      "w": "phase",
+                      "e": "🌙",
+                      "c": true
+                    },
+                    {
+                      "w": "wheel",
+                      "e": "⚙️",
+                      "c": false
+                    },
+                    {
+                      "w": "shell",
+                      "e": "🐚",
+                      "c": false
+                    },
+                    {
+                      "w": "phone",
+                      "e": "📱",
+                      "c": true
+                    },
+                    {
+                      "w": "pheasant",
+                      "e": "🦚",
+                      "c": true
+                    },
+                    {
+                      "w": "shoe",
+                      "e": "👟",
+                      "c": false
+                    },
+                    {
+                      "w": "dolphin",
+                      "e": "🐬",
+                      "c": true
+                    },
+                    {
+                      "w": "trophy",
+                      "e": "🏆",
+                      "c": true
+                    },
+                    {
+                      "w": "chair",
+                      "e": "🪑",
+                      "c": false
+                    },
+                    {
+                      "w": "graph",
+                      "e": "📊",
+                      "c": true
+                    },
+                    {
+                      "w": "pharmacy",
+                      "e": "💊",
+                      "c": true
+                    },
+                    {
+                      "w": "hat",
+                      "e": "🎩",
+                      "c": false
+                    },
+                    {
+                      "w": "cat",
+                      "e": "🐱",
+                      "c": false
+                    },
+                    {
+                      "w": "ship",
+                      "e": "🚢",
+                      "c": false
+                    },
+                    {
+                      "w": "photo",
+                      "e": "📷",
+                      "c": true
+                    },
+                    {
+                      "w": "three",
+                      "e": "3️⃣",
+                      "c": false
+                    },
+                    {
+                      "w": "phoenix",
+                      "e": "🦅",
+                      "c": true
+                    }
+                  ]
+                },
+                {
+                  "letters": "ng",
+                  "color": "#1abc9c",
+                  "words": [
+                    {
+                      "w": "phone",
+                      "e": "📱",
+                      "c": false
+                    },
+                    {
+                      "w": "cat",
+                      "e": "🐱",
+                      "c": false
+                    },
+                    {
+                      "w": "strong",
+                      "e": "💪",
+                      "c": true
+                    },
+                    {
+                      "w": "hat",
+                      "e": "🎩",
+                      "c": false
+                    },
+                    {
+                      "w": "king",
+                      "e": "👑",
+                      "c": true
+                    },
+                    {
+                      "w": "three",
+                      "e": "3️⃣",
+                      "c": false
+                    },
+                    {
+                      "w": "ship",
+                      "e": "🚢",
+                      "c": false
+                    },
+                    {
+                      "w": "song",
+                      "e": "🎵",
+                      "c": true
+                    },
+                    {
+                      "w": "sting",
+                      "e": "🐝",
+                      "c": true
+                    },
+                    {
+                      "w": "spring",
+                      "e": "🌸",
+                      "c": true
+                    },
+                    {
+                      "w": "string",
+                      "e": "🪢",
+                      "c": true
+                    },
+                    {
+                      "w": "ring",
+                      "e": "💍",
+                      "c": true
+                    },
+                    {
+                      "w": "long",
+                      "e": "📏",
+                      "c": true
+                    },
+                    {
+                      "w": "swing",
+                      "e": "🛝",
+                      "c": true
+                    },
+                    {
+                      "w": "chair",
+                      "e": "🪑",
+                      "c": false
+                    },
+                    {
+                      "w": "shoe",
+                      "e": "👟",
+                      "c": false
+                    },
+                    {
+                      "w": "wing",
+                      "e": "🦅",
+                      "c": true
+                    },
+                    {
+                      "w": "dog",
+                      "e": "🐶",
+                      "c": false
+                    }
+                  ]
+                },
+                {
+                  "letters": "ck",
+                  "color": "#c0392b",
+                  "words": [
+                    {
+                      "w": "phone",
+                      "e": "📱",
+                      "c": false
+                    },
+                    {
+                      "w": "thick",
+                      "e": "📏",
+                      "c": true
+                    },
+                    {
+                      "w": "duck",
+                      "e": "🦆",
+                      "c": true
+                    },
+                    {
+                      "w": "stick",
+                      "e": "🪵",
+                      "c": true
+                    },
+                    {
+                      "w": "three",
+                      "e": "3️⃣",
+                      "c": false
+                    },
+                    {
+                      "w": "knock",
+                      "e": "🚪",
+                      "c": true
+                    },
+                    {
+                      "w": "star",
+                      "e": "⭐",
+                      "c": false
+                    },
+                    {
+                      "w": "brick",
+                      "e": "🧱",
+                      "c": true
+                    },
+                    {
+                      "w": "track",
+                      "e": "🛤️",
+                      "c": true
+                    },
+                    {
+                      "w": "shoe",
+                      "e": "👟",
+                      "c": false
+                    },
+                    {
+                      "w": "black",
+                      "e": "🖤",
+                      "c": true
+                    },
+                    {
+                      "w": "wing",
+                      "e": "🦅",
+                      "c": false
+                    },
+                    {
+                      "w": "ring",
+                      "e": "💍",
+                      "c": false
+                    },
+                    {
+                      "w": "truck",
+                      "e": "🚛",
+                      "c": true
+                    },
+                    {
+                      "w": "clock",
+                      "e": "🕐",
+                      "c": true
+                    },
+                    {
+                      "w": "flock",
+                      "e": "🐑",
+                      "c": true
+                    },
+                    {
+                      "w": "whale",
+                      "e": "🐋",
+                      "c": false
+                    },
+                    {
+                      "w": "shell",
+                      "e": "🐚",
+                      "c": false
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "game_blends",
+            "id": "blends",
+            "title": "Word Families",
+            "sub": "-it · -at · -un · -ap",
+            "data": {
+              "families": [
+                {
+                  "end": "-it",
+                  "color": "#e74c3c",
+                  "words": [
+                    {
+                      "w": "bit",
+                      "e": "🔧"
+                    },
+                    {
+                      "w": "hit",
+                      "e": "🥊"
+                    },
+                    {
+                      "w": "sit",
+                      "e": "💺"
+                    },
+                    {
+                      "w": "kit",
+                      "e": "🧰"
+                    },
+                    {
+                      "w": "fit",
+                      "e": "💪"
+                    },
+                    {
+                      "w": "pit",
+                      "e": "🕳️"
+                    }
+                  ]
+                },
+                {
+                  "end": "-at",
+                  "color": "#3498db",
+                  "words": [
+                    {
+                      "w": "bat",
+                      "e": "🦇"
+                    },
+                    {
+                      "w": "cat",
+                      "e": "🐱"
+                    },
+                    {
+                      "w": "hat",
+                      "e": "🎩"
+                    },
+                    {
+                      "w": "mat",
+                      "e": "🧹"
+                    },
+                    {
+                      "w": "rat",
+                      "e": "🐭"
+                    },
+                    {
+                      "w": "sat",
+                      "e": "💺"
+                    }
+                  ]
+                },
+                {
+                  "end": "-un",
+                  "color": "#27ae60",
+                  "words": [
+                    {
+                      "w": "bun",
+                      "e": "🍞"
+                    },
+                    {
+                      "w": "fun",
+                      "e": "😄"
+                    },
+                    {
+                      "w": "run",
+                      "e": "🏃"
+                    },
+                    {
+                      "w": "sun",
+                      "e": "☀️"
+                    },
+                    {
+                      "w": "nun",
+                      "e": "🙏"
+                    },
+                    {
+                      "w": "gun",
+                      "e": "🔫"
+                    }
+                  ]
+                },
+                {
+                  "end": "-ap",
+                  "color": "#f39c12",
+                  "words": [
+                    {
+                      "w": "cap",
+                      "e": "🧢"
+                    },
+                    {
+                      "w": "map",
+                      "e": "🗺️"
+                    },
+                    {
+                      "w": "nap",
+                      "e": "😴"
+                    },
+                    {
+                      "w": "tap",
+                      "e": "🚰"
+                    },
+                    {
+                      "w": "lap",
+                      "e": "🦵"
+                    },
+                    {
+                      "w": "gap",
+                      "e": "🕳️"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "game_hfwords",
+            "id": "hfwords",
+            "title": "High Frequency Words",
+            "sub": "Sight words",
+            "data": {
+              "words": [
+                {
+                  "w": "is",
+                  "s": "She is my friend."
+                },
+                {
+                  "w": "see",
+                  "s": "I can see a rainbow!"
+                },
+                {
+                  "w": "in",
+                  "s": "The bird is in the tree."
+                },
+                {
+                  "w": "we",
+                  "s": "We go to school together."
+                },
+                {
+                  "w": "and",
+                  "s": "I have a cat and a dog."
+                },
+                {
+                  "w": "with",
+                  "s": "I like to play with my friends."
+                },
+                {
+                  "w": "some",
+                  "s": "Can I have some cake please?"
+                },
+                {
+                  "w": "little",
+                  "s": "The little puppy is so cute!"
+                },
+                {
+                  "w": "out",
+                  "s": "Let us go out to the garden."
+                },
+                {
+                  "w": "for",
+                  "s": "This gift is for you!"
+                },
+                {
+                  "w": "there",
+                  "s": "There is a cat on the roof!"
+                },
+                {
+                  "w": "can",
+                  "s": "I can jump very high."
+                },
+                {
+                  "w": "all",
+                  "s": "All the children are playing."
+                },
+                {
+                  "w": "was",
+                  "s": "It was a very cold morning."
+                },
+                {
+                  "w": "his",
+                  "s": "His dog is brown and white."
+                },
+                {
+                  "w": "up",
+                  "s": "The bird flew up into the sky."
+                },
+                {
+                  "w": "the",
+                  "s": "The cat sat on the mat."
+                },
+                {
+                  "w": "did",
+                  "s": "Did you finish your homework?"
+                },
+                {
+                  "w": "come",
+                  "s": "Come and play with me!"
+                },
+                {
+                  "w": "will",
+                  "s": "I will help you carry the bag."
+                },
+                {
+                  "w": "day",
+                  "s": "Today is a beautiful day."
+                },
+                {
+                  "w": "not",
+                  "s": "I am not hungry today."
+                },
+                {
+                  "w": "that",
+                  "s": "That is a very tall tree."
+                },
+                {
+                  "w": "big",
+                  "s": "The elephant is very big."
+                },
+                {
+                  "w": "on",
+                  "s": "The book is on the table."
+                },
+                {
+                  "w": "good",
+                  "s": "You did a good job today!"
+                },
+                {
+                  "w": "this",
+                  "s": "This is my favourite book."
+                },
+                {
+                  "w": "go",
+                  "s": "Let us go to the park."
+                },
+                {
+                  "w": "play",
+                  "s": "Let us play in the sand."
+                },
+                {
+                  "w": "a",
+                  "s": "I see a big dog."
+                },
+                {
+                  "w": "look",
+                  "s": "Look at the beautiful butterfly!"
+                },
+                {
+                  "w": "you",
+                  "s": "You are my best friend."
+                },
+                {
+                  "w": "have",
+                  "s": "I have a pet rabbit."
+                },
+                {
+                  "w": "they",
+                  "s": "They are going to the park."
+                },
+                {
+                  "w": "what",
+                  "s": "What is your favourite colour?"
+                },
+                {
+                  "w": "like",
+                  "s": "I like to read books."
+                },
+                {
+                  "w": "girl",
+                  "s": "The girl has a pretty dress."
+                },
+                {
+                  "w": "are",
+                  "s": "We are a happy family."
+                },
+                {
+                  "w": "how",
+                  "s": "How many apples do you see?"
+                },
+                {
+                  "w": "it",
+                  "s": "It is a sunny day."
+                },
+                {
+                  "w": "her",
+                  "s": "Her name is Sarah."
+                },
+                {
+                  "w": "said",
+                  "s": "She said hello to her teacher."
+                },
+                {
+                  "w": "has",
+                  "s": "She has a beautiful smile."
+                },
+                {
+                  "w": "he",
+                  "s": "He is a good boy."
+                },
+                {
+                  "w": "here",
+                  "s": "Come and sit here with me."
+                },
+                {
+                  "w": "do",
+                  "s": "Do you want to play?"
+                },
+                {
+                  "w": "boy",
+                  "s": "The boy is running fast."
+                },
+                {
+                  "w": "want",
+                  "s": "I want some ice cream please."
+                },
+                {
+                  "w": "she",
+                  "s": "She likes to sing."
+                },
+                {
+                  "w": "my",
+                  "s": "This is my favourite toy."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "calendar_k1",
+        "name": "Days, Months & Time",
+        "icon": "📅",
+        "items": [
+          {
+            "type": "game_days_spell",
+            "id": "days_spell",
+            "title": "Days of the Week",
+            "sub": "Spell each day!",
+            "data": {
+              "items": [
+                {
+                  "word": "Monday",
+                  "emoji": "😴",
+                  "fact": "Monday is the 1st day of the school week. It comes after Sunday."
+                },
+                {
+                  "word": "Tuesday",
+                  "emoji": "📚",
+                  "fact": "Tuesday is the 2nd school day. It comes after Monday."
+                },
+                {
+                  "word": "Wednesday",
+                  "emoji": "💼",
+                  "fact": "Wednesday is the middle of the school week! It comes after Tuesday."
+                },
+                {
+                  "word": "Thursday",
+                  "emoji": "📅",
+                  "fact": "Thursday is almost the weekend! It comes after Wednesday."
+                },
+                {
+                  "word": "Friday",
+                  "emoji": "🎉",
+                  "fact": "Friday is the last school day! TGIF — Thank Goodness It's Friday!"
+                },
+                {
+                  "word": "Saturday",
+                  "emoji": "🎨",
+                  "fact": "Saturday is the first weekend day. No school today!"
+                },
+                {
+                  "word": "Sunday",
+                  "emoji": "⛪",
+                  "fact": "Sunday is the last day of the week. Get ready for Monday!"
+                }
+              ]
+            }
+          },
+          {
+            "type": "game_days_seq",
+            "id": "days_seq",
+            "title": "Day Sequences",
+            "sub": "What day comes next?",
+            "data": {
+              "rounds": [
+                {
+                  "question": "Monday",
+                  "questionEmoji": "😴",
+                  "answer": "Tuesday",
+                  "choices": [
+                    "Tuesday",
+                    "Friday",
+                    "Sunday",
+                    "Wednesday"
+                  ]
+                },
+                {
+                  "question": "Tuesday",
+                  "questionEmoji": "📚",
+                  "answer": "Wednesday",
+                  "choices": [
+                    "Monday",
+                    "Friday",
+                    "Wednesday",
+                    "Sunday"
+                  ]
+                },
+                {
+                  "question": "Wednesday",
+                  "questionEmoji": "💼",
+                  "answer": "Thursday",
+                  "choices": [
+                    "Tuesday",
+                    "Sunday",
+                    "Friday",
+                    "Thursday"
+                  ]
+                },
+                {
+                  "question": "Thursday",
+                  "questionEmoji": "📅",
+                  "answer": "Friday",
+                  "choices": [
+                    "Tuesday",
+                    "Friday",
+                    "Wednesday",
+                    "Saturday"
+                  ]
+                },
+                {
+                  "question": "Friday",
+                  "questionEmoji": "🎉",
+                  "answer": "Saturday",
+                  "choices": [
+                    "Sunday",
+                    "Monday",
+                    "Saturday",
+                    "Wednesday"
+                  ]
+                },
+                {
+                  "question": "Saturday",
+                  "questionEmoji": "🎨",
+                  "answer": "Sunday",
+                  "choices": [
+                    "Wednesday",
+                    "Tuesday",
+                    "Thursday",
+                    "Sunday"
+                  ]
+                },
+                {
+                  "question": "Sunday",
+                  "questionEmoji": "⛪",
+                  "answer": "Monday",
+                  "choices": [
+                    "Saturday",
+                    "Tuesday",
+                    "Monday",
+                    "Wednesday"
+                  ]
+                }
+              ],
+              "emojis": [
+                "😴",
+                "📚",
+                "💼",
+                "📅",
+                "🎉",
+                "🎨",
+                "⛪"
+              ]
+            }
+          },
+          {
+            "type": "game_months_spell",
+            "id": "months_spell",
+            "title": "Months of the Year",
+            "sub": "Spell each month!",
+            "data": {
+              "items": [
+                {
+                  "word": "January",
+                  "emoji": "🎆",
+                  "fact": "January is the 1st month. New Year's Day is on 1st January!"
+                },
+                {
+                  "word": "February",
+                  "emoji": "❤️",
+                  "fact": "February is the 2nd month. Valentine's Day is in February!"
+                },
+                {
+                  "word": "March",
+                  "emoji": "🌸",
+                  "fact": "March is the 3rd month. Spring begins in March!"
+                },
+                {
+                  "word": "April",
+                  "emoji": "🌷",
+                  "fact": "April is the 4th month. April Fool's Day is on 1st April!"
+                },
+                {
+                  "word": "May",
+                  "emoji": "🌼",
+                  "fact": "May is the 5th month. Mother's Day is in May!"
+                },
+                {
+                  "word": "June",
+                  "emoji": "☀️",
+                  "fact": "June is the 6th month. School holidays often start in June!"
+                },
+                {
+                  "word": "July",
+                  "emoji": "🏖️",
+                  "fact": "July is the 7th month. Singapore National Day is coming soon!"
+                },
+                {
+                  "word": "August",
+                  "emoji": "🏫",
+                  "fact": "August is the 8th month. Singapore National Day is on 9th August!"
+                },
+                {
+                  "word": "September",
+                  "emoji": "🍂",
+                  "fact": "September is the 9th month. Back to school after holidays!"
+                },
+                {
+                  "word": "October",
+                  "emoji": "🎃",
+                  "fact": "October is the 10th month. Halloween is on 31st October!"
+                },
+                {
+                  "word": "November",
+                  "emoji": "🍁",
+                  "fact": "November is the 11th month. Deepavali is often in November!"
+                },
+                {
+                  "word": "December",
+                  "emoji": "🎄",
+                  "fact": "December is the 12th month. Christmas is on 25th December!"
+                }
+              ]
+            }
+          },
+          {
+            "type": "game_months_seq",
+            "id": "months_seq",
+            "title": "Month Sequences",
+            "sub": "What month comes next?",
+            "data": {
+              "rounds": [
+                {
+                  "question": "January",
+                  "questionEmoji": "🎆",
+                  "answer": "February",
+                  "choices": [
+                    "July",
+                    "April",
+                    "February",
+                    "May"
+                  ]
+                },
+                {
+                  "question": "February",
+                  "questionEmoji": "❤️",
+                  "answer": "March",
+                  "choices": [
+                    "June",
+                    "October",
+                    "September",
+                    "March"
+                  ]
+                },
+                {
+                  "question": "March",
+                  "questionEmoji": "🌸",
+                  "answer": "April",
+                  "choices": [
+                    "September",
+                    "June",
+                    "November",
+                    "April"
+                  ]
+                },
+                {
+                  "question": "April",
+                  "questionEmoji": "🌷",
+                  "answer": "May",
+                  "choices": [
+                    "May",
+                    "September",
+                    "November",
+                    "March"
+                  ]
+                },
+                {
+                  "question": "May",
+                  "questionEmoji": "🌼",
+                  "answer": "June",
+                  "choices": [
+                    "June",
+                    "August",
+                    "September",
+                    "October"
+                  ]
+                },
+                {
+                  "question": "June",
+                  "questionEmoji": "☀️",
+                  "answer": "July",
+                  "choices": [
+                    "October",
+                    "March",
+                    "July",
+                    "September"
+                  ]
+                },
+                {
+                  "question": "July",
+                  "questionEmoji": "🏖️",
+                  "answer": "August",
+                  "choices": [
+                    "September",
+                    "August",
+                    "June",
+                    "April"
+                  ]
+                },
+                {
+                  "question": "August",
+                  "questionEmoji": "🏫",
+                  "answer": "September",
+                  "choices": [
+                    "July",
+                    "September",
+                    "March",
+                    "April"
+                  ]
+                },
+                {
+                  "question": "September",
+                  "questionEmoji": "🍂",
+                  "answer": "October",
+                  "choices": [
+                    "March",
+                    "January",
+                    "December",
+                    "October"
+                  ]
+                },
+                {
+                  "question": "October",
+                  "questionEmoji": "🎃",
+                  "answer": "November",
+                  "choices": [
+                    "January",
+                    "November",
+                    "September",
+                    "December"
+                  ]
+                },
+                {
+                  "question": "November",
+                  "questionEmoji": "🍁",
+                  "answer": "December",
+                  "choices": [
+                    "January",
+                    "December",
+                    "April",
+                    "September"
+                  ]
+                },
+                {
+                  "question": "December",
+                  "questionEmoji": "🎄",
+                  "answer": "January",
+                  "choices": [
+                    "September",
+                    "June",
+                    "November",
+                    "January"
+                  ]
+                }
+              ],
+              "emojis": [
+                "🎆",
+                "❤️",
+                "🌸",
+                "🌷",
+                "🌼",
+                "☀️",
+                "🏖️",
+                "🏫",
+                "🍂",
+                "🎃",
+                "🍁",
+                "🎄"
+              ]
+            }
+          },
+          {
+            "type": "game_clock",
+            "id": "clock",
+            "title": "Reading the Clock",
+            "sub": "o'clock · half past · quarter past · quarter to",
+            "data": {
+              "clocks": [
+                {
+                  "h": 1,
+                  "m": 0,
+                  "label": "1:00",
+                  "display": "one o'clock"
+                },
+                {
+                  "h": 2,
+                  "m": 0,
+                  "label": "2:00",
+                  "display": "two o'clock"
+                },
+                {
+                  "h": 3,
+                  "m": 0,
+                  "label": "3:00",
+                  "display": "three o'clock"
+                },
+                {
+                  "h": 4,
+                  "m": 0,
+                  "label": "4:00",
+                  "display": "four o'clock"
+                },
+                {
+                  "h": 5,
+                  "m": 0,
+                  "label": "5:00",
+                  "display": "five o'clock"
+                },
+                {
+                  "h": 6,
+                  "m": 0,
+                  "label": "6:00",
+                  "display": "six o'clock"
+                },
+                {
+                  "h": 7,
+                  "m": 0,
+                  "label": "7:00",
+                  "display": "seven o'clock"
+                },
+                {
+                  "h": 8,
+                  "m": 0,
+                  "label": "8:00",
+                  "display": "eight o'clock"
+                },
+                {
+                  "h": 9,
+                  "m": 0,
+                  "label": "9:00",
+                  "display": "nine o'clock"
+                },
+                {
+                  "h": 10,
+                  "m": 0,
+                  "label": "10:00",
+                  "display": "ten o'clock"
+                },
+                {
+                  "h": 11,
+                  "m": 0,
+                  "label": "11:00",
+                  "display": "eleven o'clock"
+                },
+                {
+                  "h": 12,
+                  "m": 0,
+                  "label": "12:00",
+                  "display": "twelve o'clock"
+                },
+                {
+                  "h": 1,
+                  "m": 30,
+                  "label": "1:30",
+                  "display": "half past one"
+                },
+                {
+                  "h": 2,
+                  "m": 30,
+                  "label": "2:30",
+                  "display": "half past two"
+                },
+                {
+                  "h": 3,
+                  "m": 30,
+                  "label": "3:30",
+                  "display": "half past three"
+                },
+                {
+                  "h": 4,
+                  "m": 30,
+                  "label": "4:30",
+                  "display": "half past four"
+                },
+                {
+                  "h": 5,
+                  "m": 30,
+                  "label": "5:30",
+                  "display": "half past five"
+                },
+                {
+                  "h": 6,
+                  "m": 30,
+                  "label": "6:30",
+                  "display": "half past six"
+                },
+                {
+                  "h": 7,
+                  "m": 30,
+                  "label": "7:30",
+                  "display": "half past seven"
+                },
+                {
+                  "h": 8,
+                  "m": 30,
+                  "label": "8:30",
+                  "display": "half past eight"
+                },
+                {
+                  "h": 9,
+                  "m": 30,
+                  "label": "9:30",
+                  "display": "half past nine"
+                },
+                {
+                  "h": 10,
+                  "m": 30,
+                  "label": "10:30",
+                  "display": "half past ten"
+                },
+                {
+                  "h": 11,
+                  "m": 30,
+                  "label": "11:30",
+                  "display": "half past eleven"
+                },
+                {
+                  "h": 12,
+                  "m": 30,
+                  "label": "12:30",
+                  "display": "half past twelve"
+                },
+                {
+                  "h": 1,
+                  "m": 15,
+                  "label": "1:15",
+                  "display": "quarter past one"
+                },
+                {
+                  "h": 2,
+                  "m": 15,
+                  "label": "2:15",
+                  "display": "quarter past two"
+                },
+                {
+                  "h": 3,
+                  "m": 15,
+                  "label": "3:15",
+                  "display": "quarter past three"
+                },
+                {
+                  "h": 4,
+                  "m": 15,
+                  "label": "4:15",
+                  "display": "quarter past four"
+                },
+                {
+                  "h": 5,
+                  "m": 15,
+                  "label": "5:15",
+                  "display": "quarter past five"
+                },
+                {
+                  "h": 6,
+                  "m": 15,
+                  "label": "6:15",
+                  "display": "quarter past six"
+                },
+                {
+                  "h": 7,
+                  "m": 15,
+                  "label": "7:15",
+                  "display": "quarter past seven"
+                },
+                {
+                  "h": 8,
+                  "m": 15,
+                  "label": "8:15",
+                  "display": "quarter past eight"
+                },
+                {
+                  "h": 9,
+                  "m": 15,
+                  "label": "9:15",
+                  "display": "quarter past nine"
+                },
+                {
+                  "h": 10,
+                  "m": 15,
+                  "label": "10:15",
+                  "display": "quarter past ten"
+                },
+                {
+                  "h": 11,
+                  "m": 15,
+                  "label": "11:15",
+                  "display": "quarter past eleven"
+                },
+                {
+                  "h": 12,
+                  "m": 15,
+                  "label": "12:15",
+                  "display": "quarter past twelve"
+                },
+                {
+                  "h": 1,
+                  "m": 45,
+                  "label": "1:45",
+                  "display": "quarter to two"
+                },
+                {
+                  "h": 2,
+                  "m": 45,
+                  "label": "2:45",
+                  "display": "quarter to three"
+                },
+                {
+                  "h": 3,
+                  "m": 45,
+                  "label": "3:45",
+                  "display": "quarter to four"
+                },
+                {
+                  "h": 4,
+                  "m": 45,
+                  "label": "4:45",
+                  "display": "quarter to five"
+                },
+                {
+                  "h": 5,
+                  "m": 45,
+                  "label": "5:45",
+                  "display": "quarter to six"
+                },
+                {
+                  "h": 6,
+                  "m": 45,
+                  "label": "6:45",
+                  "display": "quarter to seven"
+                },
+                {
+                  "h": 7,
+                  "m": 45,
+                  "label": "7:45",
+                  "display": "quarter to eight"
+                },
+                {
+                  "h": 8,
+                  "m": 45,
+                  "label": "8:45",
+                  "display": "quarter to nine"
+                },
+                {
+                  "h": 9,
+                  "m": 45,
+                  "label": "9:45",
+                  "display": "quarter to ten"
+                },
+                {
+                  "h": 10,
+                  "m": 45,
+                  "label": "10:45",
+                  "display": "quarter to eleven"
+                },
+                {
+                  "h": 11,
+                  "m": 45,
+                  "label": "11:45",
+                  "display": "quarter to twelve"
+                },
+                {
+                  "h": 12,
+                  "m": 45,
+                  "label": "12:45",
+                  "display": "quarter to one"
+                },
+                {
+                  "h": 1,
+                  "m": 5,
+                  "label": "1:05",
+                  "display": "five past one"
+                },
+                {
+                  "h": 2,
+                  "m": 10,
+                  "label": "2:10",
+                  "display": "ten past two"
+                },
+                {
+                  "h": 3,
+                  "m": 20,
+                  "label": "3:20",
+                  "display": "twenty past three"
+                },
+                {
+                  "h": 4,
+                  "m": 25,
+                  "label": "4:25",
+                  "display": "twenty-five past four"
+                },
+                {
+                  "h": 5,
+                  "m": 35,
+                  "label": "5:35",
+                  "display": "twenty-five to six"
+                },
+                {
+                  "h": 6,
+                  "m": 40,
+                  "label": "6:40",
+                  "display": "twenty to seven"
+                },
+                {
+                  "h": 7,
+                  "m": 50,
+                  "label": "7:50",
+                  "display": "ten to eight"
+                },
+                {
+                  "h": 8,
+                  "m": 55,
+                  "label": "8:55",
+                  "display": "five to nine"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "songs_k1",
+        "name": "Songs",
+        "icon": "🎵",
+        "items": [
+          {
+            "type": "song",
+            "id": "twinkle",
+            "title": "Twinkle Twinkle",
+            "sub": "Classic nursery rhyme",
+            "data": {
+              "lyrics": "Twinkle, twinkle, little star\nHow I wonder what you are!\nUp above the world so high\nLike a diamond in the sky\nTwinkle, twinkle, little star\nHow I wonder what you are!"
+            }
+          },
+          {
+            "type": "song",
+            "id": "wheels_bus",
+            "title": "Wheels on the Bus",
+            "sub": "Action song",
+            "data": {
+              "lyrics": "The wheels on the bus go round and round\nRound and round, round and round\nThe wheels on the bus go round and round\nAll through the town!\n\nThe wipers on the bus go swish swish swish\nAll through the town!\n\nThe horn on the bus goes beep beep beep\nAll through the town!"
+            }
+          },
+          {
+            "type": "song",
+            "id": "baa_baa",
+            "title": "Baa Baa Black Sheep",
+            "sub": "Classic nursery rhyme",
+            "data": {
+              "lyrics": "Baa, baa, black sheep\nHave you any wool?\nYes sir, yes sir\nThree bags full!\n\nOne for the master\nOne for the dame\nAnd one for the little boy\nWho lives down the lane"
+            }
+          }
+        ]
+      },
+      {
+        "id": "numeracy_k1",
+        "name": "Numeracy",
+        "icon": "🔢",
+        "items": [
+          {
+            "type": "game_counting",
+            "id": "count20",
+            "title": "Count to 20",
+            "sub": "How many?",
+            "data": {
+              "max": 20,
+              "emoji": "⭐"
+            }
+          },
+          {
+            "type": "game_counting",
+            "id": "count_food",
+            "title": "Count the Food",
+            "sub": "Yummy counting!",
+            "data": {
+              "max": 15,
+              "emoji": "🍎"
+            }
+          },
+          {
+            "type": "game_counting",
+            "id": "count_animals",
+            "title": "Count the Animals",
+            "sub": "How many animals?",
+            "data": {
+              "max": 12,
+              "emoji": "🐾"
+            }
+          },
+          {
+            "type": "game_counting",
+            "id": "count_by2",
+            "title": "Count by 2s",
+            "sub": "2, 4, 6, 8...",
+            "data": {
+              "max": 10,
+              "step": 2,
+              "emoji": "🦋"
+            }
+          },
+          {
+            "type": "game_patterns",
+            "id": "patterns_ab",
+            "title": "AB Patterns",
+            "sub": "What comes next?",
+            "data": {
+              "patterns": [
+                {
+                  "seq": [
+                    "🔴",
+                    "🔵",
+                    "🔴",
+                    "🔵",
+                    "🔴"
+                  ],
+                  "ans": "🔵",
+                  "choices": [
+                    "🔵",
+                    "🔴",
+                    "⭐",
+                    "❤️"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🌸",
+                    "🌻",
+                    "🌸",
+                    "🌻",
+                    "🌸"
+                  ],
+                  "ans": "🌻",
+                  "choices": [
+                    "🌸",
+                    "🌹",
+                    "🌻",
+                    "🌺"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🍎",
+                    "🍊",
+                    "🍎",
+                    "🍊",
+                    "🍎"
+                  ],
+                  "ans": "🍊",
+                  "choices": [
+                    "🍎",
+                    "🍊",
+                    "🍋",
+                    "🍇"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🌙",
+                    "⭐",
+                    "🌙",
+                    "⭐",
+                    "🌙"
+                  ],
+                  "ans": "⭐",
+                  "choices": [
+                    "🌙",
+                    "⭐",
+                    "☀️",
+                    "🌟"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🦁",
+                    "🐘",
+                    "🦁",
+                    "🐘",
+                    "🦁"
+                  ],
+                  "ans": "🐘",
+                  "choices": [
+                    "🦁",
+                    "🐘",
+                    "🐯",
+                    "🦒"
+                  ]
+                },
+                {
+                  "seq": [
+                    "⭐",
+                    "❤️",
+                    "⭐",
+                    "❤️",
+                    "⭐"
+                  ],
+                  "ans": "❤️",
+                  "choices": [
+                    "⭐",
+                    "💛",
+                    "❤️",
+                    "💚"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🍕",
+                    "🍔",
+                    "🍕",
+                    "🍔",
+                    "🍕"
+                  ],
+                  "ans": "🍔",
+                  "choices": [
+                    "🍕",
+                    "🍔",
+                    "🍣",
+                    "🌮"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🔺",
+                    "🔷",
+                    "🔺",
+                    "🔷",
+                    "🔺"
+                  ],
+                  "ans": "🔷",
+                  "choices": [
+                    "🔺",
+                    "🔷",
+                    "🔶",
+                    "🔹"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "game_patterns",
+            "id": "patterns_abc",
+            "title": "ABC Patterns",
+            "sub": "Three-part patterns!",
+            "data": {
+              "patterns": [
+                {
+                  "seq": [
+                    "🍎",
+                    "🍊",
+                    "🍋",
+                    "🍇",
+                    "🍎"
+                  ],
+                  "ans": "🍊",
+                  "choices": [
+                    "🍊",
+                    "🍋",
+                    "🍇",
+                    "🍓"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🍕",
+                    "🍔",
+                    "🌮",
+                    "🍕",
+                    "🍔"
+                  ],
+                  "ans": "🌮",
+                  "choices": [
+                    "🍕",
+                    "🍔",
+                    "🌮",
+                    "🍣"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🐱",
+                    "🐶",
+                    "🐸",
+                    "🐱",
+                    "🐶"
+                  ],
+                  "ans": "🐸",
+                  "choices": [
+                    "🐱",
+                    "🐶",
+                    "🐸",
+                    "🐰"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🦁",
+                    "🐯",
+                    "🐘",
+                    "🦁",
+                    "🐯"
+                  ],
+                  "ans": "🐘",
+                  "choices": [
+                    "🦁",
+                    "🐯",
+                    "🐘",
+                    "🦒"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🍎",
+                    "🍊",
+                    "🍋",
+                    "🍎",
+                    "🍊"
+                  ],
+                  "ans": "🍋",
+                  "choices": [
+                    "🍎",
+                    "🍊",
+                    "🍋",
+                    "🍇"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🚗",
+                    "✈️",
+                    "🚢",
+                    "🚗",
+                    "✈️"
+                  ],
+                  "ans": "🚢",
+                  "choices": [
+                    "🚗",
+                    "✈️",
+                    "🚢",
+                    "🚂"
+                  ]
+                },
+                {
+                  "seq": [
+                    "🔴",
+                    "🔵",
+                    "🟢",
+                    "🔴",
+                    "🔵"
+                  ],
+                  "ans": "🟢",
+                  "choices": [
+                    "🟢",
+                    "🔴",
+                    "🔵",
+                    "🟡"
+                  ]
+                },
+                {
+                  "seq": [
+                    "⭐",
+                    "❤️",
+                    "💛",
+                    "⭐",
+                    "❤️"
+                  ],
+                  "ans": "💛",
+                  "choices": [
+                    "⭐",
+                    "❤️",
+                    "💛",
+                    "💚"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "concept",
+            "id": "compare",
+            "title": "Compare Objects",
+            "sub": "Length · Height · Mass",
+            "data": {
+              "concepts": [
+                {
+                  "name": "Length",
+                  "emoji": "📏",
+                  "desc": "Compare two objects — which is longer or shorter?"
+                },
+                {
+                  "name": "Height",
+                  "emoji": "📐",
+                  "desc": "Which is taller or shorter?"
+                },
+                {
+                  "name": "Mass",
+                  "emoji": "⚖️",
+                  "desc": "Which is heavier or lighter?"
+                },
+                {
+                  "name": "Capacity",
+                  "emoji": "🥤",
+                  "desc": "Which holds more or less water?"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "discovery_k1",
+        "name": "Discovery",
+        "icon": "🔬",
+        "items": [
+          {
+            "type": "concept",
+            "id": "science1",
+            "title": "Science Experiments",
+            "sub": "Discover the world!",
+            "data": {
+              "concepts": [
+                {
+                  "name": "Paper Planes",
+                  "emoji": "✈️",
+                  "desc": "Does the material affect how far a paper plane flies?"
+                },
+                {
+                  "name": "Water Containers",
+                  "emoji": "💧",
+                  "desc": "Which container can hold the most water?"
+                },
+                {
+                  "name": "Waterproof Materials",
+                  "emoji": "☂️",
+                  "desc": "Which materials keep us dry in the rain?"
+                },
+                {
+                  "name": "Ramp and Marble",
+                  "emoji": "🎱",
+                  "desc": "Does the texture of a ramp change how a marble rolls?"
+                },
+                {
+                  "name": "Dissolving",
+                  "emoji": "🧪",
+                  "desc": "Which substances dissolve in water?"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "motor_k1",
+        "name": "Gross Motor",
+        "icon": "🏃",
+        "items": [
+          {
+            "type": "concept",
+            "id": "gross1",
+            "title": "Body Movement Skills",
+            "sub": "Let us move!",
+            "data": {
+              "concepts": [
+                {
+                  "name": "Run and Dodge",
+                  "emoji": "🏃",
+                  "desc": "Run and avoid cones by changing direction quickly."
+                },
+                {
+                  "name": "Jump and Land",
+                  "emoji": "🦘",
+                  "desc": "Jump over a low platform and land on both feet."
+                },
+                {
+                  "name": "Hop",
+                  "emoji": "🐸",
+                  "desc": "Hop forward on one foot."
+                },
+                {
+                  "name": "Roll and Catch",
+                  "emoji": "⚾",
+                  "desc": "Underarm roll and receive a ball."
+                },
+                {
+                  "name": "Throw",
+                  "emoji": "🤸",
+                  "desc": "Practise underarm and overarm throwing."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "cn": [
+      {
+        "id": "stories_cn_k1",
+        "name": "故事",
+        "icon": "📖",
+        "items": [
+          {
+            "type": "story",
+            "id": "zongzi",
+            "title": "甜粽子还是咸粽子",
+            "sub": "端午节故事",
+            "data": {
+              "summary": "端午节到了，全家人一起包粽子。爷爷喜欢吃咸粽子，奶奶喜欢吃甜粽子。他们各自说自己的好吃，争论不休。最后，妈妈把两种都做了，全家人一起分享，大家都很开心。",
+              "moral": "每个人的喜好不同，要互相尊重和包容。",
+              "emoji": "🎋"
+            }
+          },
+          {
+            "type": "story",
+            "id": "xiaoyue",
+            "title": "小月的新家",
+            "sub": "搬家的故事",
+            "data": {
+              "summary": "小月的家搬到了新的组屋。她很担心找不到新朋友，非常不高兴。但是搬进去第一天，邻居的小朋友就来敲门，邀请她一起玩。很快，小月就爱上了新家。",
+              "moral": "勇敢面对新环境，友好待人，一定能交到好朋友。",
+              "emoji": "🏠"
+            }
+          },
+          {
+            "type": "story",
+            "id": "meili_linju",
+            "title": "美丽的邻里",
+            "sub": "社区故事",
+            "data": {
+              "summary": "我们住的组屋里有很多邻居。华族邻居阿姨会做好吃的月饼，马来族邻居叔叔会做香甜的年糕，印族邻居奶奶会跳漂亮的舞蹈。大家互相分享，是美丽和谐的大家庭。",
+              "moral": "不同种族的人可以和睦相处，互相尊重和分享。",
+              "emoji": "🏘️"
+            }
+          },
+          {
+            "type": "story",
+            "id": "dabashe",
+            "title": "搭巴士",
+            "sub": "交通故事",
+            "data": {
+              "summary": "小红第一次自己搭巴士。她学会了看巴士号码，刷卡付钱，还帮助了一位老奶奶找到座位。司机叔叔夸她是个懂礼貌的好孩子。",
+              "moral": "学会独立，乘坐公共交通要有礼貌。",
+              "emoji": "🚌"
+            }
+          }
+        ]
+      },
+      {
+        "id": "songs_cn_k1",
+        "name": "儿歌",
+        "icon": "🎶",
+        "items": [
+          {
+            "type": "song",
+            "id": "zuhaqu_k1",
+            "title": "组屋区",
+            "sub": "我们的家园",
+            "data": {
+              "lyrics": "住在组屋区\n大家都是好邻居\n华族马来族印族\n我们是一家人\n\n早上互相问早安\n出门互相打招呼\n大家和睦相处\n美丽的组屋区"
+            }
+          },
+          {
+            "type": "song",
+            "id": "hao_pengyou_k1",
+            "title": "好朋友",
+            "sub": "友谊之歌",
+            "data": {
+              "lyrics": "好朋友 好朋友\n大家来握手\n你是我的好朋友\n我们一起玩\n\n分享玩具 分享快乐\n互相帮助 互相关心\n好朋友 好朋友\n永远在一起"
+            }
+          },
+          {
+            "type": "song",
+            "id": "meili_shehui",
+            "title": "美丽的社区",
+            "sub": "我们的社区",
+            "data": {
+              "lyrics": "我们的社区真美丽\n有公园有学校\n有商店有图书馆\n大家在这里生活\n\n邻居们互相关心\n一起保护环境\n美丽的社区\n是我们共同的家"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
