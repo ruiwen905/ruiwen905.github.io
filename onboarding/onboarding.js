@@ -8,7 +8,7 @@ window.Onboarding = (() => {
   let obStep = 0;
   let obKids = [];
 
-  function newKid(i) { return { name: '', age: 3, gender: 'boy', key: 'kid' + i }; }
+  function newKid(i) { return { name: '', age: 5, gender: 'boy', key: 'kid' + i }; }
 
   function saveFormValues() {
     document.querySelectorAll('.ob-kid-row').forEach((row, i) => {
@@ -35,7 +35,7 @@ window.Onboarding = (() => {
         <div class="ob-field">
           <label>Age</label>
           <select class="ob-age">
-            ${[1,2,3,4,5,6,7,8].map(a => `<option value="${a}" ${k.age===a?'selected':''}>${a} years old</option>`).join('')}
+            ${[3,5].map(a => `<option value="${a}" ${k.age===a?'selected':''}>${a} years old</option>`).join('')}
           </select>
         </div>
         <div class="ob-field">
