@@ -145,7 +145,7 @@ window.Onboarding = (() => {
     State.initTasks();
     await State.save();
     document.getElementById('onboarding').classList.add('hidden');
-    Boot.startApp();
+    Boot.startApp(true);
   }
 
   return { show, next, back, addKid, removeKid, finish };

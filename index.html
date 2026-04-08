@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="tabs/skills/skills.css">
 <link rel="stylesheet" href="tabs/play/play.css">
 <link rel="stylesheet" href="tabs/community/community.css">
+<link rel="stylesheet" href="tabs/vocab/vocab.css">
 </head>
 <body>
 
@@ -147,6 +148,7 @@
     <button class="mob-tab"        id="mob-play"     onclick="Boot.switchView('play')"><span class="mi">🎮</span>Play</button>
     <button class="mob-tab"        id="mob-skills"   onclick="Boot.switchView('skills')"><span class="mi">⭐</span>Skills</button>
     <button class="mob-tab"        id="mob-community" onclick="Boot.switchView('community')"><span class="mi">🌍</span>Community</button>
+    <button class="mob-tab"        id="mob-vocab"      onclick="Boot.switchView('vocab')"><span class="mi">📚</span>Vocab</button>
   </div>
 
   <nav class="left-nav">
@@ -155,6 +157,7 @@
     <button class="nav-item"        id="nav-play"     onclick="Boot.switchView('play')"><span class="ni">🎮</span>Play</button>
     <button class="nav-item"        id="nav-skills"   onclick="Boot.switchView('skills')"><span class="ni">⭐</span>Skills</button>
     <button class="nav-item"        id="nav-community" onclick="Boot.switchView('community')"><span class="ni">🌍</span>Community</button>
+    <button class="nav-item"        id="nav-vocab"      onclick="Boot.switchView('vocab')"><span class="ni">📚</span>Vocab Book</button>
     <div class="nav-spacer"></div>
   </nav>
 
@@ -210,6 +213,18 @@
       <div class="skills-board" id="skills-board"></div>
     </div>
 
+    <div class="view" id="view-vocab">
+      <div class="vocab-wrap">
+        <div class="vocab-header">
+          <div>
+            <h2>📚 Vocab &amp; Phonics Book</h2>
+            <p>Track every word your child learns across all games</p>
+          </div>
+        </div>
+        <div id="vocab-content"></div>
+      </div>
+    </div>
+
     <div class="view" id="view-community">
       <div class="community-wrap">
         <div class="community-header">
@@ -258,6 +273,8 @@
 <script src="tabs/play/games/maze/maze.js"></script>
 <script src="tabs/play/games/puzzle/puzzle.js"></script>
 <script src="tabs/play/games/snake/snake.js"></script>
+<script src="js/vocab.js"></script>
+<script src="tabs/vocab/vocab.js"></script>
 <script src="tabs/community/community.js"></script>
 <script src="tabs/play/games/tracing/tracing.js"></script>
 <script src="tabs/play/games/matching/matching.js"></script>
@@ -267,5 +284,104 @@
 
 <!-- ── Boot ── -->
 <script>Boot.boot();</script>
+
+<script>
+/* ── PHONE ACCORDION — one kid open at a time on ≤500px ── */
+(function () {
+  const PHONE_BP = 500;
+  const PANEL_SELECTORS = [
+    { board: '#routines-board',  panels: '.member-panel',    header: '.panel-header'      },
+    { board: '#play-board',      panels: '.kid-play-col',    header: '.kid-play-header'   },
+    { board: '#skills-board',    panels: '.kid-skills-col',  header: '.kid-skills-header' },
+  ];
+
+  function isPhone() { return window.innerWidth <= PHONE_BP; }
+
+  function wireBoard(cfg) {
+    const board = document.querySelector(cfg.board);
+    if (!board) return;
+
+    board.querySelectorAll(cfg.panels).forEach((panel, i) => {
+      const hdr = panel.querySelector(cfg.header);
+      if (!hdr) return;
+
+      // Remove any previous listener clone trick
+      const fresh = hdr.cloneNode(true);
+      hdr.parentNode.replaceChild(fresh, hdr);
+
+      fresh.addEventListener('click', (e) => {
+        if (!isPhone()) return;               // desktop — do nothing extra
+        e.stopPropagation();
+
+        const isOpen = panel.classList.contains('panel-open');
+
+        // Close all in this board
+        board.querySelectorAll(cfg.panels).forEach(p => p.classList.remove('panel-open'));
+
+        // Toggle clicked one
+        if (!isOpen) {
+          panel.classList.add('panel-open');
+          // Scroll panel into view smoothly
+          setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+        }
+      });
+    });
+  }
+
+  function wireAll() {
+    PANEL_SELECTORS.forEach(cfg => wireBoard(cfg));
+  }
+
+  // Open first kid by default on phone
+  function openFirst() {
+    if (!isPhone()) return;
+    PANEL_SELECTORS.forEach(cfg => {
+      const board = document.querySelector(cfg.board);
+      if (!board) return;
+      const first = board.querySelector(cfg.panels);
+      if (first) first.classList.add('panel-open');
+    });
+  }
+
+  // Re-wire after any board rebuild (Boot renders boards dynamically)
+  const _origBuildBoard = null;
+  let _wireTimer = null;
+  function scheduleWire() {
+    clearTimeout(_wireTimer);
+    _wireTimer = setTimeout(() => { wireAll(); openFirst(); }, 120);
+  }
+
+  // MutationObserver — watches all board containers and re-wires when children change
+  function observe() {
+    const targets = ['#routines-board','#play-board','#skills-board']
+      .map(s => document.querySelector(s)).filter(Boolean);
+    const obs = new MutationObserver(scheduleWire);
+    targets.forEach(t => obs.observe(t, { childList: true, subtree: false }));
+  }
+
+  // Also re-wire on resize (crossing the breakpoint)
+  let _lastPhone = isPhone();
+  window.addEventListener('resize', () => {
+    const now = isPhone();
+    if (now !== _lastPhone) {
+      _lastPhone = now;
+      if (!now) {
+        // Desktop — remove all panel-open classes so CSS hides nothing
+        document.querySelectorAll('.panel-open').forEach(p => p.classList.remove('panel-open'));
+      } else {
+        wireAll(); openFirst();
+      }
+    }
+  });
+
+  // Boot
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => { observe(); scheduleWire(); });
+  } else {
+    observe(); scheduleWire();
+  }
+})();
+</script>
+
 </body>
 </html>

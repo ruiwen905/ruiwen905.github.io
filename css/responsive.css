@@ -18,3 +18,124 @@
   .market-grid { grid-template-columns: 1fr 1fr; }
   #view-market .market-wrap { grid-template-columns: 1fr; }
 }
+
+/* ─────────────────────────────────────────────────────────────
+   PHONE ACCORDION  ≤ 500px
+   All per-kid columns collapse into accordion rows.
+   Only one kid panel is open at a time (JS enforces this).
+   ───────────────────────────────────────────────────────────── */
+@media (max-width: 500px) {
+
+  /* ── All boards become single-col stacks ── */
+  .board, .play-board, .skills-board {
+    display: flex; flex-direction: column; gap: 0; padding: 0;
+  }
+
+  /* ── Each panel becomes a <details> accordion row ── */
+  .member-panel,
+  .kid-play-col,
+  .kid-skills-col {
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid #e8e0ff;
+  }
+  .member-panel:first-child,
+  .kid-play-col:first-child,
+  .kid-skills-col:first-child {
+    border-radius: 14px 14px 0 0;
+    overflow: hidden;
+  }
+  .member-panel:last-child,
+  .kid-play-col:last-child,
+  .kid-skills-col:last-child {
+    border-radius: 0 0 14px 14px;
+    overflow: hidden;
+    border-bottom: none;
+  }
+
+  /* ── Panel header acts as accordion toggle ── */
+  .panel-header,
+  .kid-play-header,
+  .kid-skills-header {
+    cursor: pointer;
+    position: relative;
+  }
+  /* Chevron indicator */
+  .panel-header::after,
+  .kid-play-header::after,
+  .kid-skills-header::after {
+    content: '▼';
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    color: rgba(255,255,255,.7);
+    transition: transform .25s;
+  }
+  .panel-open > .panel-header::after,
+  .panel-open > .kid-play-header::after,
+  .panel-open > .kid-skills-header::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  /* ── Panel body collapses when not open ── */
+  /* Habits tab */
+  .member-panel .road-wrap,
+  .member-panel #road-ethan0,
+  .member-panel [id^="road-"],
+  .member-panel .panel-body {
+    display: none;
+  }
+  .member-panel.panel-open [id^="road-"],
+  .member-panel.panel-open .panel-body {
+    display: block;
+  }
+
+  /* Play tab */
+  .kid-play-col .lang-tabs,
+  .kid-play-col .play-cats,
+  .kid-play-col .play-progress-wrap {
+    display: none;
+  }
+  .kid-play-col.panel-open .lang-tabs,
+  .kid-play-col.panel-open .play-cats,
+  .kid-play-col.panel-open .play-progress-wrap {
+    display: block;
+  }
+
+  /* Skills tab */
+  .kid-skills-col .medal-showcase,
+  .kid-skills-col .skill-cards,
+  .kid-skills-col .add-skill-btn {
+    display: none;
+  }
+  .kid-skills-col.panel-open .medal-showcase,
+  .kid-skills-col.panel-open .skill-cards,
+  .kid-skills-col.panel-open .add-skill-btn {
+    display: block;
+  }
+
+  /* ── Size adjustments inside accordion ── */
+  .panel-name, .kid-play-name, .kid-skills-name {
+    font-size: 1.8rem;
+  }
+  .panel-role { font-size: 1.2rem; }
+  .avatar-img, .avatar-emoji { width: 48px; height: 48px; font-size: 1.4rem; }
+  .star-badge { width: 48px; height: 48px; }
+  .star-bg    { font-size: 2.8rem; }
+  .star-count { font-size: 1rem; }
+  .panel-header::after,
+  .kid-play-header::after,
+  .kid-skills-header::after {
+    right: 10px;
+  }
+  /* Give road a bit of padding inside */
+  .member-panel.panel-open [id^="road-"] {
+    padding-bottom: 4px;
+  }
+  /* Market: already single col, just tighten */
+  #view-market .market-wrap { padding: 8px; }
+  .market-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .voucher-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+}

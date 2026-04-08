@@ -158,6 +158,10 @@
     },
     nextSpell() {
       const gs = window._gState;
+      // Record correct spelling
+      if (window._currentKidKey && typeof VocabTracker !== 'undefined') {
+        VocabTracker.record(window._currentKidKey, gs.data.items[gs.idx] ? gs.data.items[gs.idx].word : '', 'calendar', true);
+      }
       gs.score++; gs.idx++; gs.answer = [];
       if (gs.idx >= gs.data.items.length) {
         document.getElementById('pm-body').innerHTML = `<div style="text-align:center;padding:30px">
@@ -185,9 +189,11 @@
       if (choice === r.answer) {
         el.classList.add('correct'); gs.score++;
         if (fb) fb.textContent = '✅ Correct!';
+        if (window._currentKidKey && typeof VocabTracker !== 'undefined') VocabTracker.record(window._currentKidKey, r.answer, 'calendar', true);
       } else {
         el.classList.add('wrong');
         if (fb) fb.innerHTML = `❌ It's <strong>${r.answer}</strong>!`;
+        if (window._currentKidKey && typeof VocabTracker !== 'undefined') VocabTracker.record(window._currentKidKey, r.answer, 'calendar', false);
         document.querySelectorAll('.seq-btn').forEach(btn => {
           if (btn.querySelector('span').textContent === r.answer) btn.classList.add('correct');
         });

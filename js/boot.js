@@ -31,6 +31,7 @@ window.Boot = (() => {
     document.getElementById('onboarding').classList.add('hidden');
     document.getElementById('app').classList.add('visible');
     document.getElementById('loading').classList.add('hidden');
+    if (typeof VocabTracker !== 'undefined') VocabTracker.tickAll();
     Routines.ensureAdults();
     Routines.buildBoard();
     Play.buildBoard();
@@ -139,7 +140,7 @@ window.Boot = (() => {
   /* ── VIEW SWITCH ── */
   function switchView(v) {
     curView = v;
-    ['routines', 'market', 'play', 'skills', 'community'].forEach(n => {
+    ['routines', 'market', 'play', 'skills', 'community', 'vocab'].forEach(n => {
       document.getElementById('view-' + n).classList.toggle('active', n === v);
       const ni = document.getElementById('nav-' + n); if (ni) ni.classList.toggle('active', n === v);
       const mi = document.getElementById('mob-' + n); if (mi) mi.classList.toggle('active', n === v);
@@ -148,6 +149,7 @@ window.Boot = (() => {
     if (v === 'play')      { State.getApp().kids.forEach(k => Play.renderCol(k.key)); }
     if (v === 'skills')    { State.getApp().kids.forEach(k => Skills.renderCol(k.key)); }
     if (v === 'community') { Community.render(); }
+    if (v === 'vocab')      { VocabBook.render(); }
   }
 
   function updateFloatingStar() {

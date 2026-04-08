@@ -137,6 +137,7 @@ window.Play = (() => {
     }
     if (!item) return;
 
+    window._currentKidKey = key;  // vocab tracking
     recordPlay(key);
     document.getElementById('pm-title').textContent = item.title;
     document.getElementById('pm-body').innerHTML    = GameRegistry.render(item);

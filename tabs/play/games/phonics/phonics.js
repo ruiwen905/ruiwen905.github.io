@@ -352,6 +352,12 @@
         else if (opt.c && !_gs.selected.has(i))   { el.classList.add('wrong'); ok=false; }
       });
       if (ok) _gs.score++;
+      // Vocab tracking — record each correct-target word
+      if (window._currentKidKey && typeof VocabTracker !== 'undefined') {
+        dg.words.forEach((opt, i) => {
+          if (opt.c) VocabTracker.record(window._currentKidKey, opt.w, 'phonics', ok);
+        });
+      }
       const btn = document.querySelector('#pm-body .game-btn');
       if (btn) { btn.textContent = 'Next →'; if (ok) btn.classList.add('green'); }
     },

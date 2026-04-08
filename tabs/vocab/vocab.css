@@ -1,0 +1,113 @@
+/* tabs/vocab/vocab.css */
+
+#nav-vocab  { display: none; }
+#mob-vocab  { display: none; }
+/* Show for everyone (not just admin) — vocab is always accessible */
+#nav-vocab  { display: flex; }
+#mob-vocab  { display: flex; }
+
+#view-vocab { background: #f5f0ff; min-height: 100vh; }
+.vocab-wrap { max-width: 1100px; margin: 0 auto; padding: 16px; }
+
+/* Header */
+.vocab-header { background: linear-gradient(135deg,#5c52c0,#8b5cf6); border-radius: 18px; padding: 18px 22px; color: white; margin-bottom: 16px; }
+.vocab-header h2 { font-family: 'Fredoka One', cursive; font-size: 2.4rem; margin: 0 0 4px; display: flex; align-items: center; gap: 10px; }
+.vocab-header p  { font-size: 1.5rem; opacity: .85; margin: 0; }
+
+/* Kid tabs */
+.vocab-kid-tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.vkt { padding: 8px 18px; border-radius: 20px; border: 2px solid #c5bef0; background: white;
+  font-family: 'Fredoka One', cursive; font-size: 1.7rem; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: all .15s; }
+.vkt.active { background: #7c6fcf; color: white; border-color: #7c6fcf; }
+.vkt img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; object-position: center top; }
+
+/* Category filter */
+.vocab-cat-bar { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; align-items: center; }
+.vocab-cat-btn { padding: 6px 14px; border-radius: 16px; border: 2px solid #ddd; background: white;
+  font-size: 1.5rem; font-weight: 700; cursor: pointer; transition: all .12s; }
+.vocab-cat-btn.active { background: #5c52c0; color: white; border-color: #5c52c0; }
+.vocab-search { padding: 7px 14px; border: 2px solid #c5bef0; border-radius: 14px; font-size: 1.6rem;
+  font-family: 'Nunito',sans-serif; margin-left: auto; min-width: 160px; }
+.vocab-search:focus { outline: none; border-color: #7c6fcf; }
+
+/* Stats row */
+.vocab-stats { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+.vs-card { background: white; border-radius: 14px; padding: 12px 16px; text-align: center; flex: 1; min-width: 100px;
+  box-shadow: 0 2px 8px rgba(92,82,192,.1); }
+.vs-num  { font-family: 'Fredoka One', cursive; font-size: 2.8rem; line-height: 1; }
+.vs-lbl  { font-size: 1.4rem; color: #aaa; font-weight: 700; margin-top: 2px; }
+.vs-card.grey-card   { border-left: 4px solid #ccc; }
+.vs-card.yellow-card { border-left: 4px solid #f5c842; }
+.vs-card.green-card  { border-left: 4px solid #27ae60; }
+.vs-card.master-card { border-left: 4px solid #7c6fcf; }
+
+/* Word grid */
+.vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+
+/* Word card */
+.word-card { border-radius: 14px; border: 2px solid; padding: 12px 10px; text-align: center;
+  position: relative; cursor: default; transition: transform .15s; }
+.word-card:hover { transform: scale(1.03); }
+
+/* Stage colours */
+.wc-grey   { border-color: #ddd;    background: #fafafa; }
+.wc-yellow { border-color: #f5c842; background: #fffde8; }
+.wc-green  { border-color: #27ae60; background: #eaffea; }
+.wc-master { border-color: #7c6fcf; background: linear-gradient(135deg,#fffde0,#fff5aa); }
+
+.wc-word  { font-family: 'Fredoka One', cursive; font-size: 2rem; color: #2d2d2d; margin-bottom: 6px; line-height: 1.1; }
+.wc-master .wc-word { color: #5c52c0; }
+
+/* Score bar */
+.wc-bar-wrap { background: #f0f0f0; border-radius: 20px; height: 10px; overflow: hidden; margin-bottom: 5px; }
+.wc-bar-fill { height: 100%; border-radius: 20px; transition: width .4s cubic-bezier(.34,1.56,.64,1); }
+.wc-grey   .wc-bar-fill { background: #ccc; }
+.wc-yellow .wc-bar-fill { background: #f5c842; }
+.wc-green  .wc-bar-fill { background: #27ae60; }
+.wc-master .wc-bar-fill { background: #7c6fcf; }
+
+.wc-meta  { font-size: 1.2rem; font-weight: 700; color: #aaa; display: flex; justify-content: space-between; }
+.wc-stage { font-size: 1.2rem; font-weight: 800; }
+.wc-grey   .wc-stage { color: #bbb; }
+.wc-yellow .wc-stage { color: #b89030; }
+.wc-green  .wc-stage { color: #27ae60; }
+.wc-master .wc-stage { color: #7c6fcf; }
+
+.wc-tick { position: absolute; top: 6px; right: 8px; font-size: 1.6rem; }
+.wc-cat  { font-size: 1.1rem; color: #bbb; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .3px; margin-top: 4px; }
+
+/* Stage section headers */
+.vocab-stage-header { font-family: 'Fredoka One', cursive; font-size: 2rem; color: #3a3180;
+  margin: 20px 0 10px; padding-bottom: 6px; border-bottom: 2px solid #ddd8ff;
+  display: flex; align-items: center; gap: 10px; }
+.vocab-stage-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
+.vocab-stage-count { font-size: 1.4rem; background: #ede8ff; color: #5c52c0; border-radius: 20px; padding: 2px 10px; font-family: 'Nunito',sans-serif; font-weight: 800; }
+
+/* Today's review banner */
+.vocab-today-banner { background: #fffde8; border: 2px solid #f5c842; border-radius: 16px;
+  padding: 14px 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.vtb-icon  { font-size: 2.8rem; flex-shrink: 0; }
+.vtb-text  { flex: 1; }
+.vtb-title { font-family: 'Fredoka One', cursive; font-size: 1.9rem; color: #8a6000; }
+.vtb-sub   { font-size: 1.5rem; color: #b89030; margin-top: 2px; }
+.vtb-words { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.vtb-word  { background: #f5c842; color: #5c3a00; padding: 3px 10px; border-radius: 10px; font-weight: 800; font-size: 1.5rem; }
+
+/* Empty state */
+.vocab-empty { text-align: center; padding: 40px 20px; color: #ccc; }
+.vocab-empty .ve-icon { font-size: 4rem; }
+.vocab-empty p { font-size: 1.8rem; margin-top: 10px; font-family: 'Fredoka One',cursive; }
+
+@media (max-width: 900px) {
+  .vocab-header h2 { font-size: 1.6rem; }
+  .vocab-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
+  .wc-word  { font-size: 1.5rem; }
+  .vkt { font-size: 1.1rem; padding: 6px 12px; }
+  .vs-num { font-size: 2rem; }
+  .vocab-stage-header { font-size: 1.4rem; }
+}
+@media (max-width: 500px) {
+  .vocab-grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 6px; }
+  .wc-word { font-size: 1.3rem; }
+}
