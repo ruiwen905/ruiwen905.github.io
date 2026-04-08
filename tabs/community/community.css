@@ -1,91 +1,88 @@
-/* tabs/community/community.css
-   Only visible in admin-mode. */
+/* tabs/community/community.css */
 
-/* Nav item — hidden unless admin */
-#nav-community  { display: none; }
-#mob-community  { display: none; }
+#nav-community { display: none; }
+#mob-community { display: none; }
 .admin-mode #nav-community { display: flex; }
 .admin-mode #mob-community { display: flex; }
 
-/* View */
-#view-community { background: #f5f0ff; }
-.community-wrap { max-width: 1100px; margin: 0 auto; padding: 20px; }
+#view-community { background: #f5f0ff; min-height: 100vh; }
+.community-wrap { max-width: 1200px; margin: 0 auto; padding: 18px; }
 
 /* Header */
-.community-header { background: linear-gradient(135deg, #5c52c0, #8b5cf6); border-radius: 18px; padding: 22px 24px; color: white; margin-bottom: 20px; }
-.community-header h2 { font-family: 'Fredoka One', cursive; font-size: 2.6rem; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
-.community-header p  { font-size: 1.8rem; opacity: .85; }
+.community-header { background: linear-gradient(135deg,#5c52c0,#8b5cf6); border-radius: 18px; padding: 18px 22px; color: white; margin-bottom: 16px; display: flex; align-items: center; gap: 14px; }
+.community-header h2 { font-family: 'Fredoka One', cursive; font-size: 2.4rem; margin: 0; }
+.community-header p  { font-size: 1.6rem; opacity: .85; margin: 0; }
 
-/* Search / filter bar */
-.community-controls { display: flex; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; }
-.community-search   { flex: 1; min-width: 200px; padding: 10px 16px; font-size: 1.8rem; font-family: 'Nunito', sans-serif; border: 2px solid #c5bef0; border-radius: 14px; background: white; }
-.community-search:focus { outline: none; border-color: #7c6fcf; }
-.community-filter   { padding: 10px 14px; font-size: 1.8rem; font-family: 'Nunito', sans-serif; border: 2px solid #c5bef0; border-radius: 14px; background: white; cursor: pointer; }
-.community-filter:focus { outline: none; border-color: #7c6fcf; }
+/* Filter bar */
+.community-filters { display: flex; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+.comm-search  { flex: 1; min-width: 180px; padding: 9px 14px; font-size: 1.7rem; font-family: 'Nunito',sans-serif; border: 2px solid #c5bef0; border-radius: 12px; background: white; }
+.comm-search:focus { outline: none; border-color: #7c6fcf; }
+.comm-filter  { padding: 9px 12px; font-size: 1.7rem; font-family: 'Nunito',sans-serif; border: 2px solid #c5bef0; border-radius: 12px; background: white; cursor: pointer; }
 
-/* Category sections */
-.community-section       { margin-bottom: 24px; }
-.community-section-title { font-family: 'Fredoka One', cursive; font-size: 2.2rem; color: #3a3180; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; border-bottom: 2px solid #d4cef8; padding-bottom: 8px; }
-.community-count         { font-size: 1.4rem; background: #ede8ff; color: #5c52c0; border-radius: 20px; padding: 2px 10px; font-family: 'Nunito', sans-serif; font-weight: 800; }
+/* 2-col layout */
+.comm-layout { display: grid; grid-template-columns: 280px 1fr; gap: 14px; align-items: start; }
+.comm-col-title { font-family: 'Fredoka One', cursive; font-size: 1.8rem; color: #5c52c0; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #ddd8ff; display: flex; align-items: center; gap: 8px; }
 
-/* Cards grid */
-.community-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+/* LEFT column */
+.comm-left { background: white; border-radius: 16px; padding: 14px; box-shadow: 0 2px 10px rgba(92,82,192,.1); position: sticky; top: 10px; max-height: calc(100vh - 220px); overflow-y: auto; }
+.comm-type-row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; cursor: pointer; border: 2px solid transparent; transition: all .15s; margin-bottom: 4px; }
+.comm-type-row:hover  { background: #f0edff; border-color: #c5bef0; }
+.comm-type-row.active { background: #7c6fcf; border-color: #7c6fcf; }
+.comm-type-row.active .ctr-label { color: white; }
+.comm-type-row.active .ctr-desc  { color: rgba(255,255,255,.75); }
+.ctr-icon  { font-size: 2rem; flex-shrink: 0; width: 32px; text-align: center; }
+.ctr-label { font-weight: 800; font-size: 1.6rem; color: #3a3180; line-height: 1.2; }
+.ctr-desc  { font-size: 1.3rem; color: #aaa; margin-top: 1px; }
 
-/* Card */
-.community-card {
-  background: white; border-radius: 16px; border: 2px solid #e8e0fc;
-  box-shadow: 0 2px 8px rgba(92,82,192,.1); overflow: hidden;
-  display: flex; flex-direction: column; transition: transform .15s, box-shadow .15s;
-}
-.community-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(92,82,192,.18); }
+/* RIGHT column */
+.comm-right { background: white; border-radius: 16px; padding: 14px; box-shadow: 0 2px 10px rgba(92,82,192,.1); min-height: 300px; }
+.comm-data-empty { text-align: center; padding: 40px 20px; color: #ccc; font-size: 1.8rem; font-family: 'Fredoka One',cursive; }
+.comm-data-row { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: 12px; cursor: pointer; border: 2px solid #eee; margin-bottom: 8px; transition: all .15s; }
+.comm-data-row:hover  { border-color: #b8b0e8; background: #faf8ff; }
+.comm-data-row.active { border-color: #7c6fcf; background: #f0edff; }
+.cdr-icon  { font-size: 2.4rem; flex-shrink: 0; width: 36px; text-align: center; }
+.cdr-title { font-weight: 800; font-size: 1.8rem; color: #2d2d2d; }
+.cdr-meta  { font-size: 1.4rem; color: #aaa; margin: 2px 0; }
+.cdr-desc  { font-size: 1.5rem; color: #666; }
+.cdr-check { font-size: 2rem; color: #7c6fcf; margin-left: auto; flex-shrink: 0; }
 
-.cc-top    { padding: 16px 16px 10px; display: flex; align-items: flex-start; gap: 12px; flex: 1; }
-.cc-icon   { font-size: 2.8rem; flex-shrink: 0; line-height: 1; }
-.cc-info   { flex: 1; min-width: 0; }
-.cc-title  { font-weight: 800; font-size: 1.9rem; color: #2d2d2d; line-height: 1.2; margin-bottom: 4px; }
-.cc-desc   { font-size: 1.5rem; color: #888; line-height: 1.4; }
-.cc-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
-.cc-badge  { font-size: 1.2rem; padding: 2px 8px; border-radius: 8px; font-weight: 800; }
-.cc-badge-type { background: #f0edff; color: #5c52c0; }
-.cc-badge-lang { background: #e8f5ff; color: #2060c0; }
-.cc-badge-age  { background: #fff0e0; color: #c06020; }
-
-.cc-bottom { padding: 10px 14px 14px; border-top: 1.5px solid #f0eeff; }
-.cc-add-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-.cc-add-label { font-size: 1.5rem; color: #aaa; font-weight: 700; flex-shrink: 0; }
-.cc-add-btn {
-  background: #7c6fcf; color: white; border: none;
-  padding: 6px 12px; border-radius: 20px;
-  font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.5rem;
-  cursor: pointer; transition: background .12s, transform .1s; white-space: nowrap;
-}
-.cc-add-btn:hover { background: #5c52c0; transform: scale(1.05); }
-.cc-add-btn.skill { background: #f39c12; }
-.cc-add-btn.skill:hover { background: #d68910; }
-.cc-added { font-size: 1.4rem; color: #27ae60; font-weight: 800; display: flex; align-items: center; gap: 4px; }
-
-/* Empty state */
-.community-empty { text-align: center; padding: 40px 20px; color: #ccc; }
-.community-empty .ce-icon { font-size: 4rem; }
-.community-empty p { font-size: 1.8rem; margin-top: 10px; }
+/* Preview strip (full width below the 2 cols) */
+.comm-preview-strip { margin-top: 14px; background: white; border-radius: 16px; padding: 16px 18px; box-shadow: 0 2px 10px rgba(92,82,192,.12); border: 2.5px solid #c5bef0; }
+.comm-preview-strip.hidden { display: none; }
+.cp-inner { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.cp-game-info { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 200px; }
+.cp-game-icon { font-size: 3rem; }
+.cp-game-title { font-family: 'Fredoka One',cursive; font-size: 2rem; color: #3a3180; }
+.cp-game-sub   { font-size: 1.5rem; color: #aaa; margin-top: 2px; }
+.cp-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.cp-preview-btn { background: #eee; color: #555; border: none; padding: 9px 16px; border-radius: 14px; font-family: 'Fredoka One',cursive; font-size: 1.7rem; cursor: pointer; }
+.cp-preview-btn:hover { background: #ddd; }
+.cp-kid-btn { display: flex; align-items: center; gap: 6px; background: #7c6fcf; color: white; border: none; padding: 9px 16px; border-radius: 14px; font-family: 'Nunito',sans-serif; font-weight: 800; font-size: 1.6rem; cursor: pointer; transition: all .12s; }
+.cp-kid-btn:hover { background: #5c52c0; transform: scale(1.04); }
+.cp-kid-btn.skill { background: #f39c12; }
+.cp-kid-btn.skill:hover { background: #d68910; }
+.cp-kid-btn img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; object-position: center top; border: 2px solid rgba(255,255,255,.6); }
+.cp-kid-added { display: flex; align-items: center; gap: 6px; font-size: 1.5rem; font-weight: 800; color: #27ae60; }
+.cp-kid-added img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; object-position: center top; }
 
 /* Preview overlay */
 .cc-preview-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.65); z-index: 1800; align-items: center; justify-content: center; padding: 0 10vw; }
 .cc-preview-overlay.open { display: flex; }
 .cc-preview-modal { background: white; border-radius: 22px; width: 80vw; max-width: 900px; max-height: 88vh; overflow-y: auto; display: flex; flex-direction: column; }
-.cc-preview-head { padding: 16px 20px 12px; border-bottom: 2px solid #eee; display: flex; align-items: center; gap: 12px; }
-.cc-preview-title { font-family: 'Fredoka One', cursive; font-size: 2.2rem; flex: 1; }
+.cc-preview-head { padding: 16px 20px 12px; border-bottom: 2px solid #eee; display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.cc-preview-title { font-family: 'Fredoka One',cursive; font-size: 2.2rem; flex: 1; }
 .cc-preview-close { background: #f0f0f0; border: none; border-radius: 50%; width: 42px; height: 42px; font-size: 1.8rem; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 .cc-preview-body  { padding: 20px; flex: 1; }
 
 @media (max-width: 900px) {
-  .community-header h2 { font-size: 1.6rem; }
-  .community-header p  { font-size: 1rem; }
-  .community-search, .community-filter { font-size: 1rem; padding: 7px 10px; }
-  .community-section-title { font-size: 1.3rem; }
-  .cc-title { font-size: 1rem; }
-  .cc-desc  { font-size: .85rem; }
-  .cc-add-btn { font-size: .85rem; padding: 5px 10px; }
-  .cc-icon  { font-size: 1.8rem; }
-  .community-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+  .comm-layout { grid-template-columns: 1fr; }
+  .comm-left { position: static; max-height: 240px; }
+  .community-header h2 { font-size: 1.5rem; }
+  .ctr-label { font-size: 1rem; }
+  .ctr-desc  { font-size: .8rem; }
+  .cdr-title { font-size: 1rem; }
+  .cdr-desc  { font-size: .85rem; }
+  .cp-kid-btn { font-size: 1rem; padding: 7px 12px; }
+  .cp-game-title { font-size: 1.2rem; }
+  .comm-search, .comm-filter { font-size: 1rem; padding: 7px 10px; }
 }

@@ -197,16 +197,15 @@
     <div class="view" id="view-community">
       <div class="community-wrap">
         <div class="community-header">
-          <h2>🌍 Community Library</h2>
-          <p>Browse games, songs, stories and skills shared by the community. Add them to any child!</p>
+          <div>
+            <h2>🌍 Community Library</h2>
+            <p>Pick a game type → pick content → preview → add to any child</p>
+          </div>
         </div>
-        <div class="community-controls">
-          <input  class="community-search" id="comm-search" placeholder="Search games, songs, stories…" oninput="Community.onSearch(this.value)">
-          <select class="community-filter" id="comm-age-filter" onchange="Community.onAgeFilter(this.value)">
+        <div class="community-filters">
+          <input class="comm-search" id="comm-search" placeholder="🔍 Search content…" oninput="Community.onSearch(this.value)">
+          <select class="comm-filter" id="comm-age-filter" onchange="Community.onAgeFilter(this.value)">
             <option value="all">All Ages</option>
-          </select>
-          <select class="community-filter" id="comm-cat-filter" onchange="Community.onCatFilter(this.value)">
-            <option value="all">All Categories</option>
           </select>
         </div>
         <div id="community-content"></div>
