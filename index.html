@@ -112,11 +112,29 @@
 <!-- ── MEDAL TOOLTIP ── -->
 <div class="medal-tooltip" id="medal-tooltip" style="opacity:0;"></div>
 
+<!-- ── ADMIN COACH MARK (shown once after onboarding) ── -->
+<div class="coach-overlay" id="coach-overlay" style="display:none">
+  <div class="coach-backdrop"></div>
+  <div class="coach-box" id="coach-box">
+    <div class="coach-arrow" id="coach-arrow"></div>
+    <div class="coach-content">
+      <div class="coach-title">🔧 You're in Admin Mode!</div>
+      <div class="coach-body">To open Admin Mode again, <strong>double-tap your child's photo</strong> here on the Routines tab.</div>
+      <button class="coach-btn" onclick="Boot.dismissCoach()">Got it! 👍</button>
+    </div>
+  </div>
+</div>
+
 <!-- ── APP ── -->
 <div id="app">
-  <div class="admin-banner">
-    🔧 Admin Mode &nbsp;
-    <button onclick="Boot.toggleAdmin()" style="background:rgba(255,255,255,.3);border:none;color:white;border-radius:8px;padding:3px 14px;font-size:1.6rem;cursor:pointer;font-family:'Fredoka One',cursive;">Exit</button>
+  <!-- sticky admin bar — only shown in admin-mode -->
+  <div class="admin-topbar" id="admin-topbar">
+    <span class="atb-icon">🔧</span>
+    <span class="atb-label">Admin Mode</span>
+    <span class="atb-sep">·</span>
+    <button class="atb-btn" onclick="Boot.confirmReset()">🗑 Reset App</button>
+    <div style="flex:1"></div>
+    <button class="atb-exit" onclick="Boot.toggleAdmin()">✕ Exit Admin</button>
   </div>
 
   <div class="floating-star" id="floating-star">
@@ -124,7 +142,7 @@
   </div>
 
   <div class="mobile-bar">
-    <button class="mob-tab active" id="mob-routines" onclick="Boot.switchView('routines')"><span class="mi">📋</span>Routines</button>
+    <button class="mob-tab active" id="mob-routines" onclick="Boot.switchView('routines')"><span class="mi">📋</span>Habits</button>
     <button class="mob-tab"        id="mob-market"   onclick="Boot.switchView('market')"><span class="mi">🛒</span>Market</button>
     <button class="mob-tab"        id="mob-play"     onclick="Boot.switchView('play')"><span class="mi">🎮</span>Play</button>
     <button class="mob-tab"        id="mob-skills"   onclick="Boot.switchView('skills')"><span class="mi">⭐</span>Skills</button>
@@ -132,14 +150,12 @@
   </div>
 
   <nav class="left-nav">
-    <button class="nav-item active" id="nav-routines" onclick="Boot.switchView('routines')"><span class="ni">📋</span>Routines</button>
+    <button class="nav-item active" id="nav-routines" onclick="Boot.switchView('routines')"><span class="ni">📋</span>Habits</button>
     <button class="nav-item"        id="nav-market"   onclick="Boot.switchView('market')"><span class="ni">🛒</span>Market</button>
     <button class="nav-item"        id="nav-play"     onclick="Boot.switchView('play')"><span class="ni">🎮</span>Play</button>
     <button class="nav-item"        id="nav-skills"   onclick="Boot.switchView('skills')"><span class="ni">⭐</span>Skills</button>
     <button class="nav-item"        id="nav-community" onclick="Boot.switchView('community')"><span class="ni">🌍</span>Community</button>
     <div class="nav-spacer"></div>
-    <div class="admin-indicator">🔧 Admin</div>
-    <button class="nav-reset-btn" onclick="Boot.confirmReset()">🗑 Reset App</button>
   </nav>
 
   <div class="main">

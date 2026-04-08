@@ -21,10 +21,6 @@ body { font-family: 'Nunito', sans-serif; background: #f0ede8; color: #2d2d2d; m
 .nav-item.active { color: #f6c94e; border-left-color: #f6c94e; background: rgba(255,255,255,.1); }
 .nav-item .ni { font-size: 1.9rem; }
 .nav-spacer { flex: 1; }
-.admin-indicator { display: none; padding: 8px 6px; text-align: center; color: #ff6b35; font-size: 1rem; font-weight: 800; }
-.admin-mode .admin-indicator { display: block; }
-.nav-reset-btn { display: none; padding: 10px 6px; text-align: center; color: #ff9966; font-size: 1.1rem; font-weight: 800; cursor: pointer; border: none; background: none; }
-.admin-mode .nav-reset-btn { display: block; }
 
 /* ── MAIN CONTENT ── */
 .main { flex: 1; overflow-y: auto; min-width: 0; }
@@ -32,8 +28,6 @@ body { font-family: 'Nunito', sans-serif; background: #f0ede8; color: #2d2d2d; m
 .view.active { display: block; }
 
 /* ── ADMIN BANNER ── */
-.admin-banner { display: none; background: #ff6b35; color: white; text-align: center; padding: 9px; font-family: 'Fredoka One', cursive; font-size: 1.8rem; }
-.admin-mode .admin-banner { display: block; }
 
 /* ── FLOATING STAR ── */
 .floating-star {
@@ -92,3 +86,67 @@ body { font-family: 'Nunito', sans-serif; background: #f0ede8; color: #2d2d2d; m
 
 /* ── SHARED ANIMATIONS ── */
 @keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)} }
+
+/* ── STICKY ADMIN TOP BAR ── */
+.admin-topbar {
+  display: none;
+  position: sticky; top: 0; z-index: 600;
+  background: #ff6b35;
+  color: white;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.7rem;
+  box-shadow: 0 2px 8px rgba(255,107,53,.4);
+  flex-shrink: 0;
+}
+.admin-mode .admin-topbar { display: flex; }
+.atb-icon  { font-size: 1.8rem; }
+.atb-label { font-size: 1.8rem; }
+.atb-sep   { opacity: .5; }
+.atb-btn   { background: rgba(255,255,255,.2); border: none; color: white; padding: 5px 12px;
+  border-radius: 8px; font-family: 'Fredoka One', cursive; font-size: 1.5rem; cursor: pointer; }
+.atb-btn:hover  { background: rgba(255,255,255,.35); }
+.atb-exit  { background: rgba(0,0,0,.25); border: none; color: white; padding: 6px 14px;
+  border-radius: 10px; font-family: 'Fredoka One', cursive; font-size: 1.7rem; cursor: pointer; }
+.atb-exit:hover { background: rgba(0,0,0,.4); }
+
+/* ── COACH MARK ── */
+.coach-overlay  { position: fixed; inset: 0; z-index: 4000; pointer-events: none; }
+.coach-overlay.active { pointer-events: all; }
+.coach-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.55); }
+.coach-box {
+  position: absolute;
+  background: white;
+  border-radius: 18px;
+  padding: 20px 22px;
+  max-width: 280px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.35);
+  pointer-events: all;
+}
+.coach-arrow {
+  position: absolute;
+  width: 0; height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  /* arrow direction set by JS */
+}
+.coach-arrow.up   { top: -14px; left: 50%; transform: translateX(-50%); border-bottom: 14px solid white; }
+.coach-arrow.down { bottom: -14px; left: 30%; transform: translateX(-50%); border-top: 14px solid white; }
+.coach-title { font-family: 'Fredoka One', cursive; font-size: 2rem; color: #ff6b35; margin-bottom: 8px; }
+.coach-body  { font-size: 1.6rem; color: #444; line-height: 1.5; margin-bottom: 14px; }
+.coach-body strong { color: #5c52c0; }
+.coach-btn   { background: #5c52c0; color: white; border: none; padding: 10px 22px;
+  border-radius: 14px; font-family: 'Fredoka One', cursive; font-size: 1.8rem; cursor: pointer; width: 100%; }
+.coach-btn:hover { background: #3a3180; }
+
+@media (max-width: 900px) {
+  .admin-topbar { font-size: 1.1rem; padding: 6px 10px; gap: 6px; }
+  .atb-label    { display: none; }
+  .atb-btn, .atb-exit { font-size: 1rem; padding: 4px 10px; }
+  .coach-box    { max-width: 230px; padding: 16px 18px; }
+  .coach-title  { font-size: 1.5rem; }
+  .coach-body   { font-size: 1.2rem; }
+  .coach-btn    { font-size: 1.3rem; }
+}

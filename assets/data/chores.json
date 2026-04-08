@@ -1,0 +1,246 @@
+{
+  "ROLES": {
+    "Chef": {
+      "icon": "👨‍🍳",
+      "color": "#e67e22",
+      "desc": "Cooking & grocery",
+      "chores": [
+        {
+          "id": "ch_cook",
+          "desc": "Plan & cook dinner",
+          "icon": "🍳",
+          "freq": "weekly",
+          "freqDays": 7
+        },
+        {
+          "id": "ch_grocery",
+          "desc": "Weekly grocery run",
+          "icon": "🛒",
+          "freq": "weekly",
+          "freqDays": 7
+        },
+        {
+          "id": "ch_stove",
+          "desc": "Wipe stove & counters",
+          "icon": "🧹",
+          "freq": "weekly",
+          "freqDays": 7
+        }
+      ]
+    },
+    "Hall Leader": {
+      "icon": "🛋️",
+      "color": "#8e44ad",
+      "desc": "Living room & laundry",
+      "chores": [
+        {
+          "id": "ch_vacuum",
+          "desc": "Vacuum living room",
+          "icon": "🧹",
+          "freq": "weekly",
+          "freqDays": 7
+        },
+        {
+          "id": "ch_fold",
+          "desc": "Fold & put away clothes",
+          "icon": "👕",
+          "freq": "weekly",
+          "freqDays": 7
+        },
+        {
+          "id": "ch_sofa",
+          "desc": "Tidy sofa & cushions",
+          "icon": "🛋️",
+          "freq": "weekly",
+          "freqDays": 7
+        }
+      ]
+    },
+    "Dining Leader": {
+      "icon": "🍽️",
+      "color": "#27ae60",
+      "desc": "Dining area & floor",
+      "chores": [
+        {
+          "id": "ch_table",
+          "desc": "Wipe dining table",
+          "icon": "🍽️",
+          "freq": "daily",
+          "freqDays": 1
+        },
+        {
+          "id": "ch_robot",
+          "desc": "Empty robot vacuum & mop",
+          "icon": "🤖",
+          "freq": "weekly",
+          "freqDays": 7
+        },
+        {
+          "id": "ch_floor",
+          "desc": "Check & sweep floor",
+          "icon": "🧹",
+          "freq": "weekly",
+          "freqDays": 7
+        }
+      ]
+    },
+    "Kitchen Leader": {
+      "icon": "🍜",
+      "color": "#3498db",
+      "desc": "Dishes & rubbish",
+      "chores": [
+        {
+          "id": "ch_dishes",
+          "desc": "Clear & wash dishes",
+          "icon": "🫧",
+          "freq": "daily",
+          "freqDays": 1
+        },
+        {
+          "id": "ch_bin",
+          "desc": "Throw rubbish outside",
+          "icon": "🗑️",
+          "freq": "daily",
+          "freqDays": 1
+        },
+        {
+          "id": "ch_sink",
+          "desc": "Clean kitchen sink",
+          "icon": "🚿",
+          "freq": "weekly",
+          "freqDays": 7
+        }
+      ]
+    },
+    "Helper": {
+      "icon": "🌟",
+      "color": "#1abc9c",
+      "desc": "General helper",
+      "chores": [
+        {
+          "id": "ch_tidy",
+          "desc": "Tidy up common areas",
+          "icon": "🧺",
+          "freq": "daily",
+          "freqDays": 1
+        },
+        {
+          "id": "ch_water",
+          "desc": "Water the plants",
+          "icon": "🌱",
+          "freq": "weekly",
+          "freqDays": 7
+        }
+      ]
+    }
+  },
+  "KID_CHORES": {
+    "3-4": {
+      "role": "Little Helper",
+      "icon": "⭐",
+      "color": "#f39c12",
+      "desc": "Small helping tasks",
+      "chores": [
+        {
+          "id": "kc_toys",
+          "desc": "Put toys back in box",
+          "icon": "🧸",
+          "freq": "daily",
+          "freqDays": 1
+        },
+        {
+          "id": "kc_napkin",
+          "desc": "Put napkin in laundry",
+          "icon": "🧻",
+          "freq": "daily",
+          "freqDays": 1
+        },
+        {
+          "id": "kc_shoes",
+          "desc": "Line up shoes neatly",
+          "icon": "👟",
+          "freq": "daily",
+          "freqDays": 1
+        }
+      ]
+    },
+    "5-6": {
+      "role": "Junior Crew",
+      "icon": "🚀",
+      "color": "#e8789a",
+      "desc": "Small chores around the house",
+      "chores": [
+        {
+          "id": "kc_table_set",
+          "desc": "Set the table before meals",
+          "icon": "🍽️",
+          "freq": "daily",
+          "freqDays": 1
+        },
+        {
+          "id": "kc_toys",
+          "desc": "Put toys & books away",
+          "icon": "📚",
+          "freq": "daily",
+          "freqDays": 1
+        },
+        {
+          "id": "kc_feed",
+          "desc": "Feed the pet",
+          "icon": "🐾",
+          "freq": "daily",
+          "freqDays": 1
+        },
+        {
+          "id": "kc_wipe",
+          "desc": "Wipe table after meals",
+          "icon": "🧹",
+          "freq": "daily",
+          "freqDays": 1
+        }
+      ]
+    }
+  },
+  "SHARED_COUNTDOWN": [
+    {
+      "id": "cc_shoes",
+      "desc": "Wash own shoes",
+      "icon": "👟",
+      "freq": "monthly",
+      "freqDays": 30,
+      "assignee": "self"
+    }
+  ],
+  "SPECIAL_CHORES": [
+    {
+      "id": "sc_fan",
+      "desc": "Clean ceiling fans",
+      "icon": "💨",
+      "freqDays": 60,
+      "note": "Every 2 months"
+    },
+    {
+      "id": "sc_aircon",
+      "desc": "Clean aircon filter",
+      "icon": "❄️",
+      "freqDays": 60,
+      "note": "Every 2 months"
+    }
+  ],
+  "ADULTS": [
+    {
+      "key": "papa",
+      "name": "Papa",
+      "emoji": "👨",
+      "role": "Chef",
+      "image": null
+    },
+    {
+      "key": "mama",
+      "name": "Mama",
+      "emoji": "👩",
+      "role": "Hall Leader",
+      "image": null
+    }
+  ]
+}
