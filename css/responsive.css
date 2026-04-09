@@ -1,141 +1,208 @@
-@media (max-width: 900px) {
-  .left-nav { display: none; }
-  .mobile-bar { display: flex; }
-  .main { padding-top: 58px; }
+/* ═══════════════════════════════════════════════════════════════════════════
+   RESPONSIVE — Kids World App
+
+   BREAKPOINTS:
+     > 1024px   Desktop  — left sidebar nav, max 5 columns
+     768–1024px iPad     — horizontal top bar (no sidebar), max 3 columns
+     501–767px  Large ☎️  — horizontal top bar, max 2 columns
+     ≤ 500px    Phone    — top bar, accordion (1 open at a time)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── DESKTOP > 1024px ─────────────────────────────────────────────────── */
+@media (min-width: 1025px) {
+  .left-nav      { display: flex; }
+  .mobile-bar    { display: none; }
+  .main          { padding-top: 0; }
+
+  /* Community nav shows only in admin mode (handled in community.css) */
+
+  /* Boards: max 5 columns, minimum 200px each */
+  .board, .play-board, .skills-board {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-width: 100%;
+  }
+  /* Cap at 5 columns on very wide screens */
+  @supports (grid-template-columns: repeat(5, 1fr)) {
+    .board, .play-board, .skills-board {
+      grid-template-columns: repeat(min(5, var(--col-count, 5)), 1fr);
+    }
+  }
+}
+
+/* ─── iPAD 768px – 1024px ───────────────────────────────────────────────── */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* No sidebar — use horizontal mobile-bar style instead */
+  .left-nav      { display: none !important; }
+  .mobile-bar    { display: flex; height: 54px; }
+  .main          { padding-top: 54px; }
+
+  /* Floating star shift */
+  .floating-star { top: 60px; right: 14px; font-size: 1.4rem; padding: 6px 12px 6px 9px; }
+  .floating-star .fs-icon { font-size: 1.6rem; }
+
+  /* Mobile bar tabs — a bit larger on iPad */
+  .mob-tab       { font-size: 1.1rem; }
+  .mob-tab .mi   { font-size: 1.5rem; }
+
+  /* Boards: max 3 columns */
+  .board, .play-board, .skills-board {
+    padding: 14px; gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Market: side-by-side stays */
+  #view-market .market-wrap { padding: 16px; gap: 16px; }
+
+  /* Admin top bar */
+  .admin-topbar { font-size: 1.5rem; padding: 7px 14px; }
+  .atb-label    { display: block; }
+
+  /* Modal */
+  .modal h3 { font-size: 1.4rem; }
+  .modal label { font-size: 1rem; }
+  .modal input, .modal select { font-size: 1rem; padding: 8px 10px; }
+  .modal-btns button { font-size: 1.1rem; padding: 10px; }
+}
+
+/* ─── LARGE PHONE 501px – 767px ─────────────────────────────────────────── */
+@media (min-width: 501px) and (max-width: 767px) {
+  .left-nav      { display: none !important; }
+  .mobile-bar    { display: flex; }
+  .main          { padding-top: 58px; }
+
   .floating-star { top: 64px; right: 10px; font-size: 1.2rem; padding: 5px 10px 5px 8px; }
   .floating-star .fs-icon { font-size: 1.4rem; }
-  .admin-banner { font-size: 1rem; padding: 6px; }
-  .modal h3 { font-size: 1.3rem; }
+
+  /* Boards: max 2 columns */
+  .board, .play-board, .skills-board {
+    padding: 10px 8px; gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Market: stack */
+  #view-market .market-wrap { grid-template-columns: 1fr; padding: 10px; gap: 12px; }
+  .voucher-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .market-grid  { grid-template-columns: 1fr 1fr; gap: 8px; }
+
+  .admin-topbar { font-size: 1.1rem; padding: 6px 10px; }
+  .atb-label    { display: none; }
+  .modal h3 { font-size: 1.2rem; }
   .modal label { font-size: .9rem; }
   .modal input, .modal select { font-size: .9rem; padding: 7px 9px; }
   .modal-btns button { font-size: 1rem; padding: 9px; }
-  /* Boards collapse to 1 col below 600px */
-  .board, .play-board, .skills-board { padding: 10px 7px; gap: 7px; grid-template-columns: repeat(3, 1fr); }
-}
-@media (max-width: 600px) {
-  .board, .play-board, .skills-board { grid-template-columns: 1fr; }
-  .voucher-grid { grid-template-columns: 1fr 1fr; }
-  .market-grid { grid-template-columns: 1fr 1fr; }
-  #view-market .market-wrap { grid-template-columns: 1fr; }
 }
 
-/* ─────────────────────────────────────────────────────────────
-   PHONE ACCORDION  ≤ 500px
-   All per-kid columns collapse into accordion rows.
-   Only one kid panel is open at a time (JS enforces this).
-   ───────────────────────────────────────────────────────────── */
+/* ─── PHONE ≤ 500px — ACCORDION ─────────────────────────────────────────── */
 @media (max-width: 500px) {
+  .left-nav   { display: none !important; }
+  .mobile-bar { display: flex; }
+  .main       { padding-top: 58px; }
 
-  /* ── All boards become single-col stacks ── */
+  .floating-star { top: 64px; right: 8px; font-size: 1rem; padding: 4px 8px 4px 6px; }
+  .floating-star .fs-icon { font-size: 1.2rem; }
+
+  /* ── All boards → flex column (accordion JS takes over) ── */
   .board, .play-board, .skills-board {
     display: flex; flex-direction: column; gap: 0; padding: 0;
   }
 
-  /* ── Each panel becomes a <details> accordion row ── */
-  .member-panel,
-  .kid-play-col,
-  .kid-skills-col {
-    border-radius: 0;
-    box-shadow: none;
+  /* ── Each kid column is an accordion row ── */
+  .member-panel, .kid-play-col, .kid-skills-col {
+    border-radius: 0; box-shadow: none;
     border-bottom: 2px solid #e8e0ff;
   }
-  .member-panel:first-child,
-  .kid-play-col:first-child,
-  .kid-skills-col:first-child {
-    border-radius: 14px 14px 0 0;
-    overflow: hidden;
+  .member-panel:first-child, .kid-play-col:first-child, .kid-skills-col:first-child {
+    border-radius: 14px 14px 0 0; overflow: hidden;
   }
-  .member-panel:last-child,
-  .kid-play-col:last-child,
-  .kid-skills-col:last-child {
-    border-radius: 0 0 14px 14px;
-    overflow: hidden;
-    border-bottom: none;
+  .member-panel:last-child, .kid-play-col:last-child, .kid-skills-col:last-child {
+    border-radius: 0 0 14px 14px; overflow: hidden; border-bottom: none;
   }
 
-  /* ── Panel header acts as accordion toggle ── */
-  .panel-header,
-  .kid-play-header,
-  .kid-skills-header {
-    cursor: pointer;
-    position: relative;
+  /* ── Chevron on header ── */
+  .panel-header::after, .kid-play-header::after, .kid-skills-header::after {
+    content: '▼'; position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+    font-size: 1rem; color: rgba(255,255,255,.7); transition: transform .25s;
   }
-  /* Chevron indicator */
-  .panel-header::after,
-  .kid-play-header::after,
-  .kid-skills-header::after {
-    content: '▼';
-    position: absolute;
-    right: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.1rem;
-    color: rgba(255,255,255,.7);
-    transition: transform .25s;
-  }
+  .panel-header, .kid-play-header, .kid-skills-header { position: relative; cursor: pointer; }
   .panel-open > .panel-header::after,
   .panel-open > .kid-play-header::after,
-  .panel-open > .kid-skills-header::after {
-    transform: translateY(-50%) rotate(180deg);
-  }
+  .panel-open > .kid-skills-header::after { transform: translateY(-50%) rotate(180deg); }
 
-  /* ── Panel body collapses when not open ── */
-  /* Habits tab */
-  .member-panel .road-wrap,
-  .member-panel #road-ethan0,
-  .member-panel [id^="road-"],
-  .member-panel .panel-body {
-    display: none;
-  }
-  .member-panel.panel-open [id^="road-"],
-  .member-panel.panel-open .panel-body {
-    display: block;
-  }
+  /* ── Collapse body until panel-open ── */
+  .member-panel [id^="road-"], .member-panel .panel-body { display: none; }
+  .member-panel.panel-open [id^="road-"], .member-panel.panel-open .panel-body { display: block; }
 
-  /* Play tab */
-  .kid-play-col .lang-tabs,
-  .kid-play-col .play-cats,
-  .kid-play-col .play-progress-wrap {
-    display: none;
-  }
+  .kid-play-col .lang-tabs, .kid-play-col .play-cats, .kid-play-col .play-progress-wrap { display: none; }
   .kid-play-col.panel-open .lang-tabs,
   .kid-play-col.panel-open .play-cats,
-  .kid-play-col.panel-open .play-progress-wrap {
-    display: block;
-  }
+  .kid-play-col.panel-open .play-progress-wrap { display: block; }
 
-  /* Skills tab */
-  .kid-skills-col .medal-showcase,
-  .kid-skills-col .skill-cards,
-  .kid-skills-col .add-skill-btn {
-    display: none;
-  }
+  .kid-skills-col .medal-showcase, .kid-skills-col .skill-cards, .kid-skills-col .add-skill-btn { display: none; }
   .kid-skills-col.panel-open .medal-showcase,
   .kid-skills-col.panel-open .skill-cards,
-  .kid-skills-col.panel-open .add-skill-btn {
-    display: block;
-  }
+  .kid-skills-col.panel-open .add-skill-btn { display: block; }
 
-  /* ── Size adjustments inside accordion ── */
-  .panel-name, .kid-play-name, .kid-skills-name {
-    font-size: 1.8rem;
-  }
-  .panel-role { font-size: 1.2rem; }
-  .avatar-img, .avatar-emoji { width: 48px; height: 48px; font-size: 1.4rem; }
-  .star-badge { width: 48px; height: 48px; }
-  .star-bg    { font-size: 2.8rem; }
-  .star-count { font-size: 1rem; }
-  .panel-header::after,
-  .kid-play-header::after,
-  .kid-skills-header::after {
-    right: 10px;
-  }
-  /* Give road a bit of padding inside */
-  .member-panel.panel-open [id^="road-"] {
-    padding-bottom: 4px;
-  }
-  /* Market: already single col, just tighten */
-  #view-market .market-wrap { padding: 8px; }
-  .market-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .voucher-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  /* ── Size tweaks inside accordion ── */
+  .panel-name, .kid-play-name, .kid-skills-name { font-size: 1.7rem; }
+  .panel-role, .kid-play-level { font-size: 1.1rem; }
+  .avatar-img, .avatar-emoji  { width: 44px; height: 44px; font-size: 1.2rem; }
+  .star-badge { width: 44px; height: 44px; }
+  .star-bg    { font-size: 2.4rem; }
+  .star-count { font-size: .85rem; }
+
+  /* Market */
+  #view-market .market-wrap { grid-template-columns: 1fr; padding: 8px; gap: 10px; }
+  .market-grid  { grid-template-columns: 1fr 1fr; gap: 7px; }
+  .voucher-grid { grid-template-columns: 1fr 1fr; gap: 7px; }
+
+  .admin-topbar { font-size: 1rem; padding: 5px 8px; }
+  .atb-label    { display: none; }
+  .modal h3 { font-size: 1.1rem; }
+  .modal label { font-size: .85rem; }
+  .modal input, .modal select { font-size: .85rem; padding: 6px 8px; }
+  .modal-btns button { font-size: .9rem; padding: 8px; }
 }
+
+/* ─── SHARED: > 3 members → accordion regardless of breakpoint ──────────── */
+/* Applied via JS class .board-accordion when member count > max-cols */
+.board-accordion         { display: flex !important; flex-direction: column !important; gap: 0 !important; padding: 0 !important; }
+.board-accordion .member-panel,
+.board-accordion .kid-play-col,
+.board-accordion .kid-skills-col {
+  border-radius: 0; box-shadow: none; border-bottom: 2px solid #e8e0ff;
+}
+.board-accordion .member-panel:first-child,
+.board-accordion .kid-play-col:first-child,
+.board-accordion .kid-skills-col:first-child { border-radius: 14px 14px 0 0; overflow: hidden; }
+.board-accordion .member-panel:last-child,
+.board-accordion .kid-play-col:last-child,
+.board-accordion .kid-skills-col:last-child  { border-radius: 0 0 14px 14px; overflow: hidden; border-bottom: none; }
+.board-accordion .panel-header,
+.board-accordion .kid-play-header,
+.board-accordion .kid-skills-header           { position: relative; cursor: pointer; }
+.board-accordion .panel-header::after,
+.board-accordion .kid-play-header::after,
+.board-accordion .kid-skills-header::after    {
+  content: '▼'; position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
+  font-size: 1rem; color: rgba(255,255,255,.7); transition: transform .25s;
+}
+.board-accordion .panel-open > .panel-header::after,
+.board-accordion .panel-open > .kid-play-header::after,
+.board-accordion .panel-open > .kid-skills-header::after { transform: translateY(-50%) rotate(180deg); }
+/* Collapse bodies */
+.board-accordion .member-panel [id^="road-"],
+.board-accordion .member-panel .panel-body    { display: none; }
+.board-accordion .member-panel.panel-open [id^="road-"],
+.board-accordion .member-panel.panel-open .panel-body  { display: block; }
+.board-accordion .kid-play-col .lang-tabs,
+.board-accordion .kid-play-col .play-cats,
+.board-accordion .kid-play-col .play-progress-wrap { display: none; }
+.board-accordion .kid-play-col.panel-open .lang-tabs,
+.board-accordion .kid-play-col.panel-open .play-cats,
+.board-accordion .kid-play-col.panel-open .play-progress-wrap { display: block; }
+.board-accordion .kid-skills-col .medal-showcase,
+.board-accordion .kid-skills-col .skill-cards,
+.board-accordion .kid-skills-col .add-skill-btn { display: none; }
+.board-accordion .kid-skills-col.panel-open .medal-showcase,
+.board-accordion .kid-skills-col.panel-open .skill-cards,
+.board-accordion .kid-skills-col.panel-open .add-skill-btn { display: block; }

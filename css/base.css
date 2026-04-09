@@ -8,18 +8,18 @@ body { font-family: 'Nunito', sans-serif; background: #f0ede8; color: #2d2d2d; m
 
 /* ── LEFT NAV ── */
 .left-nav {
-  width: 130px; flex-shrink: 0; background: #3a3180;
-  display: flex; flex-direction: column; align-items: stretch; padding-top: 16px;
+  width: 120px; flex-shrink: 0; background: #3a3180;
+  display: flex; flex-direction: column; align-items: stretch; padding-top: 14px;
 }
 .nav-item {
-  display: flex; flex-direction: column; align-items: center; gap: 5px;
-  padding: 16px 6px; cursor: pointer; border: none; background: none;
-  color: rgba(255,255,255,.5); font-family: 'Fredoka One', cursive; font-size: 1.25rem;
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  padding: 13px 4px; cursor: pointer; border: none; background: none;
+  color: rgba(255,255,255,.5); font-family: 'Fredoka One', cursive; font-size: 1.1rem;
   border-left: 4px solid transparent; transition: all .2s; line-height: 1.2; text-align: center;
 }
 .nav-item:hover { color: rgba(255,255,255,.8); background: rgba(255,255,255,.07); }
 .nav-item.active { color: #f6c94e; border-left-color: #f6c94e; background: rgba(255,255,255,.1); }
-.nav-item .ni { font-size: 1.9rem; }
+.nav-item .ni { font-size: 1.7rem; }
 .nav-spacer { flex: 1; }
 
 /* ── MAIN CONTENT ── */

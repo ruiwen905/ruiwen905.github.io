@@ -285,103 +285,123 @@
 <!-- ── Boot ── -->
 <script>Boot.boot();</script>
 
+
+
 <script>
-/* ── PHONE ACCORDION — one kid open at a time on ≤500px ── */
+/* ── RESPONSIVE ACCORDION CONTROLLER ─────────────────────────────────────────
+   Rules:
+   - Desktop (>1024): sidebar nav, max 5 columns → accordion if >5 members
+   - iPad (768–1024): top bar,   max 3 columns → accordion if >3 members
+   - Large phone (501–767): top bar, max 2 cols → accordion if >2 members
+   - Phone (≤500): top bar, 1 col, always accordion
+   Only one panel open at a time within each board.
+   ─────────────────────────────────────────────────────────────────────────── */
 (function () {
-  const PHONE_BP = 500;
-  const PANEL_SELECTORS = [
-    { board: '#routines-board',  panels: '.member-panel',    header: '.panel-header'      },
-    { board: '#play-board',      panels: '.kid-play-col',    header: '.kid-play-header'   },
-    { board: '#skills-board',    panels: '.kid-skills-col',  header: '.kid-skills-header' },
+  const CONFIGS = [
+    { boards: ['#routines-board'], panelSel: '.member-panel',   hdrSel: '.panel-header'    },
+    { boards: ['#play-board'],     panelSel: '.kid-play-col',   hdrSel: '.kid-play-header' },
+    { boards: ['#skills-board'],   panelSel: '.kid-skills-col', hdrSel: '.kid-skills-header'},
   ];
 
-  function isPhone() { return window.innerWidth <= PHONE_BP; }
+  function maxCols() {
+    const w = window.innerWidth;
+    if (w > 1024) return 5;
+    if (w >= 768)  return 3;
+    if (w >= 501)  return 2;
+    return 1;
+  }
+  function isPhone() { return window.innerWidth <= 500; }
 
-  function wireBoard(cfg) {
-    const board = document.querySelector(cfg.board);
-    if (!board) return;
+  function updateBoards() {
+    const mc = maxCols();
+    CONFIGS.forEach(cfg => {
+      cfg.boards.forEach(sel => {
+        const board = document.querySelector(sel); if (!board) return;
+        const count = board.querySelectorAll(cfg.panelSel).length;
+        const needAccordion = isPhone() || count > mc;
 
-    board.querySelectorAll(cfg.panels).forEach((panel, i) => {
-      const hdr = panel.querySelector(cfg.header);
-      if (!hdr) return;
+        if (needAccordion) {
+          board.classList.add('board-accordion');
+        } else {
+          board.classList.remove('board-accordion');
+          // Remove panel-open from all (no collapse needed)
+          board.querySelectorAll('.panel-open').forEach(p => p.classList.remove('panel-open'));
+        }
 
-      // Remove any previous listener clone trick
+        // Set CSS custom property for column count (desktop cap)
+        if (!isPhone() && !needAccordion) {
+          board.style.gridTemplateColumns = `repeat(${Math.min(mc, count)}, 1fr)`;
+        } else {
+          board.style.gridTemplateColumns = '';
+        }
+
+        wireHeaders(board, cfg);
+      });
+    });
+  }
+
+  function wireHeaders(board, cfg) {
+    board.querySelectorAll(cfg.panelSel).forEach(panel => {
+      const hdr = panel.querySelector(cfg.hdrSel); if (!hdr) return;
+      // Re-wire: clone to remove old listeners
       const fresh = hdr.cloneNode(true);
       hdr.parentNode.replaceChild(fresh, hdr);
 
-      fresh.addEventListener('click', (e) => {
-        if (!isPhone()) return;               // desktop — do nothing extra
+      fresh.addEventListener('click', e => {
+        const accordion = panel.parentElement && panel.parentElement.classList.contains('board-accordion');
+        if (!accordion) return; // grid mode — no accordion behaviour
         e.stopPropagation();
-
         const isOpen = panel.classList.contains('panel-open');
-
         // Close all in this board
-        board.querySelectorAll(cfg.panels).forEach(p => p.classList.remove('panel-open'));
-
-        // Toggle clicked one
+        board.querySelectorAll(cfg.panelSel).forEach(p => p.classList.remove('panel-open'));
         if (!isOpen) {
           panel.classList.add('panel-open');
-          // Scroll panel into view smoothly
-          setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+          setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
         }
       });
     });
   }
 
-  function wireAll() {
-    PANEL_SELECTORS.forEach(cfg => wireBoard(cfg));
-  }
-
-  // Open first kid by default on phone
-  function openFirst() {
-    if (!isPhone()) return;
-    PANEL_SELECTORS.forEach(cfg => {
-      const board = document.querySelector(cfg.board);
-      if (!board) return;
-      const first = board.querySelector(cfg.panels);
-      if (first) first.classList.add('panel-open');
+  function openFirstIfAccordion() {
+    CONFIGS.forEach(cfg => {
+      cfg.boards.forEach(sel => {
+        const board = document.querySelector(sel); if (!board) return;
+        if (!board.classList.contains('board-accordion')) return;
+        const already = board.querySelector('.panel-open');
+        if (!already) {
+          const first = board.querySelector(cfg.panelSel);
+          if (first) first.classList.add('panel-open');
+        }
+      });
     });
   }
 
-  // Re-wire after any board rebuild (Boot renders boards dynamically)
-  const _origBuildBoard = null;
-  let _wireTimer = null;
-  function scheduleWire() {
-    clearTimeout(_wireTimer);
-    _wireTimer = setTimeout(() => { wireAll(); openFirst(); }, 120);
+  let _debounce = null;
+  function scheduleUpdate() {
+    clearTimeout(_debounce);
+    _debounce = setTimeout(() => { updateBoards(); openFirstIfAccordion(); }, 80);
   }
 
-  // MutationObserver — watches all board containers and re-wires when children change
+  // MutationObserver watches board containers for rebuilds
   function observe() {
-    const targets = ['#routines-board','#play-board','#skills-board']
+    const boards = ['#routines-board','#play-board','#skills-board']
       .map(s => document.querySelector(s)).filter(Boolean);
-    const obs = new MutationObserver(scheduleWire);
-    targets.forEach(t => obs.observe(t, { childList: true, subtree: false }));
+    if (!boards.length) { setTimeout(observe, 200); return; }
+    const obs = new MutationObserver(scheduleUpdate);
+    boards.forEach(b => obs.observe(b, { childList: true }));
   }
 
-  // Also re-wire on resize (crossing the breakpoint)
-  let _lastPhone = isPhone();
-  window.addEventListener('resize', () => {
-    const now = isPhone();
-    if (now !== _lastPhone) {
-      _lastPhone = now;
-      if (!now) {
-        // Desktop — remove all panel-open classes so CSS hides nothing
-        document.querySelectorAll('.panel-open').forEach(p => p.classList.remove('panel-open'));
-      } else {
-        wireAll(); openFirst();
-      }
-    }
-  });
+  window.addEventListener('resize', scheduleUpdate);
 
-  // Boot
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => { observe(); scheduleWire(); });
+    document.addEventListener('DOMContentLoaded', () => { observe(); scheduleUpdate(); });
   } else {
-    observe(); scheduleWire();
+    observe(); scheduleUpdate();
   }
+
+  // Expose so boot.js can trigger after view switch
+  window.AccordionCtrl = { update: scheduleUpdate };
 })();
 </script>
-
 </body>
 </html>

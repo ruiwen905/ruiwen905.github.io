@@ -1,5 +1,5 @@
 /* tabs/skills/skills.css */
-.skills-board { padding: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; align-items: start; }
+.skills-board { padding: 18px; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; align-items: start; }
 .kid-skills-col { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,.08); }
 .kid-skills-header { padding: 13px; color: white; display: flex; align-items: center; gap: 10px; }
 .kid-skills-header .avatar-img, .kid-skills-header .avatar-emoji { width: 64px; height: 64px; cursor: pointer; }
