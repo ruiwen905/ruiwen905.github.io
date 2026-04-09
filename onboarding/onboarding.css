@@ -44,3 +44,19 @@
   .ob-field input, .ob-field select { font-size: 1.3rem; }
   .ob-btn { font-size: 1.5rem; }
 }
+
+/* ── Language selector ── */
+.lang-selector { position:absolute; top:16px; right:16px; }
+.lang-btn { background:rgba(255,255,255,.25); border:2px solid rgba(255,255,255,.5);
+  color:white; padding:6px 12px; border-radius:10px; font-family:'Fredoka One',cursive;
+  font-size:1.6rem; cursor:pointer; display:flex; align-items:center; gap:6px; position:relative; }
+.lang-btn:hover { background:rgba(255,255,255,.35); }
+.lang-dropdown { display:none; position:absolute; top:calc(100% + 6px); right:0;
+  background:white; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,.2);
+  overflow:hidden; min-width:140px; z-index:100; }
+.lang-dropdown.open { display:block; }
+.lang-option { padding:10px 16px; font-family:'Fredoka One',cursive; font-size:1.6rem;
+  cursor:pointer; color:#3a3180; display:flex; align-items:center; gap:8px; }
+.lang-option:hover { background:#f0edff; }
+.lang-option.active { background:#7c6fcf; color:white; }
+#onboarding { position:relative; }

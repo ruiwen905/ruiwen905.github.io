@@ -29,6 +29,14 @@
 
 <!-- ── ONBOARDING ── -->
 <div id="onboarding" class="hidden">
+  <!-- Language selector in onboarding -->
+  <div class="lang-selector" id="ob-lang-selector">
+    <button class="lang-btn" onclick="LangPicker.toggle('ob-lang-dd')">
+      <span id="ob-lang-flag">🇬🇧</span>
+      <span id="ob-lang-code">EN</span> ▾
+    </button>
+    <div class="lang-dropdown" id="ob-lang-dd"></div>
+  </div>
   <div class="ob-card">
     <div class="ob-logo">
       <div class="ob-star">🌟</div>
@@ -135,6 +143,13 @@
     <span class="atb-sep">·</span>
     <button class="atb-btn" onclick="Boot.confirmReset()">🗑 Reset App</button>
     <div style="flex:1"></div>
+    <div class="atb-lang-wrap">
+      <button class="atb-lang-btn" onclick="LangPicker.toggle('atb-lang-dd')">
+        <span id="atb-lang-flag">🇬🇧</span>
+        <span id="atb-lang-code">EN</span> ▾
+      </button>
+      <div class="atb-lang-dd" id="atb-lang-dd"></div>
+    </div>
     <button class="atb-exit" onclick="Boot.toggleAdmin()">✕ Exit Admin</button>
   </div>
 
@@ -401,6 +416,75 @@
 
   // Expose so boot.js can trigger after view switch
   window.AccordionCtrl = { update: scheduleUpdate };
+})();
+</script>
+
+<script>
+/* ── LANGUAGE PICKER ── */
+window.LangPicker = (() => {
+  const LANGS = [
+    {code:'EN', flag:'🇬🇧', label:'English'},
+    {code:'CN', flag:'🇨🇳', label:'中文'},
+    {code:'ML', flag:'🇲🇾', label:'Melayu'},
+    {code:'TM', flag:'🇮🇳', label:'தமிழ்'},
+  ];
+
+  function renderDropdown(ddId) {
+    const dd  = document.getElementById(ddId); if (!dd) return;
+    const cur = typeof State !== 'undefined' ? State.getAppLang() : (localStorage.getItem('kids_app_lang') || 'EN');
+    dd.innerHTML = LANGS.map(l =>
+      `<div class="lang-option${l.code===cur?' active':''}" onclick="LangPicker.pick('${l.code}','${ddId}')">
+        <span>${l.flag}</span><span>${l.code}</span><span style="font-size:1.3rem;opacity:.7">${l.label}</span>
+      </div>`
+    ).join('');
+  }
+
+  function toggle(ddId) {
+    const dd = document.getElementById(ddId); if (!dd) return;
+    renderDropdown(ddId);
+    dd.classList.toggle('open');
+    // Close other open dropdowns
+    document.querySelectorAll('.lang-dropdown.open, .atb-lang-dd.open').forEach(el => {
+      if (el.id !== ddId) el.classList.remove('open');
+    });
+  }
+
+  function pick(code, ddId) {
+    const lang = LANGS.find(l => l.code === code);
+    if (!lang) return;
+    if (typeof State !== 'undefined') State.setAppLang(code);
+    else localStorage.setItem('kids_app_lang', code);
+    // Update all lang display elements
+    syncDisplays(code, lang.flag);
+    const dd = document.getElementById(ddId); if (dd) dd.classList.remove('open');
+    // Re-render dropdown to update active state
+    renderDropdown(ddId);
+  }
+
+  function syncDisplays(code, flag) {
+    [['ob-lang-flag','ob-lang-code'],['atb-lang-flag','atb-lang-code']].forEach(([fId,cId]) => {
+      const fe = document.getElementById(fId), ce = document.getElementById(cId);
+      if (fe) fe.textContent = flag;
+      if (ce) ce.textContent = code;
+    });
+  }
+
+  function init() {
+    const code = localStorage.getItem('kids_app_lang') || 'EN';
+    const lang = LANGS.find(l => l.code === code) || LANGS[0];
+    syncDisplays(lang.code, lang.flag);
+  }
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.lang-selector') && !e.target.closest('.atb-lang-wrap')) {
+      document.querySelectorAll('.lang-dropdown.open, .atb-lang-dd.open').forEach(el => el.classList.remove('open'));
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', init);
+
+  return { toggle, pick, init, LANGS };
 })();
 </script>
 </body>

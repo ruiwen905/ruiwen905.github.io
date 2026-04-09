@@ -18,6 +18,10 @@ window.State = (() => {
   const getSyllabus = ()  => SYLLABUS;
   const setSyllabus = (s) => { SYLLABUS = s; };
 
+  let _appLang = localStorage.getItem('kids_app_lang') || 'EN';
+  const getAppLang = ()  => _appLang;
+  const setAppLang = (l) => { _appLang = l; localStorage.setItem('kids_app_lang', l); };
+
   /* ── Derived helpers ── */
   const todayStr   = () => new Date().toLocaleDateString('en-SG');
   const allTasks   = () => [...(APP.morning || []), ...(APP.evening || [])];
@@ -116,6 +120,7 @@ window.State = (() => {
 
   return {
     getApp, setApp, getSyllabus, setSyllabus,
+    getAppLang, setAppLang,
     todayStr, allTasks, itemCost,
     kidDone, kidPct, getStars, totalPool,
     kidColor, kidSyllabusKey, kidLevelLabel,
