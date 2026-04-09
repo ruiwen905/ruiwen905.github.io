@@ -134,139 +134,139 @@
     "kid0": {
       "mr1": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr2": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr3": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr4": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr5": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr6": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev1": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev2": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev3": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev4": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev5": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       }
     },
     "kid1": {
       "mr1": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr2": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr3": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr4": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr5": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr6": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev1": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev2": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev3": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev4": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev5": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       }
     },
     "kid2": {
       "mr1": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr2": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr3": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr4": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr5": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "mr6": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev1": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev2": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev3": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev4": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       },
       "ev5": {
         "done": false,
-        "date": "07/04/2026"
+        "date": "09/04/2026"
       }
     }
   },
@@ -672,5 +672,23 @@
         }
       }
     ]
-  }
+  },
+  "adults": [
+    {
+      "key": "papa",
+      "name": "Papa",
+      "emoji": "👨",
+      "role": "Chef",
+      "image": null
+    },
+    {
+      "key": "mama",
+      "name": "Mama",
+      "emoji": "👩",
+      "role": "Hall Leader",
+      "image": null
+    }
+  ],
+  "customChores": {},
+  "countdownDone": {}
 }

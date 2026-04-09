@@ -7,7 +7,7 @@
 #mob-vocab  { display: flex; }
 
 #view-vocab { background: #f5f0ff; min-height: 100vh; }
-.vocab-wrap { max-width: 1100px; margin: 0 auto; padding: 16px; }
+.vocab-wrap { width: 100vw; margin: 0 auto; padding: 16px; }
 
 /* Header */
 .vocab-header { background: linear-gradient(135deg,#5c52c0,#8b5cf6); border-radius: 18px; padding: 18px 22px; color: white; margin-bottom: 16px; }
